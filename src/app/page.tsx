@@ -194,7 +194,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2.8, duration: 0.8, ease: smoothEase }}
-              className="flex flex-col sm:flex-row gap-3"
+              className="flex flex-col min-[420px]:flex-row gap-3"
             >
               <motion.div
                 whileHover={{ scale: 1.04 }}
@@ -203,7 +203,7 @@ export default function Home() {
               >
                 <Link
                   href="#cta"
-                  className="inline-flex h-14 items-center justify-center px-8 rounded-full bg-evening-forest text-white font-[family-name:var(--font-geist-sans)] font-semibold text-lg hover:bg-charcoal transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full bg-evening-forest text-white font-[family-name:var(--font-geist-sans)] font-semibold text-base min-[420px]:text-lg hover:bg-charcoal transition-colors duration-300"
                 >
                   Book en demo
                 </Link>
@@ -215,7 +215,7 @@ export default function Home() {
               >
                 <Link
                   href="#hvordan"
-                  className="inline-flex h-14 items-center justify-center px-8 rounded-full border-2 border-white/40 text-white font-[family-name:var(--font-geist-sans)] font-medium text-lg hover:bg-white/10 transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-white/40 text-white font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-white/10 transition-colors duration-300"
                 >
                   Se hvordan det fungerer
                 </Link>
@@ -697,7 +697,7 @@ export default function Home() {
               >
                 <Link
                   href="#kontakt"
-                  className="inline-flex h-14 items-center justify-center px-8 rounded-full border-2 border-white/40 text-white font-[family-name:var(--font-geist-sans)] font-medium text-lg hover:bg-white/10 transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-white/40 text-white font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-white/10 transition-colors duration-300"
                 >
                   Book en demo
                 </Link>
