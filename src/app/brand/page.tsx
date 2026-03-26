@@ -75,87 +75,169 @@ const secondaryColors = [
   { name: "White", hex: "#FFFFFF", desc: "Overflater", textLight: false },
 ];
 
-const logos = [
+/* Logo matrix matching Figma logo sheet */
+const logoCategories = [
   {
-    name: "Logo m/ effekt",
+    title: "Hero — Effektlogo",
     desc: "3D-boble med dybde og skygge. Til hero og markedsføring.",
-    file: "/images/peerlo-hero-logo.png",
-    preview: true,
-    bg: "gradient",
-    border: false,
     wide: true,
+    items: [
+      {
+        name: "Hero-logo m/ effekt",
+        file: "/images/peerlo-hero-logo.png",
+        svg: null,
+        bg: "gradient",
+      },
+    ],
   },
   {
-    name: "Boble — 3D-effekt",
-    desc: "Frittstående 3D-boble for stort format.",
-    file: "/images/peerlo-bubble-3d.png",
-    preview: false,
-    bg: "gradient",
-    border: false,
+    title: "Large",
+    desc: "Fullstor logo med boble og ordmerke. For presentasjoner og markedsmateriell.",
     wide: false,
+    items: [
+      {
+        name: "Primary duo tone",
+        file: "/images/logos/logo-large-duo.png",
+        svg: "/images/logos/logo-large-duo.svg",
+        bg: "bg-[#d7d7d7]",
+      },
+      {
+        name: "Secondary positive",
+        file: "/images/logos/logo-large-positive.png",
+        svg: "/images/logos/logo-large-positive.svg",
+        bg: "bg-paper",
+        border: true,
+      },
+      {
+        name: "Secondary negative",
+        file: "/images/logos/logo-large-negative.png",
+        svg: "/images/logos/logo-large-negative.svg",
+        bg: "forest-gradient",
+      },
+    ],
   },
   {
-    name: "Ordmerke — Effekt",
-    desc: "Ordmerke med teksturert dybde-effekt.",
-    file: "/images/peerlo-wordmark-dark.png",
-    preview: false,
-    bg: "bg-pastel-forest",
-    border: false,
+    title: "App",
+    desc: "Appikon med avrundet firkant. For app-butikker og digitale plattformer.",
     wide: false,
+    items: [
+      {
+        name: "Primary duo tone",
+        file: "/images/logos/logo-app-duo.png",
+        svg: "/images/logos/logo-app-duo.svg",
+        bg: "bg-[#d7d7d7]",
+      },
+      {
+        name: "Secondary positive",
+        file: "/images/logos/logo-app-positive.png",
+        svg: "/images/logos/logo-app-positive.svg",
+        bg: "bg-paper",
+        border: true,
+      },
+      {
+        name: "Secondary negative",
+        file: "/images/logos/logo-app-negative.png",
+        svg: "/images/logos/logo-app-negative.svg",
+        bg: "forest-gradient",
+      },
+    ],
   },
   {
-    name: "Logo — Mørk",
-    desc: "Mørk boble + mørk tekst. For lyse bakgrunner.",
-    file: "/images/logodark.svg",
-    preview: false,
-    bg: "bg-paper",
-    border: true,
+    title: "Mini",
+    desc: "Kompakt versjon for navbar, små kontekster og favicon.",
     wide: false,
+    items: [
+      {
+        name: "Primary duo tone",
+        file: "/images/logos/logo-mini-duo.png",
+        svg: "/images/logos/logo-mini-duo.svg",
+        bg: "bg-[#d7d7d7]",
+      },
+      {
+        name: "Secondary positive",
+        file: "/images/logos/logo-mini-positive.png",
+        svg: "/images/logos/logo-mini-positive.svg",
+        bg: "bg-paper",
+        border: true,
+      },
+      {
+        name: "Secondary negative",
+        file: "/images/logos/logo-mini-negative.png",
+        svg: "/images/logos/logo-mini-negative.svg",
+        bg: "forest-gradient",
+      },
+    ],
   },
   {
-    name: "Logo — Duo",
-    desc: "Hvit boble + mørk tekst. For lyse bakgrunner.",
-    file: "/images/logo.svg",
-    preview: false,
-    bg: "bg-bright-forest/40",
-    border: false,
+    title: "Wordmark",
+    desc: "Kun ordmerket uten boble. Ikke tilgjengelig i duo tone.",
     wide: false,
+    items: [
+      {
+        name: "Secondary positive",
+        file: "/images/logos/wordmark-positive.png",
+        svg: "/images/logos/wordmark-positive.svg",
+        bg: "bg-paper",
+        border: true,
+      },
+      {
+        name: "Secondary negative",
+        file: "/images/logos/wordmark-negative.png",
+        svg: "/images/logos/wordmark-negative.svg",
+        bg: "forest-gradient",
+      },
+    ],
   },
   {
-    name: "Logo — Lys",
-    desc: "Helt hvit. For mørke bakgrunner.",
-    file: "/images/logo-light.svg",
-    preview: false,
-    bg: "bg-evening-forest",
-    border: false,
+    title: "App-ikoner (frittstående)",
+    desc: "Avrundede app-ikoner uten tekst. For digitale flater.",
     wide: false,
+    items: [
+      {
+        name: "Duo tone",
+        file: "/images/logos/app-icon-duo.png",
+        svg: null,
+        bg: "bg-[#d7d7d7]",
+      },
+      {
+        name: "Positive",
+        file: "/images/logos/app-icon-positive.png",
+        svg: null,
+        bg: "bg-paper",
+        border: true,
+      },
+      {
+        name: "Negative",
+        file: "/images/logos/app-icon-negative.png",
+        svg: null,
+        bg: "forest-gradient",
+      },
+    ],
   },
   {
-    name: "Mini-logo — Mørk",
-    desc: "Kompakt versjon for navbar og små kontekster.",
-    file: "/images/peerlo-mini-logo-dark.svg",
-    preview: false,
-    bg: "bg-pastel-forest/50",
-    border: false,
+    title: "Boble-ikon & Effekt",
+    desc: "Frittstående boble og 3D-effektversjoner.",
     wide: false,
-  },
-  {
-    name: "Mini-logo — Duo",
-    desc: "Grønn boble + mørk tekst.",
-    file: "/images/peerlo-mini-logo.svg",
-    preview: false,
-    bg: "bg-bright-forest/30",
-    border: false,
-    wide: false,
-  },
-  {
-    name: "Boble-ikon",
-    desc: "Frittstående ikon for favicons og avatarer.",
-    file: "/images/peerlo-bubble.svg",
-    preview: false,
-    bg: "bg-evening-forest",
-    border: false,
-    wide: false,
+    items: [
+      {
+        name: "Boble — 3D-effekt",
+        file: "/images/peerlo-bubble-3d.png",
+        svg: null,
+        bg: "gradient",
+      },
+      {
+        name: "Ordmerke — Effekt",
+        file: "/images/peerlo-wordmark-dark.png",
+        svg: null,
+        bg: "bg-pastel-forest",
+      },
+      {
+        name: "Boble-ikon (SVG)",
+        file: "/images/peerlo-bubble.svg",
+        svg: "/images/peerlo-bubble.svg",
+        bg: "bg-evening-forest",
+      },
+    ],
   },
 ];
 
@@ -326,50 +408,72 @@ export default function BrandPage() {
               </p>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {logos.map((logo, i) => (
-                <AnimatedSection
-                  key={logo.name}
-                  delay={i * 0.06}
-                  className={logo.wide ? "sm:col-span-2 lg:col-span-3" : ""}
-                >
-                  <motion.div
-                    className={`bg-paper rounded-2xl overflow-hidden ${logo.border ? "ring-1 ring-charcoal/5" : ""}`}
-                    whileHover={{ y: -6, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
-                    transition={{ duration: 0.35, ease: smoothEase }}
-                  >
-                    <div
-                      className={`${logo.bg === "gradient" ? "" : logo.bg} ${logo.wide ? "h-64 md:h-80" : "h-44"} flex items-center justify-center p-8`}
-                      style={
-                        logo.bg === "gradient"
-                          ? { backgroundImage: "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)" }
-                          : undefined
-                      }
-                    >
-                      <img
-                        src={logo.file}
-                        alt={logo.name}
-                        className={`${logo.wide ? "max-h-48 md:max-h-56" : logo.preview ? "max-h-20" : "max-h-14"} w-auto object-contain`}
-                      />
-                    </div>
-                    <div className="p-5">
-                      <p className="font-semibold text-sm mb-1">{logo.name}</p>
-                      <p className="text-charcoal/50 text-xs mb-3 leading-relaxed">
-                        {logo.desc}
-                      </p>
-                      <a
-                        href={logo.file}
-                        download
-                        className="inline-flex items-center gap-1.5 text-forest text-xs font-[family-name:var(--font-geist-sans)] font-semibold hover:text-evening-forest transition-colors duration-300"
+            {logoCategories.map((cat, ci) => (
+              <AnimatedSection key={cat.title} delay={ci * 0.08} className="mb-12 last:mb-0">
+                <div className="mb-4">
+                  <h3 className="text-xl font-normal mb-1">{cat.title}</h3>
+                  <p className="text-charcoal/50 text-sm">{cat.desc}</p>
+                </div>
+                <div className={`grid gap-5 ${cat.wide ? "grid-cols-1" : `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`}`}>
+                  {cat.items.map((logo) => {
+                    const bgClass =
+                      logo.bg === "gradient"
+                        ? ""
+                        : logo.bg === "forest-gradient"
+                          ? ""
+                          : logo.bg;
+                    const bgStyle =
+                      logo.bg === "gradient"
+                        ? { backgroundImage: "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)" }
+                        : logo.bg === "forest-gradient"
+                          ? { backgroundImage: "linear-gradient(180deg, #F5F3F0 0%, #388566 100%)" }
+                          : undefined;
+                    return (
+                      <motion.div
+                        key={logo.name}
+                        className={`bg-paper rounded-2xl overflow-hidden ${logo.border ? "ring-1 ring-charcoal/5" : ""}`}
+                        whileHover={{ y: -6, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
+                        transition={{ duration: 0.35, ease: smoothEase }}
                       >
-                        <Download size={13} />
-                        Last ned {logo.file.endsWith(".svg") ? "SVG" : "PNG"}
-                      </a>
-                    </div>
-                  </motion.div>
-                </AnimatedSection>
-              ))}
-            </div>
+                        <div
+                          className={`${bgClass} ${cat.wide ? "h-64 md:h-80" : "h-44"} flex items-center justify-center p-8`}
+                          style={bgStyle}
+                        >
+                          <img
+                            src={logo.file}
+                            alt={logo.name}
+                            className={`${cat.wide ? "max-h-48 md:max-h-56" : "max-h-24"} w-auto object-contain`}
+                          />
+                        </div>
+                        <div className="p-5">
+                          <p className="font-semibold text-sm mb-1">{logo.name}</p>
+                          <div className="flex items-center gap-3 mt-2">
+                            <a
+                              href={logo.file}
+                              download
+                              className="inline-flex items-center gap-1.5 text-forest text-xs font-[family-name:var(--font-geist-sans)] font-semibold hover:text-evening-forest transition-colors duration-300"
+                            >
+                              <Download size={13} />
+                              PNG
+                            </a>
+                            {logo.svg && (
+                              <a
+                                href={logo.svg}
+                                download
+                                className="inline-flex items-center gap-1.5 text-forest text-xs font-[family-name:var(--font-geist-sans)] font-semibold hover:text-evening-forest transition-colors duration-300"
+                              >
+                                <Download size={13} />
+                                SVG
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </AnimatedSection>
+            ))}
 
             <AnimatedSection delay={0.3} className="mt-10">
               <div className="bg-bright-forest/30 rounded-2xl p-6 md:p-8">

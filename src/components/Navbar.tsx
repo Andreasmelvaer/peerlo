@@ -34,7 +34,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/">
+        <Link href="/" className="flex items-center gap-2.5">
           <motion.img
             src="/images/logodark.svg"
             alt="Peerlo"
@@ -44,6 +44,9 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />
+          <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-forest/10 text-forest text-[10px] font-[family-name:var(--font-geist-sans)] font-semibold uppercase tracking-wider">
+            Beta
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

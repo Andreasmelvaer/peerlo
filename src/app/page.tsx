@@ -80,7 +80,7 @@ function TypingHero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1.6, duration: 0.9, ease: smoothEase }}
         >
-          Hvordan har du det — <em className="text-forest">egentlig?</em>
+          Vi er her for <em className="text-forest">deg.</em>
         </motion.p>
       </motion.div>
     </motion.div>
