@@ -167,7 +167,7 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(168deg, #F5F3F0 30%, #BDE1D2 70%, #388566 100%)",
+              "linear-gradient(168deg, #F5F3F0 20%, #C3D6CC 100%)",
           }}
         />
         <motion.div
@@ -627,7 +627,7 @@ export default function Home() {
         className="py-24 md:py-32 relative overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(168deg, #F5F3F0 30%, #BDE1D2 70%, #388566 100%)",
+            "linear-gradient(168deg, #F5F3F0 20%, #C3D6CC 100%)",
         }}
       >
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
