@@ -80,7 +80,7 @@ function TypingHero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1.6, duration: 0.9, ease: smoothEase }}
         >
-          Vi er her for <em className="text-forest">deg.</em>
+          Hvordan har du det?
         </motion.p>
       </motion.div>
     </motion.div>
@@ -167,7 +167,7 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)",
+              "linear-gradient(168deg, #F5F3F0 30%, #BDE1D2 70%, #388566 100%)",
           }}
         />
         <motion.div
@@ -182,10 +182,10 @@ export default function Home() {
               transition={{ delay: 2.4, duration: 0.8, ease: smoothEase }}
               className="space-y-4"
             >
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+              <p className="text-xl md:text-2xl text-charcoal/80 leading-relaxed">
                 Snakk med noen som har vært der før.
               </p>
-              <p className="text-white/70 leading-relaxed max-w-md">
+              <p className="text-charcoal/60 leading-relaxed max-w-md">
                 Peerlo kobler mennesker som står i noe vanskelig med peers som
                 har vært gjennom lignende utfordringer.
               </p>
@@ -215,7 +215,7 @@ export default function Home() {
               >
                 <Link
                   href="#hvordan"
-                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-white/40 text-white font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-white/10 transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-evening-forest/30 text-evening-forest font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-evening-forest/10 transition-colors duration-300"
                 >
                   Se hvordan det fungerer
                 </Link>
@@ -246,7 +246,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.2, duration: 1.2, ease: smoothEase }}
-          className="absolute bottom-8 left-0 right-0 text-center text-white/30 text-sm font-[family-name:var(--font-geist-sans)] font-medium tracking-[0.3em] uppercase"
+          className="absolute bottom-8 left-0 right-0 text-center text-evening-forest/30 text-sm font-[family-name:var(--font-geist-sans)] font-medium tracking-[0.3em] uppercase"
         >
           Your peer, right here
         </motion.p>
@@ -257,15 +257,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-normal mb-6">
-              De fleste sliter i stillhet.
+              Altfor mange sliter i stillhet.
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
             <p className="text-xl text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
-              Millioner av ansatte står i stress, ensomhet, familieproblemer,
-              angst eller utbrenthet. Men svært få snakker om det. Og de fleste
-              støttesystemer starter først når problemene allerede har blitt
-              alvorlige.
+              Mange ansatte står i stress, ensomhet, familieproblemer eller
+              søvnløse netter — uten at noen vet det. Og hjelpen kommer ofte
+              først når det har gått for langt.
             </p>
           </AnimatedSection>
         </div>
@@ -558,9 +557,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HVORFOR PEERLO / Founder Story ===== */}
+      {/* ===== HVORFOR PEERLO ===== */}
       <section id="hvorfor" className="py-24 md:py-32 bg-paper">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection>
             <motion.p
               className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4"
@@ -571,50 +570,14 @@ export default function Home() {
             >
               Hvorfor Peerlo finnes
             </motion.p>
-            <h2 className="text-4xl md:text-5xl font-normal mb-10">
+            <h2 className="text-4xl md:text-5xl font-normal mb-6">
               Det handler om å gjøre det litt enklere å snakke med noen som
               forstår.
             </h2>
-          </AnimatedSection>
-          <AnimatedSection delay={0.1}>
-            <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
-              <p>Hei, jeg heter Ole Aarre og er gründer av Peerlo.</p>
-              <p>
-                I 2025 bestemte jeg meg for å skape noe jeg selv skulle ønske
-                fantes da jeg falt ut av arbeidslivet. For jeg er ganske sikker
-                på at det kunne vært unngått.
-              </p>
-              <p>
-                Jeg har selv vært sykmeldt og ute av arbeidslivet. Ikke bare én
-                gang, men flere ganger. Over en periode på fem år var jeg av og
-                på sykmeldinger. Det kostet arbeidsgiveren min penger. Det kostet
-                samfunnet penger. Men viktigst av alt: det kostet meg selv — og
-                menneskene rundt meg.
-              </p>
-              <p>
-                Det jeg egentlig trengte, var noe annet. Å snakke med noen som
-                hadde vært gjennom noe lignende selv. Et menneske som forstod.
-              </p>
-              <p className="text-charcoal font-semibold text-xl">
-                Peerlo handler om å gjøre det litt enklere å snakke med noen som
-                forstår. Ikke nødvendigvis en terapeut. Bare et menneske som har
-                kjent på noe av det samme.
-              </p>
-              <p>
-                Sykenærvær er minst like viktig å snakke om som sykefravær.
-                Tenk hvor mange som kunne prestert bedre hvis de bare fikk ryddet
-                litt i tanker, problemer og bekymringer.
-              </p>
-              <motion.p
-                className="text-2xl font-medium text-forest"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: smoothEase }}
-              >
-                Hallo peers.
-              </motion.p>
-            </div>
+            <p className="text-xl text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
+              Ikke nødvendigvis en terapeut. Bare et menneske som har
+              kjent på noe av det samme.
+            </p>
           </AnimatedSection>
         </div>
       </section>
@@ -643,7 +606,7 @@ export default function Home() {
               />
               <FAQItem
                 q="Når kan man bruke Peerlo?"
-                a="Når som helst. Mange bruker Peerlo på kveldstid eller når livet kjennes tungt."
+                a="Når som helst. Når peers er tilgjengelige — også på kvelder, i helger og i ferier."
               />
               <FAQItem
                 q="Hva om noen trenger profesjonell hjelp?"
@@ -664,15 +627,15 @@ export default function Home() {
         className="py-24 md:py-32 relative overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)",
+            "linear-gradient(168deg, #F5F3F0 30%, #BDE1D2 70%, #388566 100%)",
         }}
       >
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-6xl font-normal text-white mb-6">
+            <h2 className="text-4xl md:text-6xl font-normal text-evening-forest mb-6">
               Alle trenger noen som forstår.
             </h2>
-            <p className="text-xl text-white/80 mb-10 max-w-xl mx-auto">
+            <p className="text-xl text-charcoal/70 mb-10 max-w-xl mx-auto">
               Bli med i piloten og gi ansatte tidlig støtte — før problemene
               eskalerer.
             </p>
@@ -684,7 +647,7 @@ export default function Home() {
               >
                 <Link
                   href="#kontakt"
-                  className="inline-flex h-14 items-center justify-center px-8 rounded-full bg-white text-evening-forest font-[family-name:var(--font-geist-sans)] font-semibold text-lg hover:bg-bright-forest transition-colors duration-300 gap-2"
+                  className="inline-flex h-14 items-center justify-center px-8 rounded-full bg-evening-forest text-white font-[family-name:var(--font-geist-sans)] font-semibold text-lg hover:bg-charcoal transition-colors duration-300 gap-2"
                 >
                   Bli med i piloten
                   <ArrowRight size={18} />
@@ -697,7 +660,7 @@ export default function Home() {
               >
                 <Link
                   href="#kontakt"
-                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-white/40 text-white font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-white/10 transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-evening-forest/30 text-evening-forest font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-evening-forest/10 transition-colors duration-300"
                 >
                   Book en demo
                 </Link>

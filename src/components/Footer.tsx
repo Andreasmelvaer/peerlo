@@ -97,7 +97,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Peerlo. Alle rettigheter
             reservert.
           </p>
-          <p>Hallo peers.</p>
+          <p>Your peer, right here.</p>
         </motion.div>
       </div>
     </footer>

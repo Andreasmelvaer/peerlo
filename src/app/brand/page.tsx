@@ -431,7 +431,7 @@ export default function BrandPage() {
                     return (
                       <motion.div
                         key={logo.name}
-                        className={`bg-paper rounded-2xl overflow-hidden ${logo.border ? "ring-1 ring-charcoal/5" : ""}`}
+                        className={`bg-paper rounded-2xl overflow-hidden ${"border" in logo && logo.border ? "ring-1 ring-charcoal/5" : ""}`}
                         whileHover={{ y: -6, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
                         transition={{ duration: 0.35, ease: smoothEase }}
                       >
