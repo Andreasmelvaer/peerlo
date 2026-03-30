@@ -59,15 +59,15 @@ function TypingHero() {
       className="relative"
     >
       <motion.div
-        className="bg-white rounded-3xl px-8 py-6 shadow-lg max-w-lg"
-        whileHover={{ scale: 1.02, boxShadow: "0 25px 50px -12px rgba(0,0,0,0.15)" }}
+        className="bg-white/10 backdrop-blur-md rounded-3xl px-8 py-6 shadow-lg max-w-lg border border-white/10"
+        whileHover={{ scale: 1.02, boxShadow: "0 25px 50px -12px rgba(0,0,0,0.25)" }}
         transition={{ duration: 0.4, ease: smoothEase }}
       >
-        <p className="text-charcoal/40 text-sm mb-1 font-[family-name:var(--font-geist-sans)]">
+        <p className="text-white/40 text-sm mb-1 font-[family-name:var(--font-geist-sans)]">
           Peerlo
         </p>
         <motion.p
-          className="text-3xl md:text-5xl font-normal leading-tight"
+          className="text-3xl md:text-5xl font-normal leading-tight text-white"
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.8, duration: 0.7, ease: smoothEase }}
@@ -75,7 +75,7 @@ function TypingHero() {
           Hallo.
         </motion.p>
         <motion.p
-          className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-charcoal"
+          className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-white/90"
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1.6, duration: 0.9, ease: smoothEase }}
@@ -164,11 +164,7 @@ export default function Home() {
         className="relative min-h-screen flex items-center overflow-hidden pt-16"
       >
         <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "linear-gradient(168deg, #F5F3F0 20%, #E6F4EC 100%)",
-          }}
+          className="absolute inset-0 bg-evening-forest"
         />
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
@@ -182,10 +178,10 @@ export default function Home() {
               transition={{ delay: 2.4, duration: 0.8, ease: smoothEase }}
               className="space-y-4"
             >
-              <p className="text-xl md:text-2xl text-charcoal/80 leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
                 Snakk med noen som har vært der før.
               </p>
-              <p className="text-charcoal/60 leading-relaxed max-w-md">
+              <p className="text-white/60 leading-relaxed max-w-md">
                 Peerlo kobler mennesker som står i noe vanskelig med peers som
                 har vært gjennom lignende utfordringer.
               </p>
@@ -203,7 +199,7 @@ export default function Home() {
               >
                 <Link
                   href="#cta"
-                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full bg-evening-forest text-white font-[family-name:var(--font-geist-sans)] font-semibold text-base min-[420px]:text-lg hover:bg-charcoal transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full bg-white text-evening-forest font-[family-name:var(--font-geist-sans)] font-semibold text-base min-[420px]:text-lg hover:bg-bright-forest transition-colors duration-300"
                 >
                   Book en demo
                 </Link>
@@ -215,7 +211,7 @@ export default function Home() {
               >
                 <Link
                   href="#hvordan"
-                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-evening-forest/30 text-evening-forest font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-evening-forest/10 transition-colors duration-300"
+                  className="inline-flex h-12 min-[420px]:h-14 items-center justify-center px-6 min-[420px]:px-8 rounded-full border-2 border-white/30 text-white font-[family-name:var(--font-geist-sans)] font-medium text-base min-[420px]:text-lg hover:bg-white/10 transition-colors duration-300"
                 >
                   Se hvordan det fungerer
                 </Link>

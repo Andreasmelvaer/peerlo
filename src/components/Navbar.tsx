@@ -36,15 +36,21 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <motion.img
-            src="/images/logodark.svg"
+            src={scrolled ? "/images/logodark.svg" : "/images/logo-light.svg"}
             alt="Peerlo"
             width={119}
             height={81}
-            className="h-10 w-auto"
+            className="h-10 w-auto transition-opacity duration-300"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />
-          <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-forest/10 text-forest text-[10px] font-[family-name:var(--font-geist-sans)] font-semibold uppercase tracking-wider">
+          <span
+            className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-[family-name:var(--font-geist-sans)] font-semibold uppercase tracking-wider transition-colors duration-500 ${
+              scrolled
+                ? "bg-forest/10 text-forest"
+                : "bg-white/15 text-white/80"
+            }`}
+          >
             Beta
           </span>
         </Link>
@@ -54,10 +60,18 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative text-sm font-[family-name:var(--font-geist-sans)] font-medium text-charcoal/70 hover:text-charcoal transition-colors duration-300 group"
+              className={`relative text-sm font-[family-name:var(--font-geist-sans)] font-medium transition-colors duration-300 group ${
+                scrolled
+                  ? "text-charcoal/70 hover:text-charcoal"
+                  : "text-white/70 hover:text-white"
+              }`}
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-forest rounded-full transition-all duration-300 group-hover:w-full" />
+              <span
+                className={`absolute -bottom-1 left-0 w-0 h-0.5 rounded-full transition-all duration-300 group-hover:w-full ${
+                  scrolled ? "bg-forest" : "bg-white"
+                }`}
+              />
             </Link>
           ))}
           <motion.div
@@ -67,7 +81,11 @@ export default function Navbar() {
           >
             <Link
               href="#cta"
-              className="inline-flex h-10 items-center px-6 rounded-full bg-forest text-white text-sm font-[family-name:var(--font-geist-sans)] font-semibold hover:bg-evening-forest transition-colors duration-300"
+              className={`inline-flex h-10 items-center px-6 rounded-full text-sm font-[family-name:var(--font-geist-sans)] font-semibold transition-colors duration-300 ${
+                scrolled
+                  ? "bg-forest text-white hover:bg-evening-forest"
+                  : "bg-white text-evening-forest hover:bg-bright-forest"
+              }`}
             >
               Book en demo
             </Link>
@@ -75,7 +93,9 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden p-2 text-charcoal"
+          className={`md:hidden p-2 transition-colors duration-300 ${
+            scrolled ? "text-charcoal" : "text-white"
+          }`}
           onClick={() => setOpen(!open)}
           aria-label="Meny"
         >
