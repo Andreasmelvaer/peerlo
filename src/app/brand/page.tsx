@@ -84,9 +84,9 @@ const logoCategories = [
     items: [
       {
         name: "Hero-logo m/ effekt",
-        file: "/images/peerlo-hero-logo.png",
+        file: "/images/logos/hero-effect-logo.png",
         svg: null,
-        bg: "gradient",
+        bg: "effect-gradient",
       },
     ],
   },
@@ -221,9 +221,9 @@ const logoCategories = [
     items: [
       {
         name: "Boble — 3D-effekt",
-        file: "/images/peerlo-bubble-3d.png",
+        file: "/images/logos/app-icon-duo.png",
         svg: null,
-        bg: "gradient",
+        bg: "effect-gradient",
       },
       {
         name: "Ordmerke — Effekt",
@@ -252,7 +252,7 @@ const typeScale = [
 const gradients = [
   {
     name: "Green to Paper",
-    css: "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)",
+    css: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)",
     from: "#F5F3F0",
     to: "#388566",
     desc: "Brukes på hero og CTA-seksjoner",
@@ -314,7 +314,7 @@ export default function BrandPage() {
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
         style={{
-          backgroundImage: "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)",
+          backgroundImage: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)",
         }}
       >
         <motion.div
@@ -324,20 +324,12 @@ export default function BrandPage() {
           transition={{ duration: 1.2, ease: smoothEase }}
         >
           <motion.img
-            src="/images/peerlo-bubble-3d.png"
-            alt=""
-            className="w-32 md:w-44 mb-4"
+            src="/images/logos/hero-effect-logo.png"
+            alt="Peerlo"
+            className="w-48 md:w-64 lg:w-72"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 1, ease: smoothEase }}
-          />
-          <motion.img
-            src="/images/peerlo-wordmark-dark.png"
-            alt="Peerlo"
-            className="h-10 md:h-14 w-auto"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8, ease: smoothEase }}
           />
         </motion.div>
 
@@ -417,17 +409,17 @@ export default function BrandPage() {
                 <div className={`grid gap-5 ${cat.wide ? "grid-cols-1" : `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`}`}>
                   {cat.items.map((logo) => {
                     const bgClass =
-                      logo.bg === "gradient"
+                      logo.bg === "gradient" || logo.bg === "effect-gradient" || logo.bg === "forest-gradient"
                         ? ""
-                        : logo.bg === "forest-gradient"
-                          ? ""
-                          : logo.bg;
+                        : logo.bg;
                     const bgStyle =
                       logo.bg === "gradient"
-                        ? { backgroundImage: "linear-gradient(168deg, #F5F3F0 11%, #388566 89%)" }
-                        : logo.bg === "forest-gradient"
-                          ? { backgroundImage: "linear-gradient(180deg, #F5F3F0 0%, #388566 100%)" }
-                          : undefined;
+                        ? { backgroundImage: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)" }
+                        : logo.bg === "effect-gradient"
+                          ? { backgroundImage: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)", backgroundColor: "rgba(90, 154, 126, 0.3)" }
+                          : logo.bg === "forest-gradient"
+                            ? { backgroundImage: "linear-gradient(180deg, #F5F3F0 0%, #388566 100%)" }
+                            : undefined;
                     return (
                       <motion.div
                         key={logo.name}
