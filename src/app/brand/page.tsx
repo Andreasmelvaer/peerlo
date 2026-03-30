@@ -112,7 +112,7 @@ const logoCategories = [
         name: "Secondary negative",
         file: "/images/logos/logo-large-negative.png",
         svg: "/images/logos/logo-large-negative.svg",
-        bg: "forest-gradient",
+        bg: "bg-evening-forest",
       },
     ],
   },
@@ -138,7 +138,7 @@ const logoCategories = [
         name: "Secondary negative",
         file: "/images/logos/logo-app-negative.png",
         svg: "/images/logos/logo-app-negative.svg",
-        bg: "forest-gradient",
+        bg: "bg-evening-forest",
       },
     ],
   },
@@ -164,7 +164,7 @@ const logoCategories = [
         name: "Secondary negative",
         file: "/images/logos/logo-mini-negative.png",
         svg: "/images/logos/logo-mini-negative.svg",
-        bg: "forest-gradient",
+        bg: "bg-evening-forest",
       },
     ],
   },
@@ -175,16 +175,16 @@ const logoCategories = [
     items: [
       {
         name: "Secondary positive",
-        file: "/images/logos/wordmark-positive.png",
-        svg: "/images/logos/wordmark-positive.svg",
+        file: "/images/logos/wordmark-negative.png",
+        svg: "/images/logos/wordmark-negative.svg",
         bg: "bg-paper",
         border: true,
       },
       {
         name: "Secondary negative",
-        file: "/images/logos/wordmark-negative.png",
-        svg: "/images/logos/wordmark-negative.svg",
-        bg: "forest-gradient",
+        file: "/images/logos/wordmark-positive.png",
+        svg: "/images/logos/wordmark-positive.svg",
+        bg: "bg-evening-forest",
       },
     ],
   },
@@ -210,7 +210,7 @@ const logoCategories = [
         name: "Negative",
         file: "/images/logos/app-icon-negative.png",
         svg: null,
-        bg: "forest-gradient",
+        bg: "bg-evening-forest",
       },
     ],
   },
@@ -252,7 +252,7 @@ const typeScale = [
 const gradients = [
   {
     name: "Green to Paper",
-    css: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)",
+    css: "linear-gradient(161deg, #F5F3F0 0%, #388566 94%)",
     from: "#F5F3F0",
     to: "#388566",
     desc: "Brukes på hero og CTA-seksjoner",
@@ -314,7 +314,7 @@ export default function BrandPage() {
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
         style={{
-          backgroundImage: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)",
+          backgroundImage: "linear-gradient(161deg, #F5F3F0 0%, #388566 94%)",
         }}
       >
         <motion.div
@@ -409,7 +409,7 @@ export default function BrandPage() {
                 <div className={`grid gap-5 ${cat.wide ? "grid-cols-1" : `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`}`}>
                   {cat.items.map((logo) => {
                     const bgClass =
-                      logo.bg === "gradient" || logo.bg === "effect-gradient" || logo.bg === "forest-gradient"
+                      logo.bg === "gradient" || logo.bg === "effect-gradient"
                         ? ""
                         : logo.bg;
                     const bgStyle =
@@ -417,9 +417,7 @@ export default function BrandPage() {
                         ? { backgroundImage: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)" }
                         : logo.bg === "effect-gradient"
                           ? { backgroundImage: "linear-gradient(147deg, #F5F3F0 0%, #388566 100%)", backgroundColor: "rgba(90, 154, 126, 0.3)" }
-                          : logo.bg === "forest-gradient"
-                            ? { backgroundImage: "linear-gradient(180deg, #F5F3F0 0%, #388566 100%)" }
-                            : undefined;
+                          : undefined;
                     return (
                       <motion.div
                         key={logo.name}
