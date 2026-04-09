@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import { Gabarito } from "next/font/google";
 import "./globals.css";
@@ -14,7 +14,12 @@ const gabarito = Gabarito({
   weight: ["400", "500", "600", "700"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#305043",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://peerlo.no"),
   title: "Peerlo — Snakk med noen som forstår",
   description:
     "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer. Anonymt, tilgjengelig og menneskelig. Ikke terapi — ekte erfaring, delt mellom mennesker.",
