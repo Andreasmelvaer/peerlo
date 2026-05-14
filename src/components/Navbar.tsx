@@ -6,10 +6,10 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { href: "#hvordan", label: "Hvordan det fungerer" },
-  { href: "#bedrifter", label: "For bedrifter" },
-  { href: "#hvorfor", label: "Hvorfor Peerlo" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#hvordan", label: "Hvordan det fungerer" },
+  { href: "/#bedrifter", label: "For bedrifter" },
+  { href: "/blog", label: "Blogg" },
+  { href: "/#kontakt", label: "Kontakt" },
 ];
 
 export default function Navbar() {
@@ -80,7 +80,7 @@ export default function Navbar() {
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <Link
-              href="#cta"
+              href="/#cta"
               className={`inline-flex h-10 items-center px-6 rounded-full text-sm font-[family-name:var(--font-geist-sans)] font-semibold transition-colors duration-300 ${
                 scrolled
                   ? "bg-forest text-white hover:bg-evening-forest"
@@ -157,7 +157,7 @@ export default function Navbar() {
                 transition={{ delay: 0.3, duration: 0.3 }}
               >
                 <Link
-                  href="#cta"
+                  href="/#cta"
                   className="inline-flex h-10 items-center justify-center px-6 rounded-full bg-forest text-white text-sm font-[family-name:var(--font-geist-sans)] font-semibold"
                   onClick={() => setOpen(false)}
                 >

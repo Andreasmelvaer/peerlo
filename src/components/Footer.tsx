@@ -37,9 +37,9 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               {[
-                { href: "#hvordan", label: "Hvordan det fungerer" },
-                { href: "#bedrifter", label: "For bedrifter" },
-                { href: "#hvorfor", label: "Hvorfor Peerlo" },
+                { href: "/#hvordan", label: "Hvordan det fungerer" },
+                { href: "/#bedrifter", label: "For bedrifter" },
+                { href: "/blog", label: "Blogg" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

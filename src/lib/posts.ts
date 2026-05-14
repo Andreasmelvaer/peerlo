@@ -1,0 +1,648 @@
+export type ContentBlock = string | { items: string[] };
+
+export interface InlineImage {
+  src: string;
+  alt: string;
+  afterBlock: number;
+}
+
+export interface Post {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  readingTime: number;
+  image: string;
+  inlineImages?: InlineImage[];
+  relatedSlugs: string[];
+  content: ContentBlock[];
+}
+
+const posts: Post[] = [
+  {
+    slug: "hva-jeg-savnet",
+    title: "Hva jeg egentlig savnet da jeg hadde det vanskelig",
+    excerpt:
+      "Da jeg selv slet psykisk, prøvde jeg terapi. Flere former også. Noe hjalp litt. Mye hjalp ikke. Men for meg føltes det ofte som om noe manglet.",
+    date: "2026-05-18",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/hva-jeg-savnet.png",
+    inlineImages: [
+      { src: "/images/blog/hva-jeg-savnet-inline-2.png", alt: "En person som sitter i ro ved et vindu med utsikt over norsk natur", afterBlock: 9 },
+    ],
+    relatedSlugs: [
+      "forskjellen-hort-og-forstatt",
+      "hva-er-peer-support",
+      "hvorfor-hjelp-for-sent",
+    ],
+    content: [
+      "Da jeg selv slet psykisk, prøvde jeg terapi. Flere former også.",
+      "Noe hjalp litt.\nMye hjalp ikke.",
+      "Det betyr ikke at terapi er feil. For mange er det helt avgjørende. Men for meg føltes det ofte som om noe manglet.",
+      "Jeg savnet ikke nødvendigvis flere råd.",
+      "Jeg savnet et menneske som faktisk visste hvordan det føltes.",
+      "Noen som kunne si:\n«Jeg har stått i noe lignende selv.»",
+      "Ikke som fagperson.\nIkke som ekspert.\nMen som medmenneske.",
+      "For når man sliter psykisk, føler man seg ofte alene — selv når man er omgitt av mennesker. Mange blir flinke til å skjule det. Man går på jobb. Smiler. Leverer. Fungerer på utsiden.",
+      "Men inni seg kan man føle:",
+      {
+        items: [
+          "skam",
+          "håpløshet",
+          "uro",
+          "ensomhet",
+          "frykt for å være en belastning",
+        ],
+      },
+      "Og det er akkurat der jeg tror peer support kan gjøre en enorm forskjell.",
+      "For noen ganger trenger man ikke et menneske som skal «fikse» deg.\nMan trenger et menneske som gjør at du føler deg mindre alene i det du står i.",
+      "Det er noe spesielt med å møte noen som:",
+      {
+        items: [
+          "har kjent på lignende tanker",
+          "vært langt nede selv",
+          "og kommet seg videre",
+        ],
+      },
+      "Det skaper en annen type trygghet.\nEn annen type troverdighet.",
+      "Man slipper å bruke like mye energi på å forklare hvordan det føles. Man kjenner ofte ganske raskt:\n«Ok … denne personen skjønner faktisk litt av det jeg prøver å si.»",
+      "Jeg tror også det senker terskelen enormt.",
+      "Mange søker ikke hjelp fordi det føles for stort:",
+      {
+        items: [
+          "for formelt",
+          "for alvorlig",
+          "for skummelt",
+          "eller fordi de ikke føler seg «syke nok»",
+        ],
+      },
+      "Peer support kan være noe annet.\nNoe mer menneskelig.\nMer lavterskel.\nMer tilgjengelig.",
+      "Ikke som en erstatning for terapi eller profesjonell hjelp — men som et supplement. Eller som det første steget før ting vokser seg større.",
+      "Det er også en av hovedgrunnene til at jeg bygger Peerlo i dag.",
+      "Fordi jeg tror mange mennesker går rundt og bærer på ting alene altfor lenge.",
+      "Og fordi jeg tror det finnes enorm verdi i å kunne si:\n«Du trenger ikke forklare alt. Jeg har vært der selv.»",
+      "Les også: [Forskjellen på å bli hørt — og å bli forstått](/blog/forskjellen-hort-og-forstatt)",
+    ],
+  },
+  {
+    slug: "forskjellen-hort-og-forstatt",
+    title: "Forskjellen på å bli hørt — og å bli forstått",
+    excerpt:
+      "Jeg husker ikke nødvendigvis alle rådene jeg fikk da jeg hadde det vanskelig. Men jeg husker følelsen av å møte mennesker som faktisk forstod.",
+    date: "2026-05-25",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/forskjellen-hort-og-forstatt.png",
+    inlineImages: [
+      { src: "/images/blog/forskjellen-hort-og-forstatt-inline-1.png", alt: "To mennesker i en rolig samtale på en benk i norsk natur", afterBlock: 6 },
+      { src: "/images/blog/forskjellen-hort-og-forstatt-inline-2.png", alt: "Sollys som bryter gjennom trærne i en norsk skog", afterBlock: 14 },
+    ],
+    relatedSlugs: [
+      "hva-jeg-savnet",
+      "hva-er-peer-support",
+      "vanlig-menneske-hjelpe",
+    ],
+    content: [
+      "Jeg husker ikke nødvendigvis alle rådene jeg fikk da jeg hadde det vanskelig.",
+      "Men jeg husker følelsen av å møte mennesker som faktisk forstod.",
+      "Det er en stor forskjell på de to tingene.",
+      "Mange mennesker er flinke til å lytte.\nMange mener godt.\nMange prøver å hjelpe.",
+      "Men noen ganger merker man ganske raskt om personen foran deg:",
+      {
+        items: [
+          "virkelig forstår følelsen",
+          "eller bare prøver å forstå den",
+        ],
+      },
+      "Og den forskjellen kan være enorm når man sliter psykisk.",
+      "Jeg har hatt samtaler der jeg satt igjen med følelsen av å være analysert.\nKartlagt.\nVurdert.",
+      "Andre ganger har jeg møtt mennesker som bare traff på en helt annen måte.",
+      "Ikke fordi de hadde perfekt utdanning.\nIkke fordi de sa alle de riktige tingene.\nMen fordi de hadde kjent på noe lignende selv.",
+      "Det skaper ofte en helt annen ro i samtalen.",
+      "Man slipper å overforklare.\nMan slipper å «bevise» hvordan man har det.\nMan føler seg mindre rar.",
+      "Noen ganger holder det nesten med små ting:",
+      {
+        items: [
+          "måten noen nikker på",
+          "stillheten de tåler",
+          "at de ikke prøver å fikse deg med én gang",
+          "at de tør å være ærlige tilbake",
+        ],
+      },
+      "Det er kanskje nettopp derfor peer support kan oppleves så annerledes.",
+      "For i peer support handler det ikke om å være ekspert på mennesker.\nDet handler om å møte noen som menneske.",
+      "Jeg tror også mange undervurderer hvor mye håp det kan gi å møte noen som faktisk har kommet seg gjennom noe vanskelig.",
+      "Ikke fordi livet deres er perfekt nå.\nMen fordi de er et levende bevis på at det går an å komme videre.",
+      "Det kan være utrolig kraftfullt når man selv står midt i mørket.",
+      "Og kanskje er det nettopp derfor så mange åpner seg lettere for mennesker med egenerfaring.",
+      "Ikke fordi de nødvendigvis har alle svarene.\nMen fordi de vet hvordan det føles når livet gjør vondt.",
+      "Les også: [Hvordan kan et vanlig menneske hjelpe meg?](/blog/vanlig-menneske-hjelpe)",
+    ],
+  },
+  {
+    slug: "hva-er-peer-support",
+    title: "Hva er egentlig peer support?",
+    excerpt:
+      "«Peer support» høres kanskje ut som et fancy faguttrykk. Men egentlig handler det om noe ganske menneskelig — å få støtte fra noen som har opplevd noe lignende selv.",
+    date: "2026-06-01",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/hva-er-peer-support.png",
+    inlineImages: [
+      { src: "/images/blog/hva-er-peer-support-inline-1.png", alt: "En gruppe mennesker som støtter hverandre i et trygt miljø", afterBlock: 7 },
+    ],
+    relatedSlugs: [
+      "hva-jeg-savnet",
+      "hvorfor-hjelp-for-sent",
+      "hvem-peer-support-hjelpe",
+    ],
+    content: [
+      "«Peer support» høres kanskje ut som et fancy faguttrykk.",
+      "Men egentlig handler det om noe ganske menneskelig.",
+      "Det handler om å få støtte fra noen som har opplevd noe lignende selv.",
+      "Noen som ikke bare har lest om det.\nMen kjent det på kroppen.",
+      "Det kan være:",
+      {
+        items: [
+          "psykiske utfordringer",
+          "ensomhet",
+          "utbrenthet",
+          "angst",
+          "depresjon",
+          "rus",
+          "sorg",
+          "mobbing",
+          "traumer",
+          "eller bare perioder der livet føles tungt",
+        ],
+      },
+      "I stedet for å møte noen som analyserer deg, møter du noen som kan si:\n«Jeg kjenner igjen følelsen.»",
+      "Og akkurat det kan bety mer enn mange tror.",
+      "For når man har det vanskelig, føler man seg ofte alene i det man står i.",
+      "Man kan tenke:",
+      {
+        items: [
+          "«Ingen skjønner meg.»",
+          "«Det er bare jeg som har det sånn.»",
+          "«Jeg burde klart dette bedre.»",
+        ],
+      },
+      "Peer support kan bryte litt med den følelsen.",
+      "Ikke fordi den andre personen har alle svarene.\nMen fordi de gjør at man føler seg mindre alene.",
+      "Det handler mer om:",
+      {
+        items: [
+          "støtte",
+          "gjenkjennelse",
+          "håp",
+          "ærlige samtaler",
+          "og følelsen av å bli forstått",
+        ],
+      },
+      "Noen ganger kan det faktisk være lettere å åpne seg for noen med egenerfaring enn for venner eller familie.",
+      "Hvorfor?",
+      "Fordi det ofte er mindre skam.\nMindre frykt for å bli dømt.\nOg mindre behov for å forklare alt i detalj.",
+      "Mange opplever også at terskelen blir lavere.",
+      "Det føles mindre dramatisk å ta en prat med et medmenneske enn å «søke hjelp».",
+      "Og kanskje er det nettopp derfor peer support kan hjelpe mennesker tidligere — før ting vokser seg større.",
+      "Jeg tror egentlig ikke peer support handler om perfekte samtaler.",
+      "Jeg tror det handler om noe mye enklere:",
+      "Å møte et menneske som sier:\n«Du er ikke alene i dette.»",
+      "Les også: [Hvem kan peer support være ekstra viktig for?](/blog/hvem-peer-support-hjelpe)",
+    ],
+  },
+  {
+    slug: "hvorfor-hjelp-for-sent",
+    title: "Hvorfor søker så mange hjelp altfor sent?",
+    excerpt:
+      "Jeg tror ikke hovedproblemet er at mennesker ikke vil ha hjelp. Jeg tror problemet er at terskelen føles altfor høy.",
+    date: "2026-06-08",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/hvorfor-hjelp-for-sent.png",
+    inlineImages: [
+      { src: "/images/blog/hvorfor-hjelp-for-sent-inline-1.png", alt: "En person som ser ut over et stille fjordlandskap i dempet lys", afterBlock: 7 },
+      { src: "/images/blog/hvorfor-hjelp-for-sent-inline-2.png", alt: "To mennesker som går sammen langs en sti i norsk natur", afterBlock: 16 },
+    ],
+    relatedSlugs: [
+      "vanskelig-forsta-psykisk-helse",
+      "alene-for-lenge",
+      "apne-deg-forste-gang",
+    ],
+    content: [
+      "Jeg tror ikke hovedproblemet er at mennesker ikke vil ha hjelp.",
+      "Jeg tror problemet er at terskelen føles altfor høy.",
+      "Mange går rundt med tanker som:",
+      {
+        items: [
+          "«Det er ikke alvorlig nok.»",
+          "«Andre har det verre enn meg.»",
+          "«Jeg burde klare dette selv.»",
+          "«Jeg vil ikke være en belastning.»",
+          "«Det går sikkert over.»",
+        ],
+      },
+      "Så man venter.\nOg venter litt til.",
+      "Ofte helt til kroppen eller hodet sier stopp.",
+      "Jeg tror også mange er redde for hva det betyr å «søke hjelp».",
+      "For noen føles det stort.\nNesten dramatisk.",
+      "Det kan føles som:",
+      {
+        items: [
+          "å innrømme nederlag",
+          "å miste kontroll",
+          "eller å måtte sette ord på ting man knapt forstår selv",
+        ],
+      },
+      "Og kanskje er det nettopp derfor peer support kan være lettere for mange.",
+      "For det føles ofte mer menneskelig.",
+      "Mer som:\n«Kan jeg bare få snakke med noen som skjønner litt?»",
+      "I stedet for:\n«Jeg trenger behandling.»",
+      "Det er en stor forskjell.",
+      "Når man møter noen med egenerfaring, senkes ofte skuldrene litt.",
+      "Man slipper følelsen av å måtte prestere i samtalen.\nMan slipper kanskje også frykten for å bli analysert eller misforstått.",
+      "For det er noe eget med mennesker som faktisk har kjent på lignende ting selv.",
+      "De vet ofte:",
+      {
+        items: [
+          "hvor vanskelig det kan være å åpne seg",
+          "hvor mye skam som kan ligge bak",
+          "hvor slitsomt det er å late som alt går fint",
+        ],
+      },
+      "Og noen ganger er det akkurat derfor folk tør å være ærlige.",
+      "Ikke fordi den andre personen har perfekte svar.\nMen fordi de skaper trygghet.",
+      "Jeg tror egentlig mange mennesker kunne fått hjelp mye tidligere dersom terskelen føltes lavere.",
+      "Hvis det føltes mer normalt å si:\n«Jeg har det litt tungt om dagen.»",
+      "Før det blir:\n«Jeg klarer ikke mer.»",
+      "Kanskje er det nettopp der peer support kan gjøre den største forskjellen.",
+      "Les også: [Hva skjer når man går alene for lenge?](/blog/alene-for-lenge)",
+    ],
+  },
+  {
+    slug: "vanskelig-forsta-psykisk-helse",
+    title: "Det er vanskelig å forstå psykisk helse før man kjenner det på kroppen",
+    excerpt:
+      "Jeg tror mange mennesker misforstår psykisk helse. Ikke fordi de er onde. Men fordi de aldri har kjent det på kroppen selv.",
+    date: "2026-06-15",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/vanskelig-forsta-psykisk-helse.png",
+    inlineImages: [
+      { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-1.png", alt: "En person som sitter alene ved et vindu og ser ut på regnet", afterBlock: 6 },
+      { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-2.png", alt: "Lys som bryter gjennom skyer over norsk fjelllandskap", afterBlock: 14 },
+    ],
+    relatedSlugs: [
+      "hva-jeg-savnet",
+      "hvorfor-hjelp-for-sent",
+      "alene-for-lenge",
+    ],
+    content: [
+      "Jeg tror mange mennesker misforstår psykisk helse.",
+      "Ikke fordi de er onde.\nMen fordi de aldri har kjent det på kroppen selv.",
+      "Det er vanskelig å forstå hvor tungt noe kan være når det ikke synes utenpå.",
+      "Mange tenker fortsatt:",
+      {
+        items: [
+          "«Bare ta deg sammen.»",
+          "«Kom deg ut litt.»",
+          "«Tenk positivt.»",
+          "«Alle har det vanskelig iblant.»",
+        ],
+      },
+      "Og ja — alle har tunge dager.",
+      "Men psykiske utfordringer handler ofte om noe helt annet enn å være litt sliten eller lei seg.",
+      "Det kan være som å gå rundt med en usynlig vekt på kroppen hver eneste dag.",
+      "Noen klarer fortsatt å gå på jobb.\nSmile.\nLevere.\nVære sosial.",
+      "Men inni seg kan de være helt utslitt.",
+      "Det tror jeg mange undervurderer.",
+      "Jeg gjorde kanskje det selv også før jeg opplevde det på nært hold.",
+      "Jeg trodde nok psykisk uhelse ofte så mer «tydelig» ut.\nAt man kunne se det.",
+      "Men mange av de som sliter mest er ofte de flinkeste til å skjule det.",
+      "De fungerer.\nHelt til de plutselig ikke gjør det lenger.",
+      "Og kanskje er det nettopp derfor så mange føler seg alene.",
+      "For hvis ingen ser det, begynner man ofte å tenke:",
+      {
+        items: [
+          "«Kanskje jeg bare er svak.»",
+          "«Kanskje jeg overdriver.»",
+          "«Kanskje jeg burde tålt mer.»",
+        ],
+      },
+      "Det er en farlig spiral.",
+      "Jeg tror også mange ikke forstår hvor mye skam som kan ligge bak psykiske utfordringer.",
+      "Skam over å ikke mestre.\nSkam over å være sliten.\nSkam over å ikke kjenne seg selv igjen.",
+      "Og jo lenger man går alene med det, jo vanskeligere kan det bli å åpne seg.",
+      "Kanskje er det derfor [peer support](/blog/hva-er-peer-support) kan bety så mye.",
+      "For noen ganger trenger man ikke nødvendigvis et menneske som har alle løsningene.\nMan trenger et menneske som sier:\n«Det du føler er ikke rart.»",
+      "Det kan være starten på noe veldig viktig.",
+    ],
+  },
+  {
+    slug: "vanlig-menneske-hjelpe",
+    title: "«Hvordan kan et vanlig menneske hjelpe meg?»",
+    excerpt:
+      "Mange tenker: «Hvis noen skal hjelpe meg psykisk, må de vel være ekspert?» Men jeg tror mange undervurderer verdien av et menneske som virkelig forstår følelsen.",
+    date: "2026-06-22",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/vanlig-menneske-hjelpe.png",
+    inlineImages: [
+      { src: "/images/blog/vanlig-menneske-hjelpe-inline-1.png", alt: "Et varmt og trygt rom der to mennesker sitter sammen", afterBlock: 6 },
+      { src: "/images/blog/vanlig-menneske-hjelpe-inline-2.png", alt: "En kopp kaffe på et bord mellom to personer i samtale", afterBlock: 12 },
+    ],
+    relatedSlugs: [
+      "forskjellen-hort-og-forstatt",
+      "hva-er-peer-support",
+      "etter-god-samtale",
+    ],
+    content: [
+      "Det er egentlig et veldig forståelig spørsmål.",
+      "Mange tenker nok:\n«Hvis noen skal hjelpe meg psykisk, må de vel være ekspert?»",
+      "Og noen ganger trenger man selvfølgelig profesjonell hjelp.",
+      "Men jeg tror også mange undervurderer hvor mye verdi det kan ligge i et menneske som virkelig forstår følelsen.",
+      "For ofte handler ikke psykiske utfordringer bare om mangel på råd.",
+      "Det handler om:",
+      {
+        items: [
+          "ensomhet",
+          "skam",
+          "håpløshet",
+          "følelsen av å være alene i det man står i",
+        ],
+      },
+      "Og da kan et menneske med egenerfaring bety utrolig mye.",
+      "Ikke fordi de har fasiten.\nMen fordi de vet hvordan det kan føles når livet blir tungt.",
+      "De vet kanskje:",
+      {
+        items: [
+          "hvordan det er å late som alt går fint",
+          "hvordan det er å trekke seg unna mennesker",
+          "hvordan det er å føle seg misforstått",
+          "hvor vanskelig det kan være å be om hjelp",
+        ],
+      },
+      "Noen ganger er det faktisk nok at noen sier:\n«Jeg kjenner meg igjen i det du sier.»",
+      "Det kan senke skuldrene enormt.",
+      "Jeg tror også mange blir overrasket over hvor mye trygghet som kan oppstå når man slipper å forklare absolutt alt fra bunnen av.",
+      "Man føler seg mindre rar.\nMindre alene.\nMindre «feil».",
+      "Og kanskje er det nettopp derfor peer support kan fungere så godt for mange.",
+      "Ikke fordi peers er supermennesker.\nMen fordi de er vanlige mennesker som har vært gjennom noe vanskelig selv.",
+      "Mennesker som vet at livet kan gjøre vondt.\nOg som tør å møte andre med ærlighet, varme og gjenkjennelse.",
+      "Noen ganger kan det være mer kraftfullt enn folk tror.",
+      "Les også: [Forskjellen på å bli hørt — og å bli forstått](/blog/forskjellen-hort-og-forstatt)",
+    ],
+  },
+  {
+    slug: "etter-god-samtale",
+    title: "Hvordan burde man føle seg etter en god peer support-samtale?",
+    excerpt:
+      "Jeg tror ikke målet med en god samtale nødvendigvis er at alt skal være løst etterpå. Livet fungerer sjelden sånn.",
+    date: "2026-06-29",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/etter-god-samtale.png",
+    inlineImages: [
+      { src: "/images/blog/etter-god-samtale-inline-1.png", alt: "En person som sitter i stillhet med en rolig utsikt over fjorden", afterBlock: 4 },
+      { src: "/images/blog/etter-god-samtale-inline-2.png", alt: "Morgenlys over et stille norsk landskap med fjell og vann", afterBlock: 11 },
+    ],
+    relatedSlugs: [
+      "forskjellen-hort-og-forstatt",
+      "vanlig-menneske-hjelpe",
+      "apne-deg-forste-gang",
+    ],
+    content: [
+      "Jeg tror ikke målet med en god samtale nødvendigvis er at alt skal være løst etterpå.",
+      "Livet fungerer sjelden sånn.",
+      "Man kan ikke alltid «fikse» angst, ensomhet, sorg eller tunge tanker på 40 minutter.",
+      "Men kanskje kan man føle noe annet.",
+      "Litt mindre alene.\nLitt lettere i kroppen.\nLitt mer forstått.",
+      "Jeg tror egentlig mange mennesker går rundt og bærer veldig mye alene.",
+      "Ikke fordi de vil.\nMen fordi de ikke føler at de kan si det høyt.",
+      "Så når noen endelig får en trygg samtale med et menneske som faktisk lytter, kan det gjøre mer enn man tror.",
+      "Ikke nødvendigvis fordi den andre personen sier noe genialt.\nMen fordi man kjenner:\n«Ok … jeg ble faktisk møtt nå.»",
+      "Det kan være utrolig verdifullt.",
+      "Jeg tror også mange undervurderer hvor mye håp som kan ligge i å møte noen som har vært langt nede selv — og fortsatt står oppreist.",
+      "Ikke perfekt.\nIkke «ferdig fikset».\nBare et menneske som har kommet seg gjennom noe vanskelig.",
+      "Det kan gjøre noe med hvordan man ser på sitt eget liv.",
+      "Kanskje begynner man å tenke:",
+      {
+        items: [
+          "«Kanskje jeg ikke er alene.»",
+          "«Kanskje det finnes en vei videre.»",
+          "«Kanskje det ikke alltid skal føles så tungt.»",
+        ],
+      },
+      "Og noen ganger er det faktisk nok for én dag.",
+      "Jeg tror derfor en god peer support-samtale ikke nødvendigvis handler om å løse alt.",
+      "Kanskje handler det mer om:",
+      {
+        items: [
+          "å føle seg sett",
+          "å føle seg trygg",
+          "å tørre å være ærlig",
+          "og å sitte igjen med litt mer håp enn man hadde før samtalen startet",
+        ],
+      },
+      "Det kan være mye viktigere enn folk tror.",
+      "Les også: [Til deg som vurderer å åpne deg for første gang](/blog/apne-deg-forste-gang)",
+    ],
+  },
+  {
+    slug: "hvem-peer-support-hjelpe",
+    title: "Hvem kan peer support være ekstra viktig for?",
+    excerpt:
+      "Jeg tror peer support kan hjelpe mange forskjellige mennesker. Men kanskje spesielt dem som har blitt veldig flinke til å skjule hvordan de egentlig har det.",
+    date: "2026-07-06",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/hvem-peer-support-hjelpe.png",
+    inlineImages: [
+      { src: "/images/blog/hvem-peer-support-hjelpe-inline-1.png", alt: "En person i kontorklær som ser ut av vinduet med et ettertenksomt uttrykk", afterBlock: 5 },
+      { src: "/images/blog/hvem-peer-support-hjelpe-inline-2.png", alt: "Unge voksne som går sammen i en park i nordisk landskap", afterBlock: 13 },
+    ],
+    relatedSlugs: [
+      "hva-er-peer-support",
+      "hvorfor-hjelp-for-sent",
+      "apne-deg-forste-gang",
+    ],
+    content: [
+      "Jeg tror peer support kan hjelpe mange forskjellige mennesker.",
+      "Men kanskje spesielt dem som har blitt veldig flinke til å skjule hvordan de egentlig har det.",
+      "De som fungerer på utsiden.\nMen har det tungt på innsiden.",
+      "For sannheten er at mange som sliter psykisk fortsatt:",
+      {
+        items: [
+          "går på jobb",
+          "trener",
+          "smiler",
+          "leverer",
+          "svarer «det går fint»",
+        ],
+      },
+      "Samtidig som de føler seg helt tomme.",
+      "Jeg tror også peer support kan være ekstra viktig for mennesker som bærer mye skam.",
+      "For eksempel:",
+      {
+        items: [
+          "menn som føler de må være sterke",
+          "ledere som føler de alltid må ha kontroll",
+          "ansatte som er redde for konsekvenser på jobb",
+          "pårørende som setter alle andre først",
+          "mennesker som har blitt flinke til å lide i stillhet",
+        ],
+      },
+      "Mange av disse menneskene søker aldri hjelp.",
+      "Ikke fordi de ikke trenger det.\nMen fordi terskelen føles for høy.",
+      "De vil ikke være til bry.\nIkke virke svake.\nIkke miste kontroll.\nIkke bli sett annerledes på.",
+      "Og kanskje er det nettopp derfor peer support kan treffe noe annet.",
+      "For det føles ofte mindre skummelt å snakke med et medmenneske enn å «be om hjelp».",
+      "Man møter ikke nødvendigvis et system.\nMan møter et menneske.",
+      "Et menneske som kanskje vet hvordan det er å:",
+      {
+        items: [
+          "smile når man egentlig har det tungt",
+          "fungere på jobb mens hodet er kaos",
+          "føle seg alene midt blant andre mennesker",
+        ],
+      },
+      "Jeg tror også mange unge voksne kunne hatt stor nytte av peer support.",
+      "Spesielt i en tid der mange føler:",
+      {
+        items: [
+          "press",
+          "sammenligning",
+          "ensomhet",
+          "og frykten for å ikke strekke til",
+        ],
+      },
+      "Samtidig som alt ser perfekt ut på utsiden.",
+      "Kanskje er det nettopp derfor peer support kan bli så viktig fremover.",
+      "Fordi mange mennesker ikke nødvendigvis trenger et perfekt svar.\nDe trenger et menneske som sier:\n«Jeg kjenner igjen følelsen.»",
+      "Les også: [Hva er egentlig peer support?](/blog/hva-er-peer-support)",
+    ],
+  },
+  {
+    slug: "alene-for-lenge",
+    title: "Hva skjer når mennesker går alene med psykiske utfordringer for lenge?",
+    excerpt:
+      "Jeg tror veldig mye psykisk smerte vokser i stillhet. Ikke over natten. Men gradvis.",
+    date: "2026-07-13",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/alene-for-lenge.png",
+    inlineImages: [
+      { src: "/images/blog/alene-for-lenge-inline-1.png", alt: "En ensom skikkelse som går langs en tom strand i nordisk høstlys", afterBlock: 5 },
+      { src: "/images/blog/alene-for-lenge-inline-2.png", alt: "Et stille tåkelagt landskap med trær i dempet morgenlys", afterBlock: 12 },
+    ],
+    relatedSlugs: [
+      "hvorfor-hjelp-for-sent",
+      "vanskelig-forsta-psykisk-helse",
+      "apne-deg-forste-gang",
+    ],
+    content: [
+      "Jeg tror veldig mye psykisk smerte vokser i stillhet.",
+      "Ikke over natten.\nMen gradvis.",
+      "Man begynner kanskje med å tenke:\n«Det går sikkert over.»",
+      "Så holder man litt til.\nOg litt til.",
+      "Man går på jobb.\nSvarer på meldinger.\nSmiler når man må.\nFungerer så godt man kan.",
+      "Samtidig blir man kanskje mer sliten for hver uke som går.",
+      "Jeg tror mange undervurderer hvor tungt det er å bære alt alene over tid.",
+      "For når man ikke setter ord på det man kjenner på, begynner tankene ofte å vokse seg større inne i hodet.",
+      "Man kan begynne å tvile på seg selv.\nTrekkes bort fra mennesker.\nMiste energi.\nHåp.\nSelvtillit.",
+      "Noen blir sittende alene med tanker ingen rundt dem aner at de har.",
+      "Og kanskje er det nettopp det som skremmer meg mest.",
+      "At så mange mennesker ser helt «fine» ut på utsiden, samtidig som de har det utrolig tungt inni seg.",
+      "Jeg tror også mange venter altfor lenge før de åpner seg.",
+      "Ikke fordi de ikke vil ha hjelp.\nMen fordi:",
+      {
+        items: [
+          "de ikke vil være en belastning",
+          "de tror de burde håndtere det selv",
+          "de er redde for å bli dømt",
+          "eller fordi de ikke føler seg «syke nok»",
+        ],
+      },
+      "Så man tier.\nHelt til kroppen eller hodet til slutt sier stopp.",
+      "Noen ender kanskje med sykmelding.\nAndre mister relasjoner.\nNoen mister seg selv litt underveis.",
+      "Og noen kommer så langt ned at det blir veldig vanskelig å finne veien opp alene.",
+      "Det er derfor jeg tror tidlig støtte betyr så mye.",
+      "Ikke nødvendigvis store løsninger.\nMen små, trygge samtaler før ting vokser seg for stort.",
+      "Kanskje med et menneske som tør å spørre:\n«Hvordan har du det egentlig?»",
+      "Og som faktisk tåler det ekte svaret.",
+      "Les også: [Til deg som vurderer å åpne deg for første gang](/blog/apne-deg-forste-gang)",
+    ],
+  },
+  {
+    slug: "apne-deg-forste-gang",
+    title: "Til deg som vurderer å åpne deg for første gang",
+    excerpt:
+      "Hvis du sitter alene akkurat nå og vurderer å åpne deg for noen: Jeg håper du vet at du ikke er svak.",
+    date: "2026-07-20",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/apne-deg-forste-gang.png",
+    inlineImages: [
+      { src: "/images/blog/apne-deg-forste-gang-inline-1.png", alt: "En person som tar det første steget ut på en sti i skogen", afterBlock: 5 },
+      { src: "/images/blog/apne-deg-forste-gang-inline-2.png", alt: "Varmt lys som faller inn gjennom et vindu i et stille rom", afterBlock: 12 },
+    ],
+    relatedSlugs: [
+      "hva-er-peer-support",
+      "etter-god-samtale",
+      "alene-for-lenge",
+    ],
+    content: [
+      "Hvis du sitter alene akkurat nå og vurderer å åpne deg for noen:",
+      "Jeg håper du vet at du ikke er svak.",
+      "Selv om det kanskje føles sånn.",
+      "Det er utrolig mange mennesker som går rundt og bærer på ting ingen andre ser.",
+      "Mennesker som:",
+      {
+        items: [
+          "fungerer på jobb",
+          "smiler til andre",
+          "svarer «det går fint»",
+          "og samtidig har det veldig tungt inni seg",
+        ],
+      },
+      "Du er ikke alene om det.",
+      "Og du trenger heller ikke ha «store nok problemer» for å snakke med noen.",
+      "Man trenger ikke være helt knust før man fortjener støtte.",
+      "Jeg tror faktisk mange hadde hatt godt av å åpne seg mye tidligere.\nFør alt vokser seg så stort.",
+      "For sannheten er at det ofte krever mer styrke å være ærlig enn å late som alt går fint.",
+      "Selv små ord kan være vanskelige å si høyt:",
+      {
+        items: [
+          "«Jeg sliter litt.»",
+          "«Jeg er sliten.»",
+          "«Jeg føler meg alene.»",
+          "«Jeg vet ikke helt hvordan jeg har det.»",
+        ],
+      },
+      "Men kanskje er det nettopp der noe kan begynne å løsne litt.",
+      "Ikke nødvendigvis fordi én samtale løser alt.\nMen fordi man slipper å bære alt alene.",
+      "Og noen ganger kan det være starten på noe viktig.",
+      "Jeg tror heller ikke du trenger å forklare alt perfekt.",
+      "Du trenger ikke ha de riktige ordene.\nDu trenger ikke vite nøyaktig hva som er galt.",
+      "Noen ganger holder det egentlig å si:\n«Jeg tror jeg trenger noen å snakke med.»",
+      "Det er mer enn nok.",
+      "Les også: [Hva jeg egentlig savnet da jeg hadde det vanskelig](/blog/hva-jeg-savnet)",
+    ],
+  },
+];
+
+export function getAllPosts(): Post[] {
+  return posts;
+}
+
+export function getPost(slug: string): Post | undefined {
+  return posts.find((p) => p.slug === slug);
+}
+
+export function getRelatedPosts(post: Post): Post[] {
+  return post.relatedSlugs
+    .map((slug) => posts.find((p) => p.slug === slug))
+    .filter((p): p is Post => p !== undefined);
+}
