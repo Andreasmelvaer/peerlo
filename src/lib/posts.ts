@@ -215,9 +215,8 @@ const posts: Post[] = [
     date: "2026-06-29",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/etter-god-samtale.jpg",
+    image: "/images/blog/etter-god-samtale-inline-1.jpg",
     inlineImages: [
-      { src: "/images/blog/etter-god-samtale-inline-1.jpg", alt: "En person som sitter i stillhet med en rolig utsikt over fjorden", afterBlock: 4 },
       { src: "/images/blog/etter-god-samtale-inline-2.jpg", alt: "Morgenlys over et stille norsk landskap med fjell og vann", afterBlock: 11 },
     ],
     relatedSlugs: [
