@@ -102,9 +102,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/forskjellen-hort-og-forstatt.png",
-    inlineImages: [
-      { src: "/images/blog/forskjellen-hort-og-forstatt-inline-1.png", alt: "To mennesker i en rolig samtale på en benk i norsk natur", afterBlock: 6 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "hva-jeg-savnet",
       "hva-er-peer-support",
