@@ -36,13 +36,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/hva-jeg-savnet.jpg",
-    inlineImages: [
-      { src: "/images/blog/hva-jeg-savnet-inline-1.jpg", alt: "En mann som sitter alene på et fjell og ser utover norsk natur", afterBlock: 6 },
-      { src: "/images/blog/hva-jeg-savnet-inline-2.jpg", alt: "En person som sitter i ro ved et vindu med utsikt over norsk natur", afterBlock: 15 },
-    ],
-    credits: [
-      { photographer: "Daniel", url: "https://unsplash.com/@danieluvegard", source: "Unsplash" },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "forskjellen-hort-og-forstatt",
       "hva-er-peer-support",
@@ -97,11 +91,8 @@ const posts: Post[] = [
     date: "2026-06-01",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hva-er-peer-support-inline-1.jpg",
+    image: "/images/blog/hva-er-peer-support.jpg",
     inlineImages: [],
-    credits: [
-      { photographer: "Faris Mohammed", url: "https://unsplash.com/@pkmfaris", source: "Unsplash" },
-    ],
     relatedSlugs: [
       "hva-jeg-savnet",
       "hvorfor-hjelp-for-sent",
@@ -156,6 +147,8 @@ const posts: Post[] = [
     date: "2026-08-03",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/aerlig-om-hvordan-man-har-det.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "nar-hjelp-foles-feil",
       "anonymitet-og-apne-seg",
@@ -180,6 +173,8 @@ const posts: Post[] = [
     date: "2026-08-10",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/arbeidslivet-og-psykisk-helse.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "aerlig-om-hvordan-man-har-det",
       "anonymitet-og-apne-seg",
@@ -202,6 +197,8 @@ const posts: Post[] = [
     date: "2026-08-17",
     author: "Ole Aarre",
     readingTime: 3,
+    image: "/images/blog/folelse-av-a-bli-forstatt.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "nar-hjelp-foles-feil",
       "egenerfaring-som-ressurs",
@@ -279,10 +276,8 @@ const posts: Post[] = [
     date: "2026-06-29",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/etter-god-samtale-inline-1.jpg",
-    inlineImages: [
-      { src: "/images/blog/etter-god-samtale-inline-2.jpg", alt: "Morgenlys over et stille norsk landskap med fjell og vann", afterBlock: 11 },
-    ],
+    image: "/images/blog/etter-god-samtale.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "forskjellen-hort-og-forstatt",
       "vanlig-menneske-hjelpe",
@@ -307,6 +302,8 @@ const posts: Post[] = [
     date: "2026-08-24",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/hva-taper-vi-nar-folk-gar-alene.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "alene-for-lenge",
       "aerlig-om-hvordan-man-har-det",
@@ -329,6 +326,8 @@ const posts: Post[] = [
     date: "2026-08-31",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/hvis-peerlo-lykkes.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
       "hva-taper-vi-nar-folk-gar-alene",
@@ -350,6 +349,8 @@ const posts: Post[] = [
     date: "2026-09-07",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/hva-trenger-mennesker-nar-de-har-det-vanskelig.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "nar-hjelp-foles-feil",
       "folelse-av-a-bli-forstatt",
@@ -375,7 +376,7 @@ const posts: Post[] = [
     date: "2026-07-06",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hvem-peer-support-hjelpe-inline-2.jpg",
+    image: "/images/blog/hvem-peer-support-hjelpe.jpg",
     inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
@@ -430,9 +431,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/apne-deg-forste-gang.jpg",
-    inlineImages: [
-      { src: "/images/blog/apne-deg-forste-gang-inline-2.jpg", alt: "Varmt lys som faller inn gjennom et vindu i et stille rom", afterBlock: 12 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
       "etter-god-samtale",
@@ -525,11 +524,6 @@ const posts: Post[] = [
     date: "2026-07-27",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hva-betyr-peer-support-pa-norsk.jpg",
-    inlineImages: [],
-    credits: [
-      { photographer: "LinkedIn Sales Solutions", url: "https://unsplash.com/@linkedinsalesnavigator", source: "Unsplash" },
-    ],
     relatedSlugs: [
       "hva-er-peer-support",
       "forskjellen-hort-og-forstatt",
