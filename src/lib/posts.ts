@@ -146,7 +146,7 @@ const posts: Post[] = [
       "Jeg tror egentlig mange mennesker kunne fått hjelp mye tidligere dersom terskelen føltes lavere. Hvis det føltes mer normalt å si:\n«Jeg har det litt tungt om dagen.»",
       "Før det blir:\n«Jeg klarer ikke mer.»",
       "Kanskje er det nettopp der peer support kan gjøre den største forskjellen.",
-      "Les også: [Hva skjer når man går alene for lenge?](/blog/alene-for-lenge)",
+      "Les også: [Hva skjer når mennesker går alene med psykiske utfordringer for lenge?](/blog/alene-for-lenge)",
     ],
   },
   {
@@ -261,7 +261,7 @@ const posts: Post[] = [
   },
   {
     slug: "alene-for-lenge",
-    title: "Hva skjer når man går alene for lenge?",
+    title: "Hva skjer når mennesker går alene med psykiske utfordringer for lenge?",
     excerpt:
       "Jeg tror veldig mye psykisk smerte vokser i stillhet. Ikke over natten, men gradvis. Man venter, holder ut, og later som alt er fint. Helt til det ikke går lenger.",
     date: "2026-07-13",
