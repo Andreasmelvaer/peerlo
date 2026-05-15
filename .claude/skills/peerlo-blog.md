@@ -1,6 +1,6 @@
 # Peerlo Blog Writer
 
-Write and publish blog posts for Peerlo in Ole Aarre's voice and style.
+Write and publish blog posts for Peerlo in Ole Aarre's voice and style, with strong SEO and AEO built in.
 
 **Trigger**: When the user asks to write a blog post, create blog content, add a new article, or mentions a topic they want covered on the Peerlo blog.
 
@@ -39,6 +39,105 @@ Study the existing posts in `src/lib/posts.ts` before writing. Ole's voice has t
 - Ends with a cross-link: `"Les også: [Title](/blog/slug)"`
 - Maximum 2-3 bullet lists per post, each with 3-5 short items.
 
+---
+
+## SEO & AEO Requirements
+
+Every blog post must be optimized for both traditional search engines and AI answer engines.
+
+### On-Page SEO
+- **Title**: Compelling, includes primary keyword naturally. 50-60 characters ideal.
+- **Excerpt/meta description**: 150-160 characters, includes primary keyword, compelling enough to click.
+- **Slug**: Short, keyword-rich, Norwegian, kebab-case (3-5 words max).
+- **Heading structure**: The `<h1>` is the post title. Use the content naturally — the short paragraph style already creates scannable content.
+- **Internal linking**: Every post must link to 2-3 other Peerlo posts inline (via `[text](/blog/slug)` syntax) plus the "Les også:" at the end. This builds topic clusters.
+- **Keyword strategy**: Target one primary keyword per post (e.g., "peer support", "psykisk helse", "åpne seg"). Weave it naturally into the first paragraph, excerpt, and throughout. Never keyword-stuff — Ole's natural voice comes first.
+
+### AEO (Answer Engine Optimization)
+- Write content that directly answers questions people ask about peer support and mental health.
+- Use natural question-answer patterns in the text (Ole already does this with rhetorical questions).
+- Include clear, quotable statements that AI models can cite — short definitive sentences like "Peer support handler om å møte noen som har opplevd noe lignende selv."
+- Structured data (Article schema, BreadcrumbList) is already handled in the page component — no action needed per post.
+
+### Technical SEO (already built into the site)
+- Canonical URLs via `alternates.canonical`
+- Open Graph tags (title, description, type, image, url)
+- Twitter Card tags (summary_large_image)
+- Article structured data (JSON-LD) with author, publisher, datePublished
+- Breadcrumb structured data
+- Sitemap auto-generated at `/sitemap.xml`
+- `robots.txt` allows all crawlers
+
+### Image SEO
+- **All images must have descriptive Norwegian alt text.** Not decorative descriptions — describe what's in the image and how it relates to the content.
+- **Alt text pattern**: "En [person/scene] som [action] i [Norwegian setting]" — specific and useful for screen readers and search.
+- **Header image alt**: Should relate to the post's main theme.
+- **Inline image alts**: Should relate to the surrounding content section.
+- **File names**: Already SEO-friendly (slug-based).
+- **Image dimensions**: Header 900x450, inline 900x500 — already optimized for web.
+
+---
+
+## Image Strategy
+
+### Priority 1: Midjourney (when user has access)
+
+Generate 3 image prompts (1 header + 2 inline) in this style:
+
+```
+Hyperrealistic photograph, Nordic landscape, [scene description].
+Natural soft lighting, muted Scandinavian color palette, cinematic
+depth of field. Shot on medium format camera. --ar 16:9 --v 6.1 --s 200
+```
+
+Guidelines:
+- Always Nordic/Norwegian settings (fjords, forests, coastline, cabins, trails)
+- People shown from behind or at a distance — never faces
+- Moody, contemplative, atmospheric
+- Seasons matching the emotional tone (autumn for reflection, spring for hope)
+- Header: wider establishing shot
+- Inline: more intimate, closer scenes
+- The images should feel **ekte og nedpå** — real, grounded, not polished or stock-photo-like
+
+### Priority 2: Unsplash (when Midjourney is not available)
+
+If the user doesn't have Midjourney or wants to skip image generation, fetch real photographs from Unsplash.
+
+**Search strategy:**
+1. Search for Norwegian or Scandinavian scenes first: `norway landscape`, `norwegian forest`, `scandinavian nature`, `nordic coast`
+2. Search for mood-matching scenes: `solitude nature`, `person walking alone`, `misty forest`, `quiet morning`
+3. Prefer images that feel natural, unposed, and atmospheric — never polished commercial stock
+
+**How to fetch:**
+Use the Unsplash API via WebFetch:
+```
+https://api.unsplash.com/search/photos?query=norway+forest&orientation=landscape&per_page=5
+```
+With header: `Authorization: Client-ID YOUR_ACCESS_KEY`
+
+If no API key is available, search Unsplash via the browser and download manually.
+
+**Accreditation — REQUIRED:**
+Every Unsplash image must be credited. Add a `credits` field to the post:
+```typescript
+credits?: { photographer: string; url: string; source: "Unsplash" }[];
+```
+
+Then render credits at the bottom of the post. Example:
+```
+Bilder: John Smith via Unsplash
+```
+
+**Image requirements:**
+- Landscape orientation (16:9 or similar)
+- High resolution (at least 1200px wide)
+- Natural, authentic feel — no over-saturated, no HDR, no stock-photo poses
+- Norwegian/Scandinavian locations strongly preferred
+- Moody, contemplative atmosphere matching Peerlo's brand
+- Download and save to `public/images/blog/` with proper slug-based filenames
+
+---
+
 ## How to Add a New Post
 
 ### 1. Write the content
@@ -57,22 +156,22 @@ export type ContentBlock = string | { items: string[] };
 
 ### 2. Generate post metadata
 
-Create a complete `Post` object:
+Create a complete `Post` object with full SEO metadata:
 
 ```typescript
 {
-  slug: "kebab-case-norwegian-slug",     // max 4-5 words
-  title: "Full Norwegian Title",          // compelling, human
-  excerpt: "2-3 sentences that capture the essence...",
-  date: "YYYY-MM-DD",                     // publication date
+  slug: "kebab-case-norwegian-slug",          // keyword-rich, 3-5 words
+  title: "Full Norwegian Title",               // compelling, 50-60 chars, includes keyword
+  excerpt: "2-3 sentences that capture...",    // 150-160 chars, includes keyword, meta description
+  date: "YYYY-MM-DD",                          // publication date
   author: "Ole Aarre",
-  readingTime: 4,                          // usually 4
+  readingTime: 4,                              // usually 4
   image: "/images/blog/[slug].png",
-  inlineImages: [                          // 1-2 images
+  inlineImages: [
     { src: "/images/blog/[slug]-inline-1.png", alt: "Descriptive Norwegian alt text", afterBlock: N },
     { src: "/images/blog/[slug]-inline-2.png", alt: "Descriptive Norwegian alt text", afterBlock: N },
   ],
-  relatedSlugs: ["slug-1", "slug-2", "slug-3"],  // 3 related posts
+  relatedSlugs: ["slug-1", "slug-2", "slug-3"],  // 3 topically related posts
   content: [ /* ContentBlock[] */ ],
 }
 ```
@@ -81,32 +180,39 @@ Create a complete `Post` object:
 
 Add the new post object to the `posts` array in `src/lib/posts.ts`. Position it at the **beginning** of the array (newest first).
 
-### 4. Generate Midjourney image prompts
+### 4. Handle images
 
-Create 3 image prompts (1 header + 2 inline) in this style:
+**If Midjourney:** Output 3 prompts for the user to run. Remind them to save as:
+- `public/images/blog/[slug].png` (header)
+- `public/images/blog/[slug]-inline-1.png`
+- `public/images/blog/[slug]-inline-2.png`
 
-```
-Hyperrealistic photograph, Nordic landscape, [scene description].
-Natural soft lighting, muted Scandinavian color palette, cinematic
-depth of field. Shot on medium format camera. --ar 16:9 --v 6.1 --s 200
-```
+**If Unsplash:** Search, download, and save directly. Add credits to the post.
 
-Guidelines for prompts:
-- Always Nordic/Norwegian settings (fjords, forests, coastline, cabins, trails)
-- People shown from behind or at a distance — never faces
-- Moody, contemplative, atmospheric
-- Seasons that match the emotional tone (autumn for reflection, spring for hope)
-- Header image: wider establishing shot
-- Inline images: more intimate, closer scenes
+**If no images yet:** The post will still work — the image fields are there, the user can add images later. Note which images are missing.
 
-Output the prompts so the user can run them in Midjourney.
+### 5. Verify & deploy
 
-### 5. Remind the user
-
-After writing the post and adding it to `posts.ts`:
-- Tell them to run the Midjourney prompts
-- Remind them to place images as `public/images/blog/[slug].png`, `[slug]-inline-1.png`, `[slug]-inline-2.png`
+- Check the post renders correctly in the preview
+- Verify all links work (internal cross-links, "Les også")
+- Confirm images load (if available)
 - Offer to commit and push to deploy via Vercel
+
+---
+
+## SEO Checklist (verify before publishing)
+
+- [ ] Title includes primary keyword naturally
+- [ ] Excerpt is 150-160 chars and works as meta description
+- [ ] Slug is short and keyword-rich
+- [ ] Post links to 2-3 other Peerlo posts inline
+- [ ] "Les også:" cross-link at the end
+- [ ] Related posts (relatedSlugs) are topically relevant
+- [ ] All images have descriptive Norwegian alt text
+- [ ] Header image alt relates to post theme
+- [ ] Content answers a real question someone would search for
+- [ ] At least one clear, quotable statement for AI citation
+- [ ] Date is set correctly
 
 ## Example Content Block Style
 

@@ -6,6 +6,12 @@ export interface InlineImage {
   afterBlock: number;
 }
 
+export interface ImageCredit {
+  photographer: string;
+  url: string;
+  source: "Unsplash";
+}
+
 export interface Post {
   slug: string;
   title: string;
@@ -15,6 +21,7 @@ export interface Post {
   readingTime: number;
   image: string;
   inlineImages?: InlineImage[];
+  credits?: ImageCredit[];
   relatedSlugs: string[];
   content: ContentBlock[];
 }

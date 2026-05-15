@@ -261,6 +261,29 @@ export default async function BlogPostPage({
 
       <article className="max-w-2xl mx-auto px-6 pb-16 md:pb-24">
         <BlogContent content={post.content} inlineImages={post.inlineImages} />
+
+        {post.credits && post.credits.length > 0 && (
+          <div className="mt-12 pt-6 border-t border-charcoal/10">
+            <p className="text-xs text-charcoal/40 font-[family-name:var(--font-geist-sans)]">
+              Bilder:{" "}
+              {post.credits.map((credit, i) => (
+                <span key={i}>
+                  {i > 0 && ", "}
+                  <a
+                    href={credit.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-charcoal/60 underline underline-offset-2"
+                  >
+                    {credit.photographer}
+                  </a>
+                  {" via "}
+                  {credit.source}
+                </span>
+              ))}
+            </p>
+          </div>
+        )}
       </article>
 
       {relatedPosts.length > 0 && (
