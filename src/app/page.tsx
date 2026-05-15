@@ -63,12 +63,12 @@ function TypingHero() {
           Hei.
         </p>
         <motion.p
-          className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-white/90 whitespace-nowrap"
+          className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-white/90"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8, ease: smoothEase }}
         >
-          Hvordan har du det?{" "}
+          Hvordan har du det?<br />
           <span className="text-white/60 text-[0.5em]">(egentlig)</span>
         </motion.p>
       </div>
