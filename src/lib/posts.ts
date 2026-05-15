@@ -270,9 +270,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/alene-for-lenge.jpg",
-    inlineImages: [
-      { src: "/images/blog/alene-for-lenge-inline-2.jpg", alt: "Et stille tåkelagt landskap med trær i dempet morgenlys", afterBlock: 12 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "hvorfor-hjelp-for-sent",
       "vanskelig-forsta-psykisk-helse",
