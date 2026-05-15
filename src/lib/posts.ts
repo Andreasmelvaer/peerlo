@@ -104,7 +104,6 @@ const posts: Post[] = [
     image: "/images/blog/forskjellen-hort-og-forstatt.png",
     inlineImages: [
       { src: "/images/blog/forskjellen-hort-og-forstatt-inline-1.png", alt: "To mennesker i en rolig samtale på en benk i norsk natur", afterBlock: 6 },
-      { src: "/images/blog/forskjellen-hort-og-forstatt-inline-2.png", alt: "Sollys som bryter gjennom trærne i en norsk skog", afterBlock: 14 },
     ],
     relatedSlugs: [
       "hva-jeg-savnet",
