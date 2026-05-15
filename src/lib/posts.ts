@@ -302,7 +302,6 @@ const posts: Post[] = [
     date: "2026-08-24",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hva-taper-vi-nar-folk-gar-alene.jpg",
     inlineImages: [],
     relatedSlugs: [
       "alene-for-lenge",
