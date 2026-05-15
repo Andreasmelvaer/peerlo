@@ -322,8 +322,11 @@ const posts: Post[] = [
     date: "2026-07-27",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hva-er-peer-support.jpg",
+    image: "/images/blog/hva-betyr-peer-support-pa-norsk.jpg",
     inlineImages: [],
+    credits: [
+      { photographer: "Christina @ wocintechchat.com", url: "https://unsplash.com/@wocintechchat", source: "Unsplash" },
+    ],
     relatedSlugs: [
       "hva-er-peer-support",
       "forskjellen-hort-og-forstatt",
