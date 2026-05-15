@@ -420,11 +420,8 @@ const posts: Post[] = [
     date: "2026-07-06",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hvem-peer-support-hjelpe.png",
-    inlineImages: [
-      { src: "/images/blog/hvem-peer-support-hjelpe-inline-1.png", alt: "En person i kontorklær som ser ut av vinduet med et ettertenksomt uttrykk", afterBlock: 5 },
-      { src: "/images/blog/hvem-peer-support-hjelpe-inline-2.png", alt: "Unge voksne som går sammen i en park i nordisk landskap", afterBlock: 13 },
-    ],
+    image: "/images/blog/hvem-peer-support-hjelpe-inline-2.png",
+    inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
       "hvorfor-hjelp-for-sent",
