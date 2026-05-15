@@ -186,9 +186,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/vanlig-menneske-hjelpe.jpg",
-    inlineImages: [
-      { src: "/images/blog/vanlig-menneske-hjelpe-inline-1.jpg", alt: "Et varmt og trygt rom der to mennesker sitter sammen", afterBlock: 6 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "forskjellen-hort-og-forstatt",
       "hva-er-peer-support",
