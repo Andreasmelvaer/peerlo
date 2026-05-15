@@ -454,6 +454,8 @@ const posts: Post[] = [
     date: "2026-09-14",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/nar-hjelp-foles-feil.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "hva-trenger-mennesker-nar-de-har-det-vanskelig",
       "folelse-av-a-bli-forstatt",
@@ -477,6 +479,8 @@ const posts: Post[] = [
     date: "2026-09-21",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/anonymitet-og-apne-seg.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "aerlig-om-hvordan-man-har-det",
       "apne-deg-forste-gang",
@@ -500,6 +504,8 @@ const posts: Post[] = [
     date: "2026-09-28",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/egenerfaring-som-ressurs.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "a-vaere-peer-for-andre",
       "hva-er-peer-support",
@@ -523,6 +529,8 @@ const posts: Post[] = [
     date: "2026-07-27",
     author: "Ole Aarre",
     readingTime: 4,
+    image: "/images/blog/hva-betyr-peer-support-pa-norsk.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
       "forskjellen-hort-og-forstatt",
