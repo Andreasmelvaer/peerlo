@@ -6,11 +6,11 @@ const BASE_URL = "https://peerlo.no";
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
 
-  const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
+  const blogEntries: MetadataRoute.Sitemap = posts.map((post, i) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly",
-    priority: 0.7,
+    priority: i === 0 ? 0.9 : 0.7,
   }));
 
   return [

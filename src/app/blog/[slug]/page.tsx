@@ -171,6 +171,13 @@ function formatDate(dateStr: string) {
   });
 }
 
+function estimateWordCount(content: ContentBlock[]): number {
+  const text = content
+    .map((block) => (typeof block === "string" ? block : block.items.join(" ")))
+    .join(" ");
+  return Math.round(text.split(/\s+/).filter(Boolean).length);
+}
+
 export default async function BlogPostPage({
   params,
 }: {
@@ -185,21 +192,51 @@ export default async function BlogPostPage({
 
   const relatedPosts = getRelatedPosts(post);
 
+  const wordCount = estimateWordCount(post.content);
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `https://peerlo.no/blog/${post.slug}#article`,
     headline: post.title,
     description: post.excerpt,
-    image: `https://peerlo.no${post.image}`,
-    author: { "@type": "Person", name: post.author },
+    ...(post.image
+      ? { image: { "@type": "ImageObject", url: `https://peerlo.no${post.image}`, width: 900, height: 450 } }
+      : {}),
+    author: {
+      "@type": "Person",
+      "@id": "https://peerlo.no/#ole-aarre",
+      name: post.author,
+      url: "https://peerlo.no",
+    },
     publisher: {
       "@type": "Organization",
+      "@id": "https://peerlo.no/#organization",
       name: "Peerlo",
       logo: { "@type": "ImageObject", url: "https://peerlo.no/images/peerlo-logo.svg" },
     },
     datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: "nb-NO",
     url: `https://peerlo.no/blog/${post.slug}`,
-    mainEntityOfPage: { "@type": "WebPage", "@id": `https://peerlo.no/blog/${post.slug}` },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://peerlo.no/blog/${post.slug}`,
+      isPartOf: { "@id": "https://peerlo.no/#website" },
+    },
+    about: {
+      "@type": "Thing",
+      name: "Peer support",
+      sameAs: "https://en.wikipedia.org/wiki/Peer_support",
+    },
+    isPartOf: {
+      "@type": "Blog",
+      "@id": "https://peerlo.no/blog#blog",
+      name: "Peerlo Blogg",
+      publisher: { "@id": "https://peerlo.no/#organization" },
+    },
+    wordCount,
+    articleSection: "Psykisk helse og peer support",
   };
 
   const breadcrumbSchema = {

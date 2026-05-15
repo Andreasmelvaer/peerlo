@@ -574,6 +574,38 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
+              "@type": "HowTo",
+              "@id": "https://peerlo.no/#howto",
+              name: "Slik fungerer Peerlo",
+              description: "Slik kobler Peerlo deg med en peer som forstår.",
+              step: [
+                {
+                  "@type": "HowToStep",
+                  position: 1,
+                  name: "Velg hva du står i",
+                  text: "Beskriv kort hva du trenger støtte med. Alt er anonymt.",
+                },
+                {
+                  "@type": "HowToStep",
+                  position: 2,
+                  name: "Bli matchet med en peer",
+                  text: "Peerlo kobler deg med en sertifisert peer som har relevant egenerfaring.",
+                },
+                {
+                  "@type": "HowToStep",
+                  position: 3,
+                  name: "Start en samtale",
+                  text: "Snakk trygt og fritt med noen som virkelig forstår.",
+                },
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
               "@type": "FAQPage",
               mainEntity: [
                 { "@type": "Question", name: "Er Peerlo terapi?", acceptedAnswer: { "@type": "Answer", text: "Nei. Peerlo er ikke terapi eller behandling. Det er samtaler med mennesker som selv har opplevd lignende utfordringer." } },

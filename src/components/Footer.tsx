@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed max-w-sm">
               Peerlo kobler mennesker som står i noe vanskelig med peers som har
-              vært gjennom lignende utfordringer. Ikke terapi — bare ekte
+              vært gjennom lignende utfordringer. Ikke terapi, bare ekte
               erfaring, delt mellom mennesker.
             </p>
           </div>

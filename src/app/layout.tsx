@@ -21,17 +21,17 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://peerlo.no"),
   title: {
-    default: "Peerlo — Snakk med noen som forstår",
+    default: "Peerlo – Snakk med noen som forstår",
     template: "%s | Peerlo",
   },
   description:
-    "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer. Anonymt, tilgjengelig og menneskelig. Ikke terapi — ekte erfaring, delt mellom mennesker.",
+    "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer. Anonymt, tilgjengelig og menneskelig. Peer support for norsk arbeidsliv.",
   openGraph: {
     siteName: "Peerlo",
     locale: "nb_NO",
     type: "website",
     url: "https://peerlo.no",
-    title: "Peerlo — Snakk med noen som forstår",
+    title: "Peerlo – Snakk med noen som forstår",
     description:
       "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer. Anonymt, tilgjengelig og menneskelig.",
     images: [
@@ -39,36 +39,78 @@ export const metadata: Metadata = {
         url: "/images/peerlo-hero-logo.png",
         width: 1200,
         height: 630,
-        alt: "Peerlo — Snakk med noen som forstår",
+        alt: "Peerlo – Snakk med noen som forstår",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Peerlo — Snakk med noen som forstår",
+    title: "Peerlo – Snakk med noen som forstår",
     description:
-      "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer.",
+      "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer. Peer support for norsk arbeidsliv.",
     images: ["/images/peerlo-hero-logo.png"],
   },
   alternates: {
     canonical: "https://peerlo.no",
+    languages: { "nb-NO": "https://peerlo.no" },
   },
 };
 
-const organizationSchema = {
+const siteSchemas = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Peerlo",
-  url: "https://peerlo.no",
-  logo: "https://peerlo.no/images/peerlo-logo.svg",
-  description:
-    "Peerlo kobler mennesker som står i noe vanskelig med peers som har vært gjennom lignende utfordringer.",
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "ole@peerlo.no",
-    contactType: "customer support",
-    availableLanguage: "Norwegian",
-  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://peerlo.no/#organization",
+      name: "Peerlo",
+      url: "https://peerlo.no",
+      logo: {
+        "@type": "ImageObject",
+        "@id": "https://peerlo.no/#logo",
+        url: "https://peerlo.no/images/peerlo-logo.svg",
+        caption: "Peerlo",
+      },
+      description:
+        "Peerlo er en peer support-plattform for norsk arbeidsliv. Vi kobler ansatte med peers som har opplevd lignende utfordringer, anonymt og tilgjengelig.",
+      foundingDate: "2024",
+      founder: { "@id": "https://peerlo.no/#ole-aarre" },
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "ole@peerlo.no",
+        telephone: "+4798811908",
+        contactType: "sales",
+        availableLanguage: ["Norwegian", "English"],
+      },
+      areaServed: { "@type": "Country", name: "Norway" },
+      sameAs: ["https://www.linkedin.com/company/peerlo"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://peerlo.no/#website",
+      url: "https://peerlo.no",
+      name: "Peerlo",
+      description:
+        "Peer support-plattform for norsk arbeidsliv. Kobler ansatte med peers som har opplevd lignende utfordringer.",
+      inLanguage: "nb-NO",
+      publisher: { "@id": "https://peerlo.no/#organization" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://peerlo.no/#ole-aarre",
+      name: "Ole Aarre",
+      jobTitle: "Gründer",
+      worksFor: { "@id": "https://peerlo.no/#organization" },
+      url: "https://peerlo.no",
+      email: "ole@peerlo.no",
+      telephone: "+4798811908",
+      knowsAbout: [
+        "Peer support",
+        "Psykisk helse",
+        "Mental helse i arbeidslivet",
+        "Egenerfaring",
+      ],
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -82,7 +124,7 @@ export default function RootLayout({
         {children}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchemas) }}
         />
       </body>
     </html>

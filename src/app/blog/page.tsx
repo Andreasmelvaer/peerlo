@@ -29,12 +29,29 @@ function formatDate(dateStr: string) {
   });
 }
 
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://peerlo.no/blog#blog",
+  name: "Peerlo Blogg",
+  url: "https://peerlo.no/blog",
+  description:
+    "Tanker om peer support, psykisk helse og det å tørre å snakke med noen som forstår.",
+  inLanguage: "nb-NO",
+  publisher: {
+    "@type": "Organization",
+    "@id": "https://peerlo.no/#organization",
+    name: "Peerlo",
+  },
+};
+
 export default function BlogPage() {
   const posts = getAllPosts();
   const [featured, ...rest] = posts;
 
   return (
     <div className="bg-paper">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <section className="bg-evening-forest py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">

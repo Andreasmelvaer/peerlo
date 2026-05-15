@@ -28,6 +28,30 @@ export interface Post {
 
 const posts: Post[] = [
   {
+    slug: "egenerfaring-som-ressurs",
+    title: "Hva kan mennesker med egenerfaring bidra med som ofte mangler?",
+    excerpt: "Det er forskjell på å forstå noe faglig og å forstå hvordan det føles. Begge deler er verdifulle. Men de er ikke det samme.",
+    date: "2026-09-28",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/egenerfaring-som-ressurs.jpg",
+    inlineImages: [],
+    relatedSlugs: [
+      "a-vaere-peer-for-andre",
+      "hva-er-peer-support",
+      "hvem-peer-support-hjelpe",
+    ],
+    content: [
+      "Jeg tror dagens hjelpesystem og arbeidsliv gjør mye bra. Men jeg tror også noe viktig noen ganger mangler: mennesker som faktisk har kjent livet på kroppen selv.",
+      "For det er forskjell på å forstå noe faglig og å forstå hvordan det føles. Begge deler er verdifulle. Men de er ikke det samme.",
+      "Mennesker med egenerfaring kan ofte bidra med noe veldig menneskelig: gjenkjennelse, trygghet, håp, ærlighet og følelsen av å bli forstått. Ikke fordi de har alle svarene, men fordi de vet hvordan det kan føles når hodet er kaos, skammen tar over, man føler seg alene, eller man mister litt troen på seg selv.",
+      "Jeg tror også mennesker med egenerfaring ofte tør å møte andre på en litt annen måte. Kanskje fordi de selv vet hvor mye små ting kan bety. Et menneske som lytter uten å dømme, tåler stillheten, ikke prøver å fikse deg med én gang, og sier «jeg kjenner igjen følelsen», det kan være utrolig verdifullt.",
+      "Jeg tror også arbeidslivet kunne hatt stor nytte av flere mennesker med egenerfaring. For mange ansatte går rundt og skjuler hvordan de egentlig har det. Ikke fordi de er late eller svake, men fordi de er redde for konsekvensene av å være ærlige.",
+      "Da kan mennesker med egenerfaring bidra med noe mange savner: trygghet. Ikke perfekt trygghet, men følelsen av at dette mennesket faktisk skjønner litt av det man står i.",
+      "Og kanskje er det nettopp derfor peer support kan bli så viktig fremover. Fordi mennesker ofte trenger mer enn informasjon. De trenger menneskelig gjenkjennelse.",
+    ],
+  },
+  {
     slug: "hva-jeg-savnet",
     title: "Hva jeg egentlig savnet da jeg hadde det vanskelig",
     excerpt:
@@ -121,7 +145,7 @@ const posts: Post[] = [
     image: "/images/blog/hvorfor-hjelp-for-sent.jpg",
     inlineImages: [],
     relatedSlugs: [
-      "vanskelig-forsta-psykisk-helse",
+      "aerlig-om-hvordan-man-har-det",
       "alene-for-lenge",
       "apne-deg-forste-gang",
     ],
@@ -212,34 +236,6 @@ const posts: Post[] = [
       "For når man føler seg forstått, slipper man ofte å bruke så mye energi på å forklare eller forsvare hvordan man har det. Man kjenner at det er greit å ikke late som akkurat nå. Det kan være utrolig befriende.",
       "Jeg tror også det kan skape håp. Ikke nødvendigvis fordi alt plutselig blir bra, men fordi man ser at et annet menneske har stått i noe lignende og fortsatt er her. Fortsatt fungerer. Fortsatt smiler. Det kan gjøre noe med hvordan man ser på sin egen situasjon, og kanskje begynner man å tro litt mer på at ting kan bli lettere.",
       "Og kanskje er det nettopp derfor peer support kan være så verdifullt. Ikke fordi mennesker med egenerfaring har alle svarene, men fordi de kan gi noe mange savner: følelsen av å bli møtt på ordentlig.",
-    ],
-  },
-  {
-    slug: "vanskelig-forsta-psykisk-helse",
-    title: "Vanskelig å forstå psykisk helse uten å ha kjent det",
-    excerpt:
-      "Jeg tror mange mennesker misforstår psykisk helse. Ikke fordi de er onde, men fordi de aldri har kjent det på kroppen selv. Det er vanskelig å forstå det usynlige.",
-    date: "2026-06-15",
-    author: "Ole Aarre",
-    readingTime: 4,
-    image: "/images/blog/vanskelig-forsta-psykisk-helse.jpg",
-    inlineImages: [],
-    relatedSlugs: [
-      "hva-jeg-savnet",
-      "hvorfor-hjelp-for-sent",
-      "alene-for-lenge",
-    ],
-    content: [
-      "Jeg tror mange mennesker misforstår psykisk helse. Ikke fordi de er onde, men fordi de aldri har kjent det på kroppen selv. Det er vanskelig å forstå hvor tungt noe kan være når det ikke synes utenpå.",
-      "Mange tenker fortsatt: «Bare ta deg sammen», «kom deg ut litt», «tenk positivt», «alle har det vanskelig iblant». Og ja, alle har tunge dager. Men psykiske utfordringer handler ofte om noe helt annet enn å være litt sliten eller lei seg.",
-      "Det kan være som å gå rundt med en usynlig vekt på kroppen hver eneste dag. Noen klarer fortsatt å gå på jobb, smile, levere, være sosial. Men inni seg kan de være helt utslitt.",
-      "Det tror jeg mange undervurderer. Jeg gjorde kanskje det selv også, før jeg opplevde det på nært hold. Jeg trodde nok psykisk uhelse ofte så mer «tydelig» ut, at man kunne se det.",
-      "Men mange av de som sliter mest er ofte de flinkeste til å skjule det. De fungerer. Helt til de plutselig ikke gjør det lenger.",
-      "Og kanskje er det nettopp derfor så mange føler seg alene. For hvis ingen ser det, begynner man ofte å tenke at man bare er svak, at man overdriver, at man burde tålt mer. Det er en farlig spiral.",
-      "Jeg tror også mange ikke forstår hvor mye skam som kan ligge bak psykiske utfordringer. Skam over å ikke mestre, over å være sliten, over å ikke kjenne seg selv igjen. Og jo lenger man [går alene med det](/blog/alene-for-lenge), jo vanskeligere kan det bli å åpne seg.",
-      "Kanskje er det derfor [peer support](/blog/hva-er-peer-support) kan bety så mye. For noen ganger trenger man ikke nødvendigvis et menneske som har alle løsningene. Man trenger et menneske som sier:\n«Det du føler er ikke rart.»",
-      "Det kan være starten på noe veldig viktig.",
-      "Les også: [Hvorfor søker så mange hjelp altfor sent?](/blog/hvorfor-hjelp-for-sent)",
     ],
   },
   {
@@ -406,7 +402,7 @@ const posts: Post[] = [
     inlineImages: [],
     relatedSlugs: [
       "hvorfor-hjelp-for-sent",
-      "vanskelig-forsta-psykisk-helse",
+      "hva-taper-vi-nar-folk-gar-alene",
       "apne-deg-forste-gang",
     ],
     content: [
@@ -495,30 +491,6 @@ const posts: Post[] = [
       "For anonymitet kan skape trygghet. Når man vet at man ikke blir dømt som person, blir det ofte lettere å være ærlig. Man tør kanskje å si det man egentlig føler, ikke den pene versjonen, men det ekte.",
       "Jeg tror også anonymitet kan senke terskelen enormt. For noen mennesker er forskjellen mellom å si ingenting og å faktisk åpne seg nettopp følelsen av trygghet. Kanskje er det derfor så mange åpner seg lettere til fremmede enn til mennesker de kjenner. Fordi det føles tryggere, med mindre risiko, mindre skam og mindre frykt for konsekvenser.",
       "Og noen ganger kan det være starten på at man endelig slipper noen inn.",
-    ],
-  },
-  {
-    slug: "egenerfaring-som-ressurs",
-    title: "Hva kan mennesker med egenerfaring bidra med som ofte mangler?",
-    excerpt: "Det er forskjell på å forstå noe faglig og å forstå hvordan det føles. Begge deler er verdifulle. Men de er ikke det samme.",
-    date: "2026-09-28",
-    author: "Ole Aarre",
-    readingTime: 4,
-    image: "/images/blog/egenerfaring-som-ressurs.jpg",
-    inlineImages: [],
-    relatedSlugs: [
-      "a-vaere-peer-for-andre",
-      "hva-er-peer-support",
-      "hvem-peer-support-hjelpe",
-    ],
-    content: [
-      "Jeg tror dagens hjelpesystem og arbeidsliv gjør mye bra. Men jeg tror også noe viktig noen ganger mangler: mennesker som faktisk har kjent livet på kroppen selv.",
-      "For det er forskjell på å forstå noe faglig og å forstå hvordan det føles. Begge deler er verdifulle. Men de er ikke det samme.",
-      "Mennesker med egenerfaring kan ofte bidra med noe veldig menneskelig: gjenkjennelse, trygghet, håp, ærlighet og følelsen av å bli forstått. Ikke fordi de har alle svarene, men fordi de vet hvordan det kan føles når hodet er kaos, skammen tar over, man føler seg alene, eller man mister litt troen på seg selv.",
-      "Jeg tror også mennesker med egenerfaring ofte tør å møte andre på en litt annen måte. Kanskje fordi de selv vet hvor mye små ting kan bety. Et menneske som lytter uten å dømme, tåler stillheten, ikke prøver å fikse deg med én gang, og sier «jeg kjenner igjen følelsen», det kan være utrolig verdifullt.",
-      "Jeg tror også arbeidslivet kunne hatt stor nytte av flere mennesker med egenerfaring. For mange ansatte går rundt og skjuler hvordan de egentlig har det. Ikke fordi de er late eller svake, men fordi de er redde for konsekvensene av å være ærlige.",
-      "Da kan mennesker med egenerfaring bidra med noe mange savner: trygghet. Ikke perfekt trygghet, men følelsen av at dette mennesket faktisk skjønner litt av det man står i.",
-      "Og kanskje er det nettopp derfor peer support kan bli så viktig fremover. Fordi mennesker ofte trenger mer enn informasjon. De trenger menneskelig gjenkjennelse.",
     ],
   },
   {
