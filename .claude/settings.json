@@ -1,0 +1,8 @@
+{
+  "skills": {
+    "peerlo-blog": {
+      "description": "Write and publish blog posts for Peerlo in Ole Aarre's voice. Trigger when the user wants to write a new blog post, create blog content, or add an article about peer support, mental health, or related topics to the Peerlo blog.",
+      "path": ".claude/skills/peerlo-blog.md"
+    }
+  }
+}
