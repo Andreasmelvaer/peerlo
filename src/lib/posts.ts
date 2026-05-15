@@ -216,10 +216,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/hvorfor-hjelp-for-sent.jpg",
-    inlineImages: [
-      { src: "/images/blog/hvorfor-hjelp-for-sent-inline-1.jpg", alt: "En person som ser ut over et stille fjordlandskap i dempet lys", afterBlock: 7 },
-      { src: "/images/blog/hvorfor-hjelp-for-sent-inline-2.jpg", alt: "To mennesker som går sammen langs en sti i norsk natur", afterBlock: 16 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "vanskelig-forsta-psykisk-helse",
       "alene-for-lenge",
