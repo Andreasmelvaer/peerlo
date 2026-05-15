@@ -51,13 +51,6 @@ function AnimatedSection({
 }
 
 function TypingHero() {
-  const [phase, setPhase] = useState<"typing" | "message">("typing");
-
-  useEffect(() => {
-    const t = setTimeout(() => setPhase("message"), 2000);
-    return () => clearTimeout(t);
-  }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -65,71 +58,19 @@ function TypingHero() {
       transition={{ delay: 0.3, duration: 1, ease: smoothEase }}
       className="relative"
     >
-      <div className="flex items-end gap-3 max-w-sm">
-        {/* Avatar */}
-        <motion.div
-          className="w-9 h-9 rounded-full bg-white/15 border border-white/20 flex-shrink-0 overflow-hidden flex items-center justify-center"
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5, duration: 0.4, ease: smoothEase }}
+      <div className="bg-white/15 backdrop-blur-md rounded-[20px] rounded-bl-[5px] px-6 py-5 shadow-lg border border-white/10 inline-block">
+        <p className="text-3xl md:text-5xl font-normal leading-tight text-white">
+          Hei.
+        </p>
+        <motion.p
+          className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-white/90 whitespace-nowrap"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8, ease: smoothEase }}
         >
-          <Image src="/images/peerlo-mini-logo.svg" alt="Peerlo" width={20} height={20} />
-        </motion.div>
-
-        <div className="flex flex-col gap-1.5 min-w-0">
-          {/* Sender name */}
-          <motion.p
-            className="text-white/40 text-xs font-[family-name:var(--font-geist-sans)] ml-1"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.4 }}
-          >
-            Peerlo
-          </motion.p>
-
-          <AnimatePresence mode="wait">
-            {phase === "typing" ? (
-              <motion.div
-                key="typing"
-                className="bg-white/15 backdrop-blur-md rounded-[20px] rounded-bl-[5px] px-5 py-3.5 inline-flex gap-1.5 items-center self-start border border-white/10"
-                initial={{ opacity: 0, scale: 0.9, y: 6 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.85, y: -4 }}
-                transition={{ duration: 0.35, ease: smoothEase }}
-              >
-                {[0, 1, 2].map((i) => (
-                  <motion.span
-                    key={i}
-                    className="w-2 h-2 rounded-full bg-white/60 block"
-                    animate={{ y: [0, -5, 0] }}
-                    transition={{ repeat: Infinity, duration: 0.7, delay: i * 0.15, ease: "easeInOut" }}
-                  />
-                ))}
-              </motion.div>
-            ) : (
-              <motion.div
-                key="message"
-                className="bg-white/15 backdrop-blur-md rounded-[20px] rounded-bl-[5px] px-6 py-5 shadow-lg border border-white/10"
-                initial={{ opacity: 0, scale: 0.92, y: 8 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: smoothEase }}
-              >
-                <p className="text-3xl md:text-5xl font-normal leading-tight text-white">
-                  Hei.
-                </p>
-                <motion.p
-                  className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-white/90"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.4, duration: 0.8, ease: smoothEase }}
-                >
-                  Hvordan har du det?<br />
-                  <span className="text-white/60 text-[0.5em]">(egentlig)</span>
-                </motion.p>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+          Hvordan har du det?{" "}
+          <span className="text-white/60 text-[0.5em]">(egentlig)</span>
+        </motion.p>
       </div>
     </motion.div>
   );
