@@ -325,7 +325,7 @@ const posts: Post[] = [
     image: "/images/blog/hva-betyr-peer-support-pa-norsk.jpg",
     inlineImages: [],
     credits: [
-      { photographer: "Christina @ wocintechchat.com", url: "https://unsplash.com/@wocintechchat", source: "Unsplash" },
+      { photographer: "LinkedIn Sales Solutions", url: "https://unsplash.com/@linkedinsalesnavigator", source: "Unsplash" },
     ],
     relatedSlugs: [
       "hva-er-peer-support",
