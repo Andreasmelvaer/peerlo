@@ -72,7 +72,7 @@ function TypingHero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.8, duration: 0.7, ease: smoothEase }}
         >
-          Hallo.
+          Hei.
         </motion.p>
         <motion.p
           className="text-2xl md:text-4xl font-normal leading-tight mt-2 text-white/90"
@@ -80,7 +80,8 @@ function TypingHero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1.6, duration: 0.9, ease: smoothEase }}
         >
-          Hvordan har du det?
+          Hvordan har du det?<br />
+          <span className="text-white/60">(egentlig)</span>
         </motion.p>
       </motion.div>
     </motion.div>
