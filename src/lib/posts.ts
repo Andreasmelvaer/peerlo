@@ -107,7 +107,6 @@ const posts: Post[] = [
     readingTime: 4,
     image: "/images/blog/forskjellen-hort-og-forstatt.jpg",
     inlineImages: [
-      { src: "/images/blog/forskjellen-hort-og-forstatt-inline-1.jpg", alt: "To mennesker i en rolig samtale på en benk i norsk natur", afterBlock: 6 },
       { src: "/images/blog/forskjellen-hort-og-forstatt-inline-2.jpg", alt: "Sollys som bryter gjennom trærne i en norsk skog", afterBlock: 14 },
     ],
     relatedSlugs: [
