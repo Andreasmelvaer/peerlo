@@ -4,9 +4,21 @@ import { getAllPosts } from "@/lib/posts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogg | Peerlo",
+  title: "Blogg",
   description:
     "Tanker om peer support, psykisk helse og det å tørre å snakke med noen som forstår.",
+  alternates: { canonical: "https://peerlo.no/blog" },
+  openGraph: {
+    title: "Blogg | Peerlo",
+    description: "Tanker om peer support, psykisk helse og det å tørre å snakke med noen som forstår.",
+    url: "https://peerlo.no/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blogg | Peerlo",
+    description: "Tanker om peer support, psykisk helse og det å tørre å snakke med noen som forstår.",
+  },
 };
 
 function formatDate(dateStr: string) {

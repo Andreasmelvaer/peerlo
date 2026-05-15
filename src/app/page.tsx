@@ -580,6 +580,23 @@ export default function Home() {
 
       {/* ===== FAQ ===== */}
       <section className="py-24 md:py-32 bg-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                { "@type": "Question", name: "Er Peerlo terapi?", acceptedAnswer: { "@type": "Answer", text: "Nei. Peerlo er ikke terapi eller behandling. Det er samtaler med mennesker som selv har opplevd lignende utfordringer." } },
+                { "@type": "Question", name: "Hvem er peers?", acceptedAnswer: { "@type": "Answer", text: "Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner — og som ønsker å støtte andre." } },
+                { "@type": "Question", name: "Er det anonymt?", acceptedAnswer: { "@type": "Answer", text: "Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver får kun aggregert innsikt — aldri informasjon om enkeltpersoner." } },
+                { "@type": "Question", name: "Når kan man bruke Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Når som helst. Når peers er tilgjengelige — også på kvelder, i helger og i ferier." } },
+                { "@type": "Question", name: "Hva om noen trenger profesjonell hjelp?", acceptedAnswer: { "@type": "Answer", text: "Peerlo er ikke en erstatning for profesjonell hjelp. Hvis noen trenger mer støtte, oppfordres de til å kontakte helsepersonell." } },
+                { "@type": "Question", name: "Hvorfor tilbyr arbeidsgivere Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Fordi tidlig støtte kan gjøre en stor forskjell — før utfordringer utvikler seg til sykefravær." } },
+              ],
+            }),
+          }}
+        />
         <div className="max-w-3xl mx-auto px-6">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-normal">

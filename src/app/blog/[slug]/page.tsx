@@ -19,15 +19,32 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
 
+  const url = `https://peerlo.no/blog/${post.slug}`;
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
+      url,
       publishedTime: post.date,
       authors: [post.author],
+      images: [
+        {
+          url: post.image,
+          width: 900,
+          height: 450,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
     },
   };
 }
@@ -173,8 +190,37 @@ export default async function BlogPostPage({
 
   const relatedPosts = getRelatedPosts(post);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: `https://peerlo.no${post.image}`,
+    author: { "@type": "Person", name: post.author },
+    publisher: {
+      "@type": "Organization",
+      name: "Peerlo",
+      logo: { "@type": "ImageObject", url: "https://peerlo.no/images/peerlo-logo.svg" },
+    },
+    datePublished: post.date,
+    url: `https://peerlo.no/blog/${post.slug}`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://peerlo.no/blog/${post.slug}` },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Hjem", item: "https://peerlo.no" },
+      { "@type": "ListItem", position: 2, name: "Blogg", item: "https://peerlo.no/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://peerlo.no/blog/${post.slug}` },
+    ],
+  };
+
   return (
     <div className="bg-paper">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="bg-evening-forest pt-24 pb-16 md:pt-32 md:pb-20">
         <div className="max-w-3xl mx-auto px-6">
           <Link
