@@ -307,7 +307,7 @@ export default function Home() {
           <AnimatedSection delay={0.15}>
             <p className="text-xl text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
               Mange ansatte står i stress, ensomhet, familieproblemer eller
-              søvnløse netter — uten at noen vet det. Og hjelpen kommer ofte
+              søvnløse netter – uten at noen vet det. Og hjelpen kommer ofte
               først når det har gått for langt.
             </p>
           </AnimatedSection>
@@ -446,7 +446,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
               Peerlo gir HR anonymisert, aggregert innsikt i hva ansatte
-              faktisk står i — slik at dere kan handle tidlig, ikke for sent.
+              faktisk står i – slik at dere kan handle tidlig, ikke for sent.
               Se trender, emnekart og bruksutvikling i sanntid.
             </p>
           </AnimatedSection>
@@ -517,7 +517,7 @@ export default function Home() {
                 <span className="text-forest">før det blir sykmelding.</span>
               </h2>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
-                Peerlo hjelper virksomheter med å gi ansatte tidlig støtte —
+                Peerlo hjelper virksomheter med å gi ansatte tidlig støtte –
                 før problemene eskalerer.
               </p>
             </AnimatedSection>
@@ -537,7 +537,7 @@ export default function Home() {
                   {
                     icon: Headphones,
                     title: "Tilgjengelig støtte",
-                    desc: "Peer support når som helst — uten venteliste.",
+                    desc: "Peer support når som helst – uten venteliste.",
                   },
                 ].map(({ icon: Icon, title, desc }, i) => (
                   <motion.div
@@ -636,11 +636,11 @@ export default function Home() {
               "@type": "FAQPage",
               mainEntity: [
                 { "@type": "Question", name: "Er Peerlo terapi?", acceptedAnswer: { "@type": "Answer", text: "Nei. Peerlo er ikke terapi eller behandling. Det er samtaler med mennesker som selv har opplevd lignende utfordringer." } },
-                { "@type": "Question", name: "Hvem er peers?", acceptedAnswer: { "@type": "Answer", text: "Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner — og som ønsker å støtte andre." } },
-                { "@type": "Question", name: "Er det anonymt?", acceptedAnswer: { "@type": "Answer", text: "Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver får kun aggregert innsikt — aldri informasjon om enkeltpersoner." } },
-                { "@type": "Question", name: "Når kan man bruke Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Når som helst. Når peers er tilgjengelige — også på kvelder, i helger og i ferier." } },
+                { "@type": "Question", name: "Hvem er peers?", acceptedAnswer: { "@type": "Answer", text: "Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner – og som ønsker å støtte andre." } },
+                { "@type": "Question", name: "Er det anonymt?", acceptedAnswer: { "@type": "Answer", text: "Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver får kun aggregert innsikt – aldri informasjon om enkeltpersoner." } },
+                { "@type": "Question", name: "Når kan man bruke Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Når som helst. Når peers er tilgjengelige – også på kvelder, i helger og i ferier." } },
                 { "@type": "Question", name: "Hva om noen trenger profesjonell hjelp?", acceptedAnswer: { "@type": "Answer", text: "Peerlo er ikke en erstatning for profesjonell hjelp. Hvis noen trenger mer støtte, oppfordres de til å kontakte helsepersonell." } },
-                { "@type": "Question", name: "Hvorfor tilbyr arbeidsgivere Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Fordi tidlig støtte kan gjøre en stor forskjell — før utfordringer utvikler seg til sykefravær." } },
+                { "@type": "Question", name: "Hvorfor tilbyr arbeidsgivere Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Fordi tidlig støtte kan gjøre en stor forskjell – før utfordringer utvikler seg til sykefravær." } },
               ],
             }),
           }}
@@ -659,15 +659,15 @@ export default function Home() {
               />
               <FAQItem
                 q="Hvem er peers?"
-                a="Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner — og som ønsker å støtte andre."
+                a="Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner – og som ønsker å støtte andre."
               />
               <FAQItem
                 q="Er det anonymt?"
-                a="Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver får kun aggregert innsikt — aldri informasjon om enkeltpersoner."
+                a="Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver får kun aggregert innsikt – aldri informasjon om enkeltpersoner."
               />
               <FAQItem
                 q="Når kan man bruke Peerlo?"
-                a="Når som helst. Når peers er tilgjengelige — også på kvelder, i helger og i ferier."
+                a="Når som helst. Når peers er tilgjengelige – også på kvelder, i helger og i ferier."
               />
               <FAQItem
                 q="Hva om noen trenger profesjonell hjelp?"
@@ -675,7 +675,7 @@ export default function Home() {
               />
               <FAQItem
                 q="Hvorfor tilbyr arbeidsgivere Peerlo?"
-                a="Fordi tidlig støtte kan gjøre en stor forskjell — før utfordringer utvikler seg til sykefravær."
+                a="Fordi tidlig støtte kan gjøre en stor forskjell – før utfordringer utvikler seg til sykefravær."
               />
             </div>
           </AnimatedSection>
@@ -697,7 +697,7 @@ export default function Home() {
               Alle trenger noen som forstår.
             </h2>
             <p className="text-xl text-charcoal/70 mb-10 max-w-xl mx-auto">
-              Bli med i piloten og gi ansatte tidlig støtte — før problemene
+              Bli med i piloten og gi ansatte tidlig støtte – før problemene
               eskalerer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
