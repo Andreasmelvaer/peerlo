@@ -314,6 +314,32 @@ const posts: Post[] = [
       "Les også: [Hva jeg egentlig savnet da jeg hadde det vanskelig](/blog/hva-jeg-savnet)",
     ],
   },
+  {
+    slug: "hva-betyr-peer-support-pa-norsk",
+    title: "Hva betyr egentlig «peer support» på norsk?",
+    excerpt:
+      "«Peer support» er et begrep flere og flere har hørt. Men mange er fortsatt usikre på hva det faktisk betyr — og helt ærlig finnes det heller ikke én perfekt norsk oversettelse.",
+    date: "2026-07-27",
+    author: "Ole Aarre",
+    readingTime: 4,
+    image: "/images/blog/hva-er-peer-support.jpg",
+    inlineImages: [],
+    relatedSlugs: [
+      "hva-er-peer-support",
+      "forskjellen-hort-og-forstatt",
+      "hvem-peer-support-hjelpe",
+    ],
+    content: [
+      "«Peer support» er et begrep flere og flere har hørt de siste årene. Spesielt innen psykisk helse. Men mange er fortsatt usikre på hva det faktisk betyr — og helt ærlig finnes det heller ikke én perfekt norsk oversettelse.",
+      "Direkte oversatt handler det om støtte fra mennesker med lignende erfaringer. Altså mennesker som har stått i noe selv, som kjenner igjen følelsen, og som kan møte deg med erfaring i stedet for bare teori. På norsk brukes ord som likeperson, erfaringskonsulent, likemannsarbeid og erfaringsbasert støtte — gjerne litt om hverandre, selv om de ikke alltid betyr helt det samme.",
+      "Kjernen er egentlig ganske menneskelig: å møte noen som forstår fordi de har kjent det selv. Det kan handle om psykiske utfordringer, ensomhet, sorg, rus, utbrenthet, traumer — eller perioder der livet bare føles tungt. Det betyr ikke at erfaringene er identiske. Men at det finnes en form for gjenkjennelse. Og akkurat den følelsen kan bety mer enn mange tror.",
+      "Når det gjelder forskjellen på en peer og en erfaringskonsulent, finnes det ikke én fasit. «Erfaringskonsulent» brukes gjerne om en mer formalisert rolle — knyttet til helsevesen, kommune eller organisasjoner, med tydelig rolleforståelse og noen ganger samarbeid med fagpersoner. «Peer» brukes ofte bredere og mer lavterskel, om mennesker som ønsker å støtte andre gjennom egne erfaringer uten at rollen er like formalisert. Begge deler handler i stor grad om å bruke egenerfaring på en trygg og konstruktiv måte.",
+      "Jeg tror det er viktig å forstå at peer support ikke handler om å analysere mennesker, stille diagnoser eller ha alle svarene. Det handler ofte mer om å lytte, skape trygghet, dele erfaringer og redusere følelsen av å stå alene. For noen kan det være lettere å åpne seg for et menneske som føles mer gjenkjennelig enn «klinisk».",
+      "Jeg tror også mange savner mer menneskelighet i måten vi snakker om psykisk helse på. Ikke mindre faglighet — men kanskje mer åpenhet, ærlighet og gjenkjennelse, og litt mindre fasade. Mange går lenge med ting alene før de ber om hjelp. Da kan terskelen føles lavere hvis første møte ikke starter med et skjema eller en diagnose, men med et menneske.",
+      "Noe av det sterkeste med peer support, tror jeg, er nettopp den følelsen av:\n«Du er ikke alene om å ha det sånn.»\nIkke fordi noen har en perfekt løsning — men fordi et annet menneske viser at det går an å komme seg gjennom vanskelige perioder og fortsatt være et helt vanlig menneske etterpå. Og noen ganger kan akkurat det bety mer enn folk tror.",
+      "Les også: [Hva er egentlig peer support?](/blog/hva-er-peer-support)",
+    ],
+  },
 ];
 
 export function getAllPosts(): Post[] {
