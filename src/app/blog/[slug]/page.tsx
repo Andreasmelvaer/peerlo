@@ -31,20 +31,15 @@ export async function generateMetadata({
       url,
       publishedTime: post.date,
       authors: [post.author],
-      images: [
-        {
-          url: post.image,
-          width: 900,
-          height: 450,
-          alt: post.title,
-        },
-      ],
+      ...(post.image ? {
+        images: [{ url: post.image, width: 900, height: 450, alt: post.title }],
+      } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      ...(post.image ? { images: [post.image] } : {}),
     },
   };
 }
@@ -246,18 +241,20 @@ export default async function BlogPostPage({
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto px-6 -mt-6">
-        <div className="rounded-2xl overflow-hidden shadow-lg mb-12">
-          <Image
-            src={post.image}
-            alt={post.title}
-            width={900}
-            height={450}
-            className="w-full"
-            priority
-          />
-        </div>
-      </section>
+      {post.image && (
+        <section className="max-w-3xl mx-auto px-6 -mt-6">
+          <div className="rounded-2xl overflow-hidden shadow-lg mb-12">
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={900}
+              height={450}
+              className="w-full"
+              priority
+            />
+          </div>
+        </section>
+      )}
 
       <article className="max-w-2xl mx-auto px-6 pb-16 md:pb-24">
         <BlogContent content={post.content} inlineImages={post.inlineImages} />
@@ -300,14 +297,18 @@ export default async function BlogPostPage({
                   className="group"
                 >
                   <article className="bg-paper rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-                    <div className="aspect-[16/10] relative overflow-hidden">
-                      <Image
-                        src={related.image}
-                        alt={related.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
+                    {related.image ? (
+                      <div className="aspect-[16/10] relative overflow-hidden">
+                        <Image
+                          src={related.image}
+                          alt={related.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    ) : (
+                      <div className="h-1.5 bg-forest/25" />
+                    )}
                     <div className="p-6 flex flex-col flex-1">
                       <h3 className="text-lg font-medium mb-2 group-hover:text-forest transition-colors duration-300">
                         {related.title}

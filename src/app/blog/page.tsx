@@ -58,13 +58,15 @@ export default function BlogPage() {
           <article className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="grid md:grid-cols-2">
               <div className="aspect-[4/3] md:aspect-auto relative overflow-hidden">
-                <Image
-                  src={featured.image}
-                  alt={featured.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  priority
-                />
+                {featured.image && (
+                  <Image
+                    src={featured.image}
+                    alt={featured.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    priority
+                  />
+                )}
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest mb-3">
@@ -96,15 +98,19 @@ export default function BlogPage() {
               className="group"
             >
               <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
-                <div className="aspect-[16/10] relative overflow-hidden">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6 flex flex-col flex-1">
+                {post.image ? (
+                  <div className="aspect-[16/10] relative overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-1.5 bg-forest/25" />
+                )}
+                <div className={`p-6 flex flex-col flex-1 ${!post.image ? "pt-8" : ""}`}>
                   <h3 className="text-xl font-medium mb-3 group-hover:text-forest transition-colors duration-300">
                     {post.title}
                   </h3>
