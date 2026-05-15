@@ -271,7 +271,6 @@ const posts: Post[] = [
     readingTime: 4,
     image: "/images/blog/alene-for-lenge.jpg",
     inlineImages: [
-      { src: "/images/blog/alene-for-lenge-inline-1.jpg", alt: "En ensom skikkelse som går langs en tom strand i nordisk høstlys", afterBlock: 5 },
       { src: "/images/blog/alene-for-lenge-inline-2.jpg", alt: "Et stille tåkelagt landskap med trær i dempet morgenlys", afterBlock: 12 },
     ],
     relatedSlugs: [
