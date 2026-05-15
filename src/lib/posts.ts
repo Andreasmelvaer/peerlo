@@ -190,7 +190,6 @@ const posts: Post[] = [
     image: "/images/blog/vanlig-menneske-hjelpe.jpg",
     inlineImages: [
       { src: "/images/blog/vanlig-menneske-hjelpe-inline-1.jpg", alt: "Et varmt og trygt rom der to mennesker sitter sammen", afterBlock: 6 },
-      { src: "/images/blog/vanlig-menneske-hjelpe-inline-2.jpg", alt: "En kopp kaffe på et bord mellom to personer i samtale", afterBlock: 12 },
     ],
     relatedSlugs: [
       "forskjellen-hort-og-forstatt",
