@@ -71,9 +71,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/forskjellen-hort-og-forstatt.jpg",
-    inlineImages: [
-      { src: "/images/blog/forskjellen-hort-og-forstatt-inline-2.jpg", alt: "Sollys som bryter gjennom trærne i en norsk skog", afterBlock: 14 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "hva-jeg-savnet",
       "hva-er-peer-support",
@@ -99,11 +97,8 @@ const posts: Post[] = [
     date: "2026-06-01",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hva-er-peer-support.jpg",
-    inlineImages: [
-      { src: "/images/blog/hva-er-peer-support-inline-1.jpg", alt: "En gruppe mennesker som støtter hverandre i et trygt miljø", afterBlock: 7 },
-      { src: "/images/blog/hva-er-peer-support-inline-2.jpg", alt: "En person som sitter ved en rolig innsjø omgitt av snødekte fjell", afterBlock: 16 },
-    ],
+    image: "/images/blog/hva-er-peer-support-inline-1.jpg",
+    inlineImages: [],
     credits: [
       { photographer: "Faris Mohammed", url: "https://unsplash.com/@pkmfaris", source: "Unsplash" },
     ],
@@ -165,7 +160,6 @@ const posts: Post[] = [
     image: "/images/blog/vanskelig-forsta-psykisk-helse.jpg",
     inlineImages: [
       { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-1.jpg", alt: "En person som sitter alene ved et vindu og ser ut på regnet", afterBlock: 6 },
-      { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-2.jpg", alt: "Lys som bryter gjennom skyer over norsk fjelllandskap", afterBlock: 14 },
     ],
     relatedSlugs: [
       "hva-jeg-savnet",
@@ -252,11 +246,8 @@ const posts: Post[] = [
     date: "2026-07-06",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hvem-peer-support-hjelpe.jpg",
-    inlineImages: [
-      { src: "/images/blog/hvem-peer-support-hjelpe-inline-1.jpg", alt: "En person i kontorklær som ser ut av vinduet med et ettertenksomt uttrykk", afterBlock: 5 },
-      { src: "/images/blog/hvem-peer-support-hjelpe-inline-2.jpg", alt: "Unge voksne som går sammen i en park i nordisk landskap", afterBlock: 13 },
-    ],
+    image: "/images/blog/hvem-peer-support-hjelpe-inline-2.jpg",
+    inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
       "hvorfor-hjelp-for-sent",
@@ -314,7 +305,6 @@ const posts: Post[] = [
     readingTime: 4,
     image: "/images/blog/apne-deg-forste-gang.jpg",
     inlineImages: [
-      { src: "/images/blog/apne-deg-forste-gang-inline-1.jpg", alt: "En person som tar det første steget ut på en sti i skogen", afterBlock: 5 },
       { src: "/images/blog/apne-deg-forste-gang-inline-2.jpg", alt: "Varmt lys som faller inn gjennom et vindu i et stille rom", afterBlock: 12 },
     ],
     relatedSlugs: [
