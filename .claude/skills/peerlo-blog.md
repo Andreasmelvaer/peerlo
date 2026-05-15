@@ -25,11 +25,12 @@ Study the existing posts in `src/lib/posts.ts` before writing. Ole's voice has t
 
 ### Tone
 - First person ("jeg") mixed with universal "man" (one/you).
-- Reflective and honest — never preachy or salesy.
+- Reflective and honest, never preachy or salesy.
 - Shows vulnerability without being dramatic.
-- Always circles back to peer support as the quiet answer — never forces it.
+- Always circles back to peer support as the quiet answer, never forces it.
 - Ends with hope, never despair.
 - Uses «guillemets» for quoted speech, not "regular quotes".
+- **Never use em dashes (—).** Use periods, commas, or line breaks instead. This applies to titles, headings, content, and excerpts.
 
 ### Content Patterns
 - Opens with a personal reflection or observation.
@@ -205,7 +206,7 @@ content: [
   "Som ikke skynder seg videre til neste poeng.\nSom ikke prøver å gjøre det bedre med én gang.",
   "Bare et menneske som sier:\n«Jeg hører deg.»",
   "Det kan bety mer enn folk tror.",
-  "Les også: [Forskjellen på å bli hørt — og å bli forstått](/blog/forskjellen-hort-og-forstatt)",
+  "Les også: [Forskjellen på å bli hørt og å bli forstått](/blog/forskjellen-hort-og-forstatt)",
 ]
 ```
 
