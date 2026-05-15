@@ -155,10 +155,8 @@ const posts: Post[] = [
     date: "2026-06-01",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/hva-er-peer-support.png",
-    inlineImages: [
-      { src: "/images/blog/hva-er-peer-support-inline-1.png", alt: "En gruppe mennesker som støtter hverandre i et trygt miljø", afterBlock: 7 },
-    ],
+    image: "/images/blog/hva-er-peer-support-inline-1.png",
+    inlineImages: [],
     relatedSlugs: [
       "hva-jeg-savnet",
       "hvorfor-hjelp-for-sent",
