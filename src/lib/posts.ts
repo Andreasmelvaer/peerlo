@@ -158,9 +158,7 @@ const posts: Post[] = [
     author: "Ole Aarre",
     readingTime: 4,
     image: "/images/blog/vanskelig-forsta-psykisk-helse.jpg",
-    inlineImages: [
-      { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-1.jpg", alt: "En person som sitter alene ved et vindu og ser ut på regnet", afterBlock: 6 },
-    ],
+    inlineImages: [],
     relatedSlugs: [
       "hva-jeg-savnet",
       "hvorfor-hjelp-for-sent",
