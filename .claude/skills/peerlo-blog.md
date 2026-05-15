@@ -80,35 +80,23 @@ Every blog post must be optimized for both traditional search engines and AI ans
 
 ## Image Strategy
 
-### Priority 1: Midjourney (when user has access)
+Source real photographs from Unsplash for every blog post. 3 images per post (1 header + 2 inline).
 
-Generate 3 image prompts (1 header + 2 inline) in this style:
-
-```
-Hyperrealistic photograph, Nordic landscape, [scene description].
-Natural soft lighting, muted Scandinavian color palette, cinematic
-depth of field. Shot on medium format camera. --ar 16:9 --v 6.1 --s 200
-```
-
-Guidelines:
-- Always Nordic/Norwegian settings (fjords, forests, coastline, cabins, trails)
-- People shown from behind or at a distance — never faces
-- Moody, contemplative, atmospheric
-- Seasons matching the emotional tone (autumn for reflection, spring for hope)
-- Header: wider establishing shot
-- Inline: more intimate, closer scenes
-- The images should feel **ekte og nedpå** — real, grounded, not polished or stock-photo-like
-
-### Priority 2: Unsplash (when Midjourney is not available)
-
-If the user doesn't have Midjourney or wants to skip image generation, fetch real photographs from Unsplash.
-
-**Search strategy:**
+### Search strategy
 1. Search for Norwegian or Scandinavian scenes first: `norway landscape`, `norwegian forest`, `scandinavian nature`, `nordic coast`
 2. Search for mood-matching scenes: `solitude nature`, `person walking alone`, `misty forest`, `quiet morning`
 3. Prefer images that feel natural, unposed, and atmospheric — never polished commercial stock
 
-**How to fetch:**
+### Image style
+- **Ekte og nedpå** — real, grounded, not glossy or stock-photo-like
+- Nordic/Norwegian settings strongly preferred (fjords, forests, coastline, cabins, trails)
+- People shown from behind or at a distance — never faces
+- Moody, contemplative, atmospheric
+- Seasons that match the emotional tone (autumn for reflection, spring for hope)
+- Header: wider establishing shot
+- Inline: more intimate, closer scenes
+
+### How to fetch
 Use the Unsplash API via WebFetch:
 ```
 https://api.unsplash.com/search/photos?query=norway+forest&orientation=landscape&per_page=5
@@ -117,23 +105,17 @@ With header: `Authorization: Client-ID YOUR_ACCESS_KEY`
 
 If no API key is available, search Unsplash via the browser and download manually.
 
-**Accreditation — REQUIRED:**
+### Accreditation — REQUIRED
 Every Unsplash image must be credited. Add a `credits` field to the post:
 ```typescript
 credits?: { photographer: string; url: string; source: "Unsplash" }[];
 ```
+Credits render automatically at the bottom of the post.
 
-Then render credits at the bottom of the post. Example:
-```
-Bilder: John Smith via Unsplash
-```
-
-**Image requirements:**
+### Image requirements
 - Landscape orientation (16:9 or similar)
 - High resolution (at least 1200px wide)
 - Natural, authentic feel — no over-saturated, no HDR, no stock-photo poses
-- Norwegian/Scandinavian locations strongly preferred
-- Moody, contemplative atmosphere matching Peerlo's brand
 - Download and save to `public/images/blog/` with proper slug-based filenames
 
 ---
@@ -180,16 +162,14 @@ Create a complete `Post` object with full SEO metadata:
 
 Add the new post object to the `posts` array in `src/lib/posts.ts`. Position it at the **beginning** of the array (newest first).
 
-### 4. Handle images
+### 4. Source images from Unsplash
 
-**If Midjourney:** Output 3 prompts for the user to run. Remind them to save as:
+Search Unsplash for 3 fitting photographs (Norwegian/Scandinavian, natural, atmospheric). Download and save as:
 - `public/images/blog/[slug].png` (header)
 - `public/images/blog/[slug]-inline-1.png`
 - `public/images/blog/[slug]-inline-2.png`
 
-**If Unsplash:** Search, download, and save directly. Add credits to the post.
-
-**If no images yet:** The post will still work — the image fields are there, the user can add images later. Note which images are missing.
+Add photographer credits to the post's `credits` array. If images can't be sourced right away, the post still works — note which images are missing.
 
 ### 5. Verify & deploy
 
