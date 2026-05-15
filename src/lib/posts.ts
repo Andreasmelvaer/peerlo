@@ -544,7 +544,6 @@ const posts: Post[] = [
     readingTime: 4,
     image: "/images/blog/apne-deg-forste-gang.png",
     inlineImages: [
-      { src: "/images/blog/apne-deg-forste-gang-inline-1.png", alt: "En person som tar det første steget ut på en sti i skogen", afterBlock: 5 },
       { src: "/images/blog/apne-deg-forste-gang-inline-2.png", alt: "Varmt lys som faller inn gjennom et vindu i et stille rom", afterBlock: 12 },
     ],
     relatedSlugs: [
