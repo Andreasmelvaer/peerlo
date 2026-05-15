@@ -14,14 +14,15 @@ Study the existing posts in `src/lib/posts.ts` before writing. Ole's voice has t
 - Warm, personal, and human. Like a friend talking quietly over coffee.
 
 ### Structure
-- **Paragraphs, not lists.** The text flows as short, poetic paragraphs. Bullet lists are used *sparingly* — only for feelings, experiences, or short emotional phrases (never for instructions, steps, or takeaways).
-- Short paragraphs. Often just one sentence.
-- Uses `\n` line breaks within a single content block for poetic rhythm:
+- **Real paragraphs, not a wall of one-liners.** Each content block should feel like a natural paragraph a human would write. Most blocks should be 2-4 sentences that belong together. A single standalone sentence is powerful *occasionally* for emphasis, but if every block is one sentence the text looks like an AI wrote it.
+- **Bullet lists are rare.** Maximum 1-2 per post, only for feelings or short emotional phrases. Never for instructions, steps, or summaries. Convert everything else to flowing paragraphs.
+- Uses `\n` line breaks within a content block for poetic rhythm, but sparingly:
   ```
   "Ikke som fagperson.\nIkke som ekspert.\nMen som medmenneske."
   ```
-- Fragments for emphasis. Not every sentence needs a verb.
+- Fragments for emphasis, but embedded in longer paragraphs. Not every block should be a fragment.
 - Rhetorical questions, then answers them gently.
+- **Mix paragraph lengths.** A good post alternates between longer 3-4 sentence paragraphs and shorter 1-2 sentence ones. The rhythm of long-short-long feels human.
 
 ### Tone
 - First person ("jeg") mixed with universal "man" (one/you).
@@ -38,7 +39,7 @@ Study the existing posts in `src/lib/posts.ts` before writing. Ole's voice has t
 - Arrives at peer support naturally — never as a sales pitch.
 - Each post is ~800-1000 words, 4 min read.
 - Ends with a cross-link: `"Les også: [Title](/blog/slug)"`
-- Maximum 2-3 bullet lists per post, each with 3-5 short items.
+- Maximum 1-2 bullet lists per post, each with 3-5 short items.
 
 ---
 
@@ -199,15 +200,12 @@ Add photographer credits to the post's `credits` array. If images can't be sourc
 
 ```typescript
 content: [
-  "Jeg tror mange mennesker misforstår hva det vil si å lytte.",
-  "Ikke fordi de ikke bryr seg.\nMen fordi de ofte prøver å fikse i stedet for å bare være der.",
-  "Det er en stor forskjell på de to tingene.",
-  "Noen ganger trenger man ikke et svar.\nMan trenger et menneske som tåler stillheten.",
-  "Som ikke skynder seg videre til neste poeng.\nSom ikke prøver å gjøre det bedre med én gang.",
+  "Jeg tror mange mennesker misforstår hva det vil si å lytte. Ikke fordi de ikke bryr seg, men fordi de ofte prøver å fikse i stedet for å bare være der. Det er en stor forskjell på de to tingene.",
+  "Noen ganger trenger man ikke et svar. Man trenger et menneske som tåler stillheten. Som ikke skynder seg videre til neste poeng, og som ikke prøver å gjøre det bedre med én gang.",
   "Bare et menneske som sier:\n«Jeg hører deg.»",
-  "Det kan bety mer enn folk tror.",
+  "Det høres kanskje enkelt ut. Men for den som har båret på noe lenge, kan akkurat de ordene bety mer enn folk tror. Ikke fordi de løser noe, men fordi de gjør at man føler seg litt mindre alene.",
   "Les også: [Forskjellen på å bli hørt og å bli forstått](/blog/forskjellen-hort-og-forstatt)",
 ]
 ```
 
-Notice: short paragraphs, `\n` for rhythm, «guillemets», no bullet lists needed, warm and reflective.
+Notice: real paragraphs with multiple sentences, `\n` only for poetic moments, «guillemets», standalone short lines used sparingly for emphasis. The text reads like a human wrote it, not like a list of statements.
