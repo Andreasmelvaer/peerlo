@@ -255,7 +255,6 @@ const posts: Post[] = [
     image: "/images/blog/vanskelig-forsta-psykisk-helse.png",
     inlineImages: [
       { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-1.png", alt: "En person som sitter alene ved et vindu og ser ut på regnet", afterBlock: 6 },
-      { src: "/images/blog/vanskelig-forsta-psykisk-helse-inline-2.png", alt: "Lys som bryter gjennom skyer over norsk fjelllandskap", afterBlock: 14 },
     ],
     relatedSlugs: [
       "hva-jeg-savnet",
