@@ -34,7 +34,7 @@ const posts: Post[] = [
     date: "2026-09-28",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/egenerfaring-som-ressurs.jpg",
+    image: "/images/blog/egenerfaring-som-ressurs.png",
     inlineImages: [],
     relatedSlugs: [
       "a-vaere-peer-for-andre",
