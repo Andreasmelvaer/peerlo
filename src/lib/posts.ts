@@ -33,7 +33,7 @@ const posts: Post[] = [
     excerpt: "Det er forskjell på å forstå noe faglig og å forstå hvordan det føles. Begge deler er verdifulle. Men de er ikke det samme.",
     date: "2026-09-28",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/egenerfaring-som-ressurs.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -57,7 +57,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror samfunnet taper mye mer enn penger. Det største tapet er kanskje alt vi aldri får se.",
     date: "2026-08-24",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hva-taper-vi-nar-folk-gar-alene.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -82,7 +82,7 @@ const posts: Post[] = [
       "Jeg husker ikke nødvendigvis alle rådene jeg fikk da jeg hadde det vanskelig. Men jeg husker følelsen av å møte mennesker som faktisk forstod.",
     date: "2026-05-25",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/forskjellen-hort-og-forstatt.png",
     inlineImages: [],
     relatedSlugs: [
@@ -109,7 +109,7 @@ const posts: Post[] = [
       "Da jeg selv slet psykisk, prøvde jeg terapi. Flere former også. Noe hjalp litt. Mye hjalp ikke. Men for meg føltes det ofte som om noe manglet.",
     date: "2026-05-18",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hva-jeg-savnet.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -137,7 +137,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror de fleste mennesker som prøver å hjelpe mener godt. Men det betyr ikke alltid at hjelpen føles hjelpsom.",
     date: "2026-09-14",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/nar-hjelp-foles-feil.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -162,7 +162,7 @@ const posts: Post[] = [
     excerpt: "Når folk snakker om peer support, handler det ofte om personen som får støtte. Men jeg tror mange glemmer hvor mye det også kan bety å være peer for andre.",
     date: "2026-10-05",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/a-vaere-peer-for-andre.jpg",
     relatedSlugs: [
       "egenerfaring-som-ressurs",
@@ -187,7 +187,7 @@ const posts: Post[] = [
       "Jeg tror ikke hovedproblemet er at mennesker ikke vil ha hjelp. Jeg tror problemet er at terskelen føles altfor høy. Så man venter. Ofte altfor lenge.",
     date: "2026-06-08",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hvorfor-hjelp-for-sent.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -216,7 +216,7 @@ const posts: Post[] = [
     excerpt: "Mange går rundt med tanker og følelser de aldri sier høyt. Selv til mennesker de stoler på. Ikke fordi de ikke vil, men fordi det føles risikabelt.",
     date: "2026-08-03",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/aerlig-om-hvordan-man-har-det.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -242,7 +242,7 @@ const posts: Post[] = [
     excerpt: "Jobb er ikke bare jobb. For mange er det identitet, trygghet, økonomi og selvfølelse. Og psykisk helse og arbeidsliv henger tettere sammen enn vi liker å innrømme.",
     date: "2026-08-10",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/arbeidslivet-og-psykisk-helse.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -266,7 +266,7 @@ const posts: Post[] = [
     excerpt: "Når man har gått alene med tunge tanker lenge, begynner man ofte å føle seg annerledes enn andre. Men noen ganger møter man et menneske som faktisk forstår, og da kan noe skje ganske raskt.",
     date: "2026-08-17",
     author: "Ole Aarre",
-    readingTime: 3,
+    readingTime: 1,
     image: "/images/blog/folelse-av-a-bli-forstatt.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -291,7 +291,7 @@ const posts: Post[] = [
       "Mange tenker: «Hvis noen skal hjelpe meg psykisk, må de vel være ekspert?» Men jeg tror mange undervurderer verdien av et menneske som virkelig forstår følelsen.",
     date: "2026-06-22",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/vanlig-menneske-hjelpe.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -317,7 +317,7 @@ const posts: Post[] = [
       "Jeg tror ikke målet med en god samtale er at alt skal være løst etterpå. Kanskje handler det mer om å føle seg litt mindre alene, litt lettere i kroppen.",
     date: "2026-06-29",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/etter-god-samtale.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -343,7 +343,7 @@ const posts: Post[] = [
     excerpt: "Jeg håper psykisk helse blir litt mindre skummelt å snakke om. Ikke bare i kampanjer eller på temadager, men i hverdagen. Mellom mennesker.",
     date: "2026-08-31",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hvis-peerlo-lykkes.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -366,7 +366,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror mange mennesker tror de trenger løsninger. Men ofte tror jeg de egentlig trenger noe helt annet først.",
     date: "2026-09-07",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hva-trenger-mennesker-nar-de-har-det-vanskelig.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -393,7 +393,7 @@ const posts: Post[] = [
       "Jeg tror peer support kan hjelpe mange forskjellige mennesker. Men kanskje spesielt dem som har blitt veldig flinke til å skjule hvordan de egentlig har det.",
     date: "2026-07-06",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hvem-peer-support-hjelpe.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -420,7 +420,7 @@ const posts: Post[] = [
       "Jeg tror veldig mye psykisk smerte vokser i stillhet. Ikke over natten, men gradvis. Man venter, holder ut, og later som alt er fint. Helt til det ikke går lenger.",
     date: "2026-07-13",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/alene-for-lenge.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -447,7 +447,7 @@ const posts: Post[] = [
       "Hvis du sitter alene akkurat nå og vurderer å åpne deg for noen. Jeg håper du vet at du ikke er svak. Det krever mot å være ærlig om hvordan man har det.",
     date: "2026-07-20",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/apne-deg-forste-gang.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -472,7 +472,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror mange mennesker har ting inni seg som de aldri har sagt høyt til noen. Ikke fordi de ikke vil, men fordi de er redde.",
     date: "2026-09-21",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/anonymitet-og-apne-seg.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -498,7 +498,7 @@ const posts: Post[] = [
       "«Peer support» er et begrep flere og flere har hørt. Men mange er fortsatt usikre på hva det faktisk betyr, og helt ærlig finnes det heller ikke én perfekt norsk oversettelse.",
     date: "2026-07-27",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hva-betyr-peer-support-pa-norsk.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -524,7 +524,7 @@ const posts: Post[] = [
       "«Peer support» høres kanskje ut som et fancy faguttrykk. Men egentlig handler det om noe ganske menneskelig. Å få støtte fra noen som har opplevd noe lignende.",
     date: "2026-06-01",
     author: "Ole Aarre",
-    readingTime: 4,
+    readingTime: 2,
     image: "/images/blog/hva-er-peer-support.jpg",
     inlineImages: [],
     relatedSlugs: [
