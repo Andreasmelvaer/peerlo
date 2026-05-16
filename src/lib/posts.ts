@@ -137,7 +137,7 @@ const posts: Post[] = [
     date: "2026-05-25",
     author: "Ole Aarre",
     readingTime: 4,
-    image: "/images/blog/forskjellen-hort-og-forstatt.jpg",
+    image: "/images/blog/forskjellen-hort-og-forstatt.png",
     inlineImages: [],
     relatedSlugs: [
       "hva-jeg-savnet",
