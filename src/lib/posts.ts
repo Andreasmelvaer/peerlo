@@ -448,7 +448,7 @@ const posts: Post[] = [
     date: "2026-07-20",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/apne-deg-forste-gang.jpg",
+    image: "/images/blog/apne-deg-forste-gang.png",
     inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
