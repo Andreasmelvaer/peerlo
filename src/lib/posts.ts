@@ -138,7 +138,7 @@ const posts: Post[] = [
     date: "2026-09-14",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/nar-hjelp-foles-feil.jpg",
+    image: "/images/blog/nar-hjelp-foles-feil.png",
     inlineImages: [],
     relatedSlugs: [
       "hva-trenger-mennesker-nar-de-har-det-vanskelig",
@@ -217,7 +217,7 @@ const posts: Post[] = [
     date: "2026-08-03",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/aerlig-om-hvordan-man-har-det.jpg",
+    image: "/images/blog/aerlig-om-hvordan-man-har-det.png",
     inlineImages: [],
     relatedSlugs: [
       "nar-hjelp-foles-feil",
@@ -292,7 +292,7 @@ const posts: Post[] = [
     date: "2026-06-22",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/vanlig-menneske-hjelpe.jpg",
+    image: "/images/blog/vanlig-menneske-hjelpe.png",
     inlineImages: [],
     relatedSlugs: [
       "forskjellen-hort-og-forstatt",
