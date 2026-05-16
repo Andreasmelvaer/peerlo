@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useId } from "react";
 
 const springTransition = {
   type: "spring" as const,
@@ -78,6 +78,7 @@ function TypingHero() {
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
+  const id = useId();
   return (
     <motion.div
       className="border-b border-pastel-forest/30"
@@ -86,6 +87,8 @@ function FAQItem({ q, a }: { q: string; a: string }) {
     >
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-controls={`faq-${id}`}
         className="w-full flex items-center justify-between py-5 text-left group"
       >
         <span className="font-semibold text-lg pr-4 transition-colors duration-300 group-hover:text-forest">
@@ -99,6 +102,8 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         </motion.div>
       </button>
       <motion.div
+        id={`faq-${id}`}
+        role="region"
         initial={false}
         animate={{
           height: open ? "auto" : 0,
@@ -251,6 +256,25 @@ export default function Home() {
               søvnløse netter – uten at noen vet det. Og hjelpen kommer ofte
               først når det har gått for langt.
             </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ===== DEFINITION ===== */}
+      <section className="py-16 md:py-20 bg-paper">
+        <div className="max-w-3xl mx-auto px-6">
+          <AnimatedSection>
+            <div className="bg-white rounded-3xl p-8 md:p-12 border border-pastel-forest/30">
+              <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest mb-4">
+                Hva er peer support?
+              </p>
+              <h2 className="text-2xl md:text-3xl font-normal mb-4 leading-snug">
+                Peer support er støtte fra noen som har opplevd det samme.
+              </h2>
+              <p className="text-charcoal/70 leading-relaxed">
+                En peer er ikke en terapeut. En peer er et menneske med egenerfaring – som har stått i noe av det samme som deg, og som ønsker å hjelpe. Forskning viser at denne typen støtte kan være svært effektiv, særlig som et tidlig tilbud før problemer eskalerer til sykefravær eller mer alvorlig psykisk uhelse.
+              </p>
+            </div>
           </AnimatedSection>
         </div>
       </section>

@@ -82,6 +82,8 @@ const siteSchemas = {
         availableLanguage: ["Norwegian", "English"],
       },
       areaServed: { "@type": "Country", name: "Norway" },
+      disambiguatingDescription:
+        "Peerlo er ikke terapi, men en digital plattform som kobler ansatte med sertifiserte peers med egenerfaring.",
       sameAs: ["https://www.linkedin.com/company/peerlo"],
     },
     {
@@ -93,6 +95,26 @@ const siteSchemas = {
         "Peer support-plattform for norsk arbeidsliv. Kobler ansatte med peers som har opplevd lignende utfordringer.",
       inLanguage: "nb-NO",
       publisher: { "@id": "https://peerlo.no/#organization" },
+    },
+    {
+      "@type": "Service",
+      "@id": "https://peerlo.no/#peer-support-tjeneste",
+      name: "Peerlo Peer Support",
+      description:
+        "Digital peer support-plattform som kobler ansatte med sertifiserte peers med egenerfaring. Anonymt, tilgjengelig og menneskelig.",
+      provider: { "@id": "https://peerlo.no/#organization" },
+      serviceType: "Peer Support",
+      areaServed: { "@type": "Country", name: "Norway" },
+      availableChannel: {
+        "@type": "ServiceChannel",
+        serviceUrl: "https://peerlo.no",
+        servicePhone: "+4798811908",
+        availableLanguage: ["Norwegian"],
+      },
+      audience: {
+        "@type": "Audience",
+        audienceType: "Bedrifter og HR-avdelinger i Norge",
+      },
     },
     {
       "@type": "Person",
