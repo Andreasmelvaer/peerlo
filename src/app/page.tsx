@@ -274,9 +274,9 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
             <p className="text-xl text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
-              Stress, ensomhet, familieproblemer eller søvnløse netter – uten
-              at noen vet det. Og hjelpen kommer ofte først når det har gått
-              for langt.
+              De fleste sier ingenting. Ikke fordi de ikke trenger hjelp – men
+              fordi terskelen er for høy. Peerlo senker den terskelen, og gir
+              ansatte støtte før problemene vokser seg store.
             </p>
           </AnimatedSection>
         </div>
