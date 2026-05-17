@@ -500,8 +500,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
               <h2 className="text-4xl md:text-5xl font-normal mb-6">
-                Tidlig støtte{" "}
-                <span className="text-forest">– før det blir sykmelding</span>
+                Støtt de ansatte{" "}
+                <span className="text-forest">før det blir sykmelding</span>
               </h2>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
                 Peerlo hjelper virksomheter med å gi ansatte tidlig støtte –
