@@ -34,7 +34,7 @@ const posts: Post[] = [
     date: "2026-05-17",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/hva-koster-darlig-psykisk-helse.png",
+    image: "/images/blog/hva-koster-darlig-psykisk-helse-hr.png",
     inlineImages: [],
     relatedSlugs: ["egenerfaring-som-ressurs", "nar-hjelp-foles-feil", "aerlig-om-hvordan-man-har-det"],
     content: [
