@@ -269,7 +269,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-normal mb-6">
-              Visste du at mange av dine ansatte sliter i stillhet?
+              Hvor mange av dine ansatte sliter i stillhet akkurat nå?
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
