@@ -99,6 +99,17 @@ function BlogContent({ content, inlineImages }: { content: ContentBlock[]; inlin
         ) : null;
 
         if (typeof block === "string") {
+          if (block.startsWith("## ")) {
+            return (
+              <div key={i}>
+                <h2 className="text-2xl font-medium text-charcoal mt-10 mb-2">
+                  {block.slice(3)}
+                </h2>
+                {imgElement}
+              </div>
+            );
+          }
+
           const isRelatedLink = block.startsWith("Les også:") || block.startsWith("Les mer:");
           if (isRelatedLink) {
             return (
