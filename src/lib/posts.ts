@@ -553,7 +553,7 @@ const posts: Post[] = [
       "Jeg tror peer support kan hjelpe mange forskjellige mennesker. Men kanskje spesielt dem som har blitt veldig flinke til å skjule hvordan de egentlig har det.",
     date: "2026-07-06",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hvem-peer-support-hjelpe.jpg",
     inlineImages: [],
     relatedSlugs: [
