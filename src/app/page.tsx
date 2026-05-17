@@ -434,7 +434,7 @@ export default function Home() {
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
               Peerlo gir HR anonymisert, aggregert innsikt i hva ansatte
               faktisk står i – slik at dere kan handle tidlig, ikke for sent.
-              Se trender, emnekart og bruksutvikling i sanntid.
+              Se tendenser, emnekart og bruksutvikling i sanntid.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -461,7 +461,7 @@ export default function Home() {
                   desc: "Forstå hvilke temaer som preger arbeidsplassen",
                 },
                 {
-                  label: "Trender",
+                  label: "Tendenser",
                   desc: "Oppdage endringer i symptomtrykk over tid",
                 },
               ].map((item, i) => (
@@ -597,32 +597,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== SOCIAL PROOF ===== */}
-      <section className="py-24 md:py-32 bg-bright-forest/20 overflow-hidden">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection>
-            <motion.p
-              className="text-6xl md:text-7xl leading-tight font-normal"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 1, ease: smoothEase }}
-            >
-              &ldquo;Peer support er en av de mest kraftfulle formene for{" "}
-              <motion.span
-                className="text-forest inline-block"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-              >
-                tidlig støtte.
-              </motion.span>
-              &rdquo;
-            </motion.p>
-          </AnimatedSection>
-        </div>
-      </section>
 
       {/* ===== HVORFOR PEERLO ===== */}
       <section id="hvorfor" className="py-24 md:py-32 bg-paper">
