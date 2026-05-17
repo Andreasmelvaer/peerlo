@@ -136,7 +136,7 @@ const posts: Post[] = [
       "Jeg husker ikke nødvendigvis alle rådene jeg fikk da jeg hadde det vanskelig. Men jeg husker følelsen av å møte mennesker som faktisk forstod.",
     date: "2026-05-25",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/forskjellen-hort-og-forstatt.png",
     inlineImages: [],
     relatedSlugs: [
