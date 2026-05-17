@@ -662,7 +662,7 @@ const posts: Post[] = [
     date: "2026-07-27",
     author: "Ole Aarre",
     readingTime: 2,
-    image: "/images/blog/hva-betyr-peer-support-pa-norsk.jpg",
+    image: "/images/blog/hva-betyr-peer-support-pa-norsk.png",
     inlineImages: [],
     relatedSlugs: [
       "hva-er-peer-support",
