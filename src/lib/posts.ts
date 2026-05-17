@@ -71,7 +71,7 @@ const posts: Post[] = [
     excerpt: "Det er forskjell på å forstå noe faglig og å forstå hvordan det føles. Begge deler er verdifulle. Men de er ikke det samme.",
     date: "2026-09-28",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/egenerfaring-som-ressurs.png",
     inlineImages: [],
     relatedSlugs: [
@@ -135,7 +135,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror samfunnet taper mye mer enn penger. Det største tapet er kanskje alt vi aldri får se.",
     date: "2026-08-24",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hva-taper-vi-nar-folk-gar-alene.jpg",
     inlineImages: [],
     relatedSlugs: [
