@@ -280,7 +280,7 @@ const posts: Post[] = [
     excerpt: "Når folk snakker om peer support, handler det ofte om personen som får støtte. Men jeg tror mange glemmer hvor mye det også kan bety å være peer for andre.",
     date: "2026-10-05",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/a-vaere-peer-for-andre.jpg",
     relatedSlugs: [
       "egenerfaring-som-ressurs",
@@ -461,7 +461,7 @@ const posts: Post[] = [
     excerpt: "Jeg håper psykisk helse blir litt mindre skummelt å snakke om. Ikke bare i kampanjer eller på temadager, men i hverdagen. Mellom mennesker.",
     date: "2026-08-31",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hvis-peerlo-lykkes.jpg",
     inlineImages: [],
     relatedSlugs: [
