@@ -593,7 +593,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror mange mennesker har ting inni seg som de aldri har sagt høyt til noen. Ikke fordi de ikke vil, men fordi de er redde.",
     date: "2026-09-21",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/anonymitet-og-apne-seg.jpg",
     inlineImages: [],
     relatedSlugs: [
