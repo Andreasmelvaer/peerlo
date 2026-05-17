@@ -26,6 +26,19 @@ export const metadata: Metadata = {
   },
   description:
     "Peerlo kobler ansatte med peers som har opplevd lignende utfordringer. Anonymt, tilgjengelig og menneskelig. Peer support for norsk arbeidsliv.",
+  keywords: [
+    "peer support",
+    "peer support norsk arbeidsliv",
+    "psykisk helse på jobben",
+    "psykisk helse arbeidsplass",
+    "psykososialt arbeidsmiljø",
+    "arbeidsmiljøloven 2026",
+    "sykefravær psykisk helse",
+    "tidlig støtte ansatte",
+    "peer support plattform",
+    "egenerfaring støtte",
+    "lavterskel psykisk helse",
+  ],
   openGraph: {
     siteName: "Peerlo",
     locale: "nb_NO",
@@ -115,6 +128,17 @@ const siteSchemas = {
         "@type": "Audience",
         audienceType: "Bedrifter og HR-avdelinger i Norge",
       },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://peerlo.no/#webpage",
+      url: "https://peerlo.no",
+      name: "Peerlo – Snakk med noen som forstår",
+      description:
+        "Peer support-plattform for norsk arbeidsliv. Kobler ansatte med sertifiserte peers med egenerfaring – anonymt og tilgjengelig.",
+      isPartOf: { "@id": "https://peerlo.no/#website" },
+      about: { "@id": "https://peerlo.no/#peer-support-tjeneste" },
+      inLanguage: "nb-NO",
     },
     {
       "@type": "Person",

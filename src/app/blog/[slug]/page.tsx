@@ -247,7 +247,13 @@ export default async function BlogPostPage({
       publisher: { "@id": "https://peerlo.no/#organization" },
     },
     wordCount,
-    articleSection: "Psykisk helse og peer support",
+    articleSection: [
+      "hva-koster-darlig-psykisk-helse",
+      "slik-beregner-du-psykisk-helse-kostnad",
+      "ny-lov-nytt-ansvar-arbeidsmiljoloven-2026",
+    ].includes(post.slug)
+      ? "Psykisk helse i arbeidslivet"
+      : "Psykisk helse og peer support",
   };
 
   const breadcrumbSchema = {

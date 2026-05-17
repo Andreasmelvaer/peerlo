@@ -29,6 +29,15 @@ function formatDate(dateStr: string) {
   });
 }
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Hjem", item: "https://peerlo.no" },
+    { "@type": "ListItem", position: 2, name: "Blogg", item: "https://peerlo.no/blog" },
+  ],
+};
+
 const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
@@ -51,6 +60,7 @@ export default function BlogPage() {
 
   return (
     <div className="bg-paper">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <section className="bg-evening-forest py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 text-center">
