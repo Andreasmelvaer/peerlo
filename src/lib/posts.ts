@@ -96,7 +96,7 @@ const posts: Post[] = [
       "Samlivsbrudd er noe av det mest ensomme man kan gå gjennom, selv når man har mennesker rundt seg.",
     date: "2026-05-16",
     author: "Ole Aarre",
-    readingTime: 3,
+    readingTime: 2,
     image: "/images/blog/samlivsbrudd-hvorfor-gjor-det-sa-vondt.png",
     inlineImages: [],
     relatedSlugs: [
