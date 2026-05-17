@@ -598,31 +598,6 @@ export default function Home() {
       </section>
 
 
-      {/* ===== HVORFOR PEERLO ===== */}
-      <section id="hvorfor" className="py-24 md:py-32 bg-paper">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <AnimatedSection>
-            <motion.p
-              className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, ease: smoothEase }}
-            >
-              Hvorfor Peerlo finnes
-            </motion.p>
-            <h2 className="text-4xl md:text-5xl font-normal mb-6">
-              Det handler om å gjøre det litt enklere å snakke med noen som
-              forstår.
-            </h2>
-            <p className="text-xl text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
-              Ikke nødvendigvis en terapeut. Bare et menneske som har
-              kjent på noe av det samme.
-            </p>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* ===== FAQ ===== */}
       <section className="py-24 md:py-32 bg-white">
         <script
