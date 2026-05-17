@@ -108,10 +108,10 @@ export default function BlogPage() {
 
       <section className="max-w-3xl mx-auto px-6 pt-16 md:pt-20 pb-4">
         <p className="text-charcoal/70 leading-relaxed text-xl">
-          Her skriver vi om peer support, psykisk helse og det å tørre å ta det første steget. Vi tror at det å snakke med noen som har opplevd det samme, eller noe lignende, kan gjøre en stor forskjell – uansett når på døgnet behovet melder seg. Og vi tror arbeidsgivere vil være tjent med å tilby nettopp dette til sine ansatte.
+          Her skriver vi om peer support, psykisk helse og det å tørre å ta det første steget. Vi tror at det å snakke med noen som har opplevd det samme, eller noe lignende, kan gjøre en stor forskjell.
         </p>
         <p className="text-charcoal/70 leading-relaxed text-xl mt-3">
-          Ta vare på de ansatte – også når de ikke er på jobb.
+          Et verktøy for arbeidsgivere som ønsker å ta vare på sine ansatte – også når de ikke er på jobb.
         </p>
       </section>
 
