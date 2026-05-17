@@ -661,7 +661,7 @@ const posts: Post[] = [
       "«Peer support» er et begrep flere og flere har hørt. Men mange er fortsatt usikre på hva det faktisk betyr, og helt ærlig finnes det heller ikke én perfekt norsk oversettelse.",
     date: "2026-07-27",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hva-betyr-peer-support-pa-norsk.png",
     inlineImages: [],
     relatedSlugs: [
@@ -687,7 +687,7 @@ const posts: Post[] = [
       "«Peer support» høres kanskje ut som et fancy faguttrykk. Men egentlig handler det om noe ganske menneskelig. Å få støtte fra noen som har opplevd noe lignende.",
     date: "2026-06-01",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hva-er-peer-support.png",
     inlineImages: [],
     relatedSlugs: [
