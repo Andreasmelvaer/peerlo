@@ -527,7 +527,7 @@ const posts: Post[] = [
     date: "2026-09-07",
     author: "Ole Aarre",
     readingTime: 1,
-    image: "/images/blog/hva-trenger-mennesker-nar-de-har-det-vanskelig.jpg",
+    image: "/images/blog/hva-trenger-mennesker-nar-de-har-det-vanskelig.png",
     inlineImages: [],
     relatedSlugs: [
       "nar-hjelp-foles-feil",
