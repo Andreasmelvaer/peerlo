@@ -28,6 +28,28 @@ const springTransition = {
 
 const smoothEase = [0.25, 0.46, 0.45, 0.94] as const;
 
+const testimonials = [
+  {
+    quote:
+      "Vi ser et tydelig behov for løsninger som gjør det enklere for ansatte å få støtte – før det utvikler seg til sykefravær. Peerlo fyller et tomrom mange virksomheter i dag ikke har gode svar på.",
+    source: "Privat bedrift",
+  },
+  {
+    quote: "Med Peerlo kunne vi fulgt opp våre ansatte på en mye bedre måte enn før.",
+    source: "Privat bedrift",
+  },
+  {
+    quote:
+      "Vi har store utfordringer med sykefravær og ser at vi må prøve nye ting for å få sykefraværet ned. Det du prøver å få til med Peerlo ser interessant ut, og kan være aktuelt for oss å teste ut.",
+    source: "Kommune",
+  },
+  {
+    quote:
+      "Peerlo vil, etter min mening, treffe spesielt godt i selskaper fra 50 ansatte og oppover – der det blir krevende å ha oversikt over hvordan folk faktisk har det.",
+    source: "Privat bedrift",
+  },
+];
+
 function AnimatedSection({
   children,
   className = "",
@@ -535,6 +557,42 @@ export default function Home() {
                 ))}
               </div>
             </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== TESTIMONIALS ===== */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-14">
+            <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">
+              Hva sier virksomhetene?
+            </p>
+            <h2 className="text-4xl md:text-5xl font-normal">
+              Tilbakemeldinger fra markedet
+            </h2>
+          </AnimatedSection>
+          <div className="grid md:grid-cols-2 gap-6">
+            {testimonials.map((t, i) => (
+              <AnimatedSection key={i} delay={i * 0.1}>
+                <motion.div
+                  className="bg-paper rounded-3xl p-8 md:p-10 flex flex-col h-full border border-pastel-forest/20"
+                  whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
+                  transition={{ duration: 0.35, ease: smoothEase }}
+                >
+                  <span className="text-forest/20 font-serif text-7xl leading-none select-none mb-2">&ldquo;</span>
+                  <p className="text-charcoal/80 text-lg leading-relaxed flex-1 -mt-4">
+                    {t.quote}
+                  </p>
+                  <div className="mt-6 flex items-center gap-2">
+                    <div className="w-6 h-0.5 bg-forest/40 rounded-full" />
+                    <span className="text-sm font-[family-name:var(--font-geist-sans)] font-medium text-charcoal/50">
+                      {t.source}
+                    </span>
+                  </div>
+                </motion.div>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
