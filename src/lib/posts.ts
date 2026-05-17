@@ -59,6 +59,8 @@ const posts: Post[] = [
       "Du trenger ikke velge mellom å bry deg og å tenke på bunnlinjen. De to henger sammen.",
       "Bedrifter som investerer i psykisk helse ser lavere fravær, høyere engasjement og sterkere lojalitet. Det er ikke mykt – det er god forretning.",
       "Ta kontakt med oss for å høre hvordan Peerlo kan passe inn i din virksomhet.",
+      "## Kilder",
+      "[World Health Organization (2016). Investing in treatment for depression and anxiety leads to fourfold return.](https://www.who.int/news/item/13-04-2016-investing-in-treatment-for-depression-and-anxiety-leads-to-fourfold-return)",
     ],
   },
   {
