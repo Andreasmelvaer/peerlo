@@ -347,7 +347,7 @@ const posts: Post[] = [
       "Jeg tror ikke hovedproblemet er at mennesker ikke vil ha hjelp. Jeg tror problemet er at terskelen føles altfor høy. Så man venter. Ofte altfor lenge.",
     date: "2026-06-08",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hvorfor-hjelp-for-sent.jpg",
     inlineImages: [],
     relatedSlugs: [
@@ -376,7 +376,7 @@ const posts: Post[] = [
     excerpt: "Mange går rundt med tanker og følelser de aldri sier høyt. Selv til mennesker de stoler på. Ikke fordi de ikke vil, men fordi det føles risikabelt.",
     date: "2026-08-03",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/aerlig-om-hvordan-man-har-det.png",
     inlineImages: [],
     relatedSlugs: [
@@ -402,7 +402,7 @@ const posts: Post[] = [
     excerpt: "Jobb er ikke bare jobb. For mange er det identitet, trygghet, økonomi og selvfølelse. Og psykisk helse og arbeidsliv henger tettere sammen enn vi liker å innrømme.",
     date: "2026-08-10",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/arbeidslivet-og-psykisk-helse.jpg",
     inlineImages: [],
     relatedSlugs: [
