@@ -269,14 +269,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-normal mb-6">
-              Altfor mange sliter i stillhet.
+              Visste du at mange av dine ansatte sliter i stillhet?
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
             <p className="text-xl text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
-              Mange ansatte står i stress, ensomhet, familieproblemer eller
-              søvnløse netter – uten at noen vet det. Og hjelpen kommer ofte
-              først når det har gått for langt.
+              Stress, ensomhet, familieproblemer eller søvnløse netter – uten
+              at noen vet det. Og hjelpen kommer ofte først når det har gått
+              for langt.
             </p>
           </AnimatedSection>
         </div>
