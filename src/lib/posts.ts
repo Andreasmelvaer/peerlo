@@ -526,7 +526,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror mange mennesker tror de trenger løsninger. Men ofte tror jeg de egentlig trenger noe helt annet først.",
     date: "2026-09-07",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/hva-trenger-mennesker-nar-de-har-det-vanskelig.jpg",
     inlineImages: [],
     relatedSlugs: [
