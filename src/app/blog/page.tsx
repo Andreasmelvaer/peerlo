@@ -108,7 +108,7 @@ export default function BlogPage() {
 
       <section className="max-w-3xl mx-auto px-6 pt-16 md:pt-20 pb-4">
         <p className="text-charcoal/70 leading-relaxed text-xl">
-          Her skriver vi om peer support, psykisk helse og det å tørre å ta det første steget. Innleggene er skrevet av Ole Aarre, gründer av Peerlo, med egenerfaring og engasjement for tidlig støtte. Vi tror at det å snakke med noen som har opplevd det samme kan gjøre en stor forskjell.
+          Her skriver vi om peer support, psykisk helse og det å tørre å ta det første steget. Vi tror at det å snakke med noen som har opplevd det samme kan gjøre en stor forskjell.
         </p>
       </section>
 
