@@ -255,7 +255,7 @@ const posts: Post[] = [
     excerpt: "Jeg tror de fleste mennesker som prøver å hjelpe mener godt. Men det betyr ikke alltid at hjelpen føles hjelpsom.",
     date: "2026-09-14",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/nar-hjelp-foles-feil.png",
     inlineImages: [],
     relatedSlugs: [
