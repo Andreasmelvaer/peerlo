@@ -187,7 +187,7 @@ const posts: Post[] = [
       "Hvis du sitter alene akkurat nå og vurderer å åpne deg for noen. Jeg håper du vet at du ikke er svak. Det krever mot å være ærlig om hvordan man har det.",
     date: "2026-07-20",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/apne-deg-forste-gang.png",
     inlineImages: [],
     relatedSlugs: [
