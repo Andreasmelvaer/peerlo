@@ -179,7 +179,7 @@ const posts: Post[] = [
   },
   {
     slug: "slik-beregner-du-psykisk-helse-kostnad",
-    title: "Slik beregner du hva psykisk helse faktisk koster din bedrift",
+    title: "Slik beregner du hva psykisk uhelse faktisk koster din bedrift",
     excerpt: "De fleste bedrifter vet ikke hva psykisk helse koster dem. Ikke fordi de ikke bryr seg – men fordi kostnadene er usynlige.",
     date: "2026-05-17",
     author: "Ole Aarre",
