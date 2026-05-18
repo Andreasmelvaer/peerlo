@@ -29,7 +29,7 @@ export interface Post {
 const posts: Post[] = [
   {
     slug: "hva-koster-darlig-psykisk-helse",
-    title: "Hva koster dårlig psykisk helse på arbeidsplassen – og hva gjør du med det?",
+    title: "Hva koster psykisk uhelse på arbeidsplassen – og hva gjør du med det?",
     excerpt: "De fleste ledere vet at psykisk helse på jobben er viktig. Færre vet hva det faktisk koster når det ikke ivaretas.",
     date: "2026-05-17",
     author: "Ole Aarre",
