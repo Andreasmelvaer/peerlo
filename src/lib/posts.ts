@@ -322,7 +322,7 @@ const posts: Post[] = [
     date: "2026-10-05",
     author: "Ole Aarre",
     readingTime: 1,
-    image: "/images/blog/a-vaere-peer-for-andre.jpg",
+    image: "/images/blog/a-vaere-peer-for-andre.png",
     relatedSlugs: [
       "egenerfaring-som-ressurs",
       "hva-er-peer-support",
