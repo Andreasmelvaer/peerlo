@@ -251,6 +251,10 @@ export default async function BlogPostPage({
       "hva-koster-darlig-psykisk-helse",
       "slik-beregner-du-psykisk-helse-kostnad",
       "ny-lov-nytt-ansvar-arbeidsmiljoloven-2026",
+      "tall-om-psykisk-helse-norge",
+      "tall-psykisk-helse-arbeidsplassen",
+      "arbeidslivet-og-psykisk-helse",
+      "parorende-holde-alt-sammen",
     ].includes(post.slug)
       ? "Psykisk helse i arbeidslivet"
       : "Psykisk helse og peer support",

@@ -38,6 +38,10 @@ export const metadata: Metadata = {
     "peer support plattform",
     "egenerfaring støtte",
     "lavterskel psykisk helse",
+    "psykisk uhelse arbeidsliv",
+    "kostnad psykisk helse bedrift",
+    "pårørende støtte",
+    "tall psykisk helse Norge",
   ],
   openGraph: {
     siteName: "Peerlo",

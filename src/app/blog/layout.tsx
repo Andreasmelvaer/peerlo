@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     "sykefravær psykisk helse",
     "peer support norsk arbeidsliv",
     "tidlig støtte ansatte",
+    "psykisk uhelse arbeidsliv",
+    "kostnad psykisk helse bedrift",
+    "pårørende støtte",
+    "spillavhengighet hjelp",
+    "tall psykisk helse Norge",
   ],
 };
 
