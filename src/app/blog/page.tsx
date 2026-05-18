@@ -68,11 +68,11 @@ export default function BlogPage() {
             Peerlo Blogg
           </p>
           <h1 className="text-4xl md:text-6xl font-normal text-white mb-6">
-            Tanker om det å være menneske
+            Psykisk helse i arbeidslivet
           </h1>
           <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-            Om peer support, psykisk helse, og det å tørre å snakke med noen
-            som forstår.
+            Artikler om peer support, psykisk helse, sykefravær og hvordan
+            mennesker kan støtte mennesker tidligere.
           </p>
         </div>
       </section>
