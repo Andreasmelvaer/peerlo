@@ -504,7 +504,7 @@ const posts: Post[] = [
     excerpt: "Alle snakker om den som er syk. Få snakker om den som står ved siden av. Pårørende er ofte de mest glemte i hele bildet.",
     date: "2026-05-18",
     author: "Ole Aarre",
-    readingTime: 2,
+    readingTime: 1,
     image: "/images/blog/parorende.png",
     inlineImages: [],
     relatedSlugs: [
