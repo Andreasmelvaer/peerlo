@@ -9,6 +9,7 @@ const links = [
   { href: "/#hvordan", label: "Hvordan det fungerer" },
   { href: "/#bedrifter", label: "For bedrifter" },
   { href: "/blog", label: "Blogg" },
+  { href: "/bli-en-peer", label: "Bli en peer" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
 
