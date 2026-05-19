@@ -42,7 +42,6 @@ const posts: Post[] = [
       "ny-lov-nytt-ansvar-arbeidsmiljoloven-2026",
     ],
     content: [
-      "Noen av dine ansatte har det ikke bra akkurat nå. Vet du hvem?",
       "Rundt én av fem voksne oppfyller kriteriene for en psykisk lidelse i løpet av ett år. I en bedrift med 50 ansatte er det opptil ti personer. Med 100 ansatte er det opptil tjue.",
       "De fleste av dem sier ikke ifra. Og de fleste av dem får ikke hjelp – ikke fordi hjelpen ikke finnes, men fordi den ikke er tilgjengelig når behovet er størst.",
       "## Problemet med eksisterende løsninger",
