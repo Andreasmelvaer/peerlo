@@ -30,7 +30,7 @@ const posts: Post[] = [
   {
     slug: "hvorfor-peerlo-bedrift",
     title: "Hvorfor bør din bedrift ha Peerlo?",
-    excerpt: "Norske virksomheter mister millioner hvert år på noe de knapt snakker om rundt ledermøtebordet. Det handler ikke om fravær – det handler om alle som møter opp uten å ha det bra.",
+    excerpt: "Noen av dine ansatte har det ikke bra akkurat nå. De fleste sier ikke ifra – ikke fordi hjelpen ikke finnes, men fordi den ikke er tilgjengelig når behovet er størst.",
     date: "2026-05-19",
     author: "Ole Aarre",
     readingTime: 3,
