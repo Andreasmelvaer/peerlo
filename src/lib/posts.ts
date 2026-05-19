@@ -29,7 +29,7 @@ export interface Post {
 const posts: Post[] = [
   {
     slug: "hvorfor-peerlo-bedrift",
-    title: "Noen av dine ansatte har det ikke bra akkurat nå. Du kan hjelpe dem.",
+    title: "Flere av dine ansatte sliter i stillhet. Du kan hjelpe dem.",
     excerpt: "De fleste sier ikke ifra – ikke fordi hjelpen ikke finnes, men fordi den ikke er tilgjengelig når behovet er størst. Du kan gjøre noe med det.",
     date: "2026-05-19",
     author: "Ole Aarre",
