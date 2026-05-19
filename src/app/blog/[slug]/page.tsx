@@ -248,6 +248,7 @@ export default async function BlogPostPage({
     },
     wordCount,
     articleSection: [
+      "hvorfor-peerlo-bedrift",
       "hva-koster-darlig-psykisk-helse",
       "slik-beregner-du-psykisk-helse-kostnad",
       "ny-lov-nytt-ansvar-arbeidsmiljoloven-2026",
