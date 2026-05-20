@@ -230,19 +230,29 @@ export default function BliEnPeerPage() {
           </div>
         </section>
 
-        {/* Form */}
+        {/* Contact */}
         <section className="bg-white border-t border-charcoal/8">
-          <div className="max-w-xl mx-auto px-6 py-20 md:py-28">
-            <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4 text-center">
+          <div className="max-w-xl mx-auto px-6 py-20 md:py-28 text-center">
+            <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">
               Meld interesse
             </p>
-            <h2 className="text-3xl md:text-4xl font-normal text-charcoal mb-3 text-center leading-snug">
+            <h2 className="text-3xl md:text-4xl font-normal text-charcoal mb-4 leading-snug">
               Ta det første steget.
             </h2>
-            <p className="text-charcoal/60 text-center mb-10 leading-relaxed">
-              Fyll ut skjemaet så tar vi kontakt for en uforpliktende prat.
+            <p className="text-charcoal/60 text-lg leading-relaxed mb-3">
+              Send en e-post til oss med en kort beskrivelse av deg selv:
             </p>
-            <PeerForm />
+            <ul className="text-charcoal/60 text-lg leading-relaxed mb-10 space-y-1">
+              <li>Navn</li>
+              <li>Telefonnummer</li>
+              <li>Hva du har erfaring med</li>
+            </ul>
+            <a
+              href="mailto:ole@peerlo.no"
+              className="inline-flex h-13 items-center px-8 rounded-full bg-forest text-white font-[family-name:var(--font-geist-sans)] font-semibold text-base hover:bg-evening-forest transition-colors duration-300"
+            >
+              Send e-post til ole@peerlo.no
+            </a>
           </div>
         </section>
 
