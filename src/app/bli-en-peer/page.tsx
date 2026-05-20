@@ -161,9 +161,6 @@ export default function BliEnPeerPage() {
               <p>
                 Du som har erfaring med psykiske utfordringer, stress, utbrenthet, samlivsbrudd, sorg, avhengighet, eller andre livshendelser – og som ønsker å bruke den erfaringen til å hjelpe andre.
               </p>
-              <p>
-                Du trenger ikke ha alt på stell selv. Du trenger bare å ha vært der, og ønske å bidra.
-              </p>
             </div>
           </div>
 
