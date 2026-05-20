@@ -234,7 +234,7 @@ export default function BliEnPeerPage() {
               Meld interesse
             </p>
             <h2 className="text-3xl md:text-4xl font-normal text-charcoal mb-4 leading-snug">
-              Ta det første steget.
+              Helt uforpliktende.
             </h2>
             <p className="text-charcoal/60 text-lg leading-relaxed mb-3">
               Send en e-post til oss med en kort beskrivelse av deg selv:
