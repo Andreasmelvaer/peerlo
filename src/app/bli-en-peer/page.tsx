@@ -159,7 +159,7 @@ export default function BliEnPeerPage() {
             </h2>
             <div className="space-y-4 text-charcoal/70 text-lg leading-relaxed">
               <p>
-                Du som har erfaring med psykiske utfordringer, stress, utbrenthet, samlivsbrudd, sorg, avhengighet, eller andre livshendelser – og som ønsker å bruke den erfaringen til å hjelpe andre.
+                Du som har erfaring med psykiske utfordringer, stress, utbrenthet, samlivsbrudd, sorg, avhengighet, eller andre livshendelser – og ønsker å bruke den erfaringen til å hjelpe andre.
               </p>
             </div>
           </div>
