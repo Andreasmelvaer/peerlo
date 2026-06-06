@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,6 +17,8 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -23,10 +26,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const solidNav = !isHome || scrolled;
+
   return (
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+        solidNav
           ? "bg-paper/90 backdrop-blur-lg border-b border-pastel-forest/30 shadow-sm"
           : "bg-transparent border-b border-transparent"
       }`}
@@ -37,7 +42,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <motion.img
-            src={scrolled ? "/images/logodark.svg" : "/images/logo-light.svg"}
+            src={solidNav ? "/images/logodark.svg" : "/images/logo-light.svg"}
             alt="Peerlo"
             width={119}
             height={81}
@@ -47,7 +52,7 @@ export default function Navbar() {
           />
           <span
             className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-[family-name:var(--font-geist-sans)] font-semibold uppercase tracking-wider transition-colors duration-500 ${
-              scrolled
+              solidNav
                 ? "bg-forest/10 text-forest"
                 : "bg-white/15 text-white/80"
             }`}
@@ -62,7 +67,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`relative text-sm font-[family-name:var(--font-geist-sans)] font-medium transition-colors duration-300 group ${
-                scrolled
+                solidNav
                   ? "text-charcoal/70 hover:text-charcoal"
                   : "text-white/70 hover:text-white"
               }`}
@@ -70,7 +75,7 @@ export default function Navbar() {
               {link.label}
               <span
                 className={`absolute -bottom-1 left-0 w-0 h-0.5 rounded-full transition-all duration-300 group-hover:w-full ${
-                  scrolled ? "bg-forest" : "bg-white"
+                  solidNav ? "bg-forest" : "bg-white"
                 }`}
               />
             </Link>
@@ -83,7 +88,7 @@ export default function Navbar() {
             <Link
               href="/#cta"
               className={`inline-flex h-10 items-center px-6 rounded-full text-sm font-[family-name:var(--font-geist-sans)] font-semibold transition-colors duration-300 ${
-                scrolled
+                solidNav
                   ? "bg-forest text-white hover:bg-evening-forest"
                   : "bg-white text-evening-forest hover:bg-bright-forest"
               }`}
@@ -95,7 +100,7 @@ export default function Navbar() {
 
         <button
           className={`md:hidden p-2 transition-colors duration-300 ${
-            scrolled ? "text-charcoal" : "text-white"
+            solidNav ? "text-charcoal" : "text-white"
           }`}
           onClick={() => setOpen(!open)}
           aria-label="Meny"
