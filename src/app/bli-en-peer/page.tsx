@@ -129,7 +129,7 @@ export default function BliEnPeerPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-16 bg-paper">
+      <main className="min-h-screen bg-paper">
 
         {/* Hero */}
         <section className="bg-evening-forest pt-24 pb-20 md:pt-32 md:pb-28">
