@@ -367,7 +367,7 @@ export default function Home() {
       </section>
 
       {/* ===== HOW IT WORKS ===== */}
-      <section id="hvordan" className="py-24 md:py-32 bg-paper">
+      <section id="hvordan" className="py-24 md:py-32 bg-paper scroll-mt-16">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-normal">
@@ -495,7 +495,7 @@ export default function Home() {
       </section>
 
       {/* ===== FOR EMPLOYERS ===== */}
-      <section id="bedrifter" className="py-24 md:py-32 bg-paper">
+      <section id="bedrifter" className="py-24 md:py-32 bg-paper scroll-mt-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
@@ -689,7 +689,7 @@ export default function Home() {
       {/* ===== CTA ===== */}
       <section
         id="cta"
-        className="py-24 md:py-32 relative overflow-hidden"
+        className="py-24 md:py-32 relative overflow-hidden scroll-mt-16"
         style={{
           backgroundImage:
             "linear-gradient(168deg, #F5F3F0 20%, #E6F4EC 100%)",
@@ -736,7 +736,7 @@ export default function Home() {
       </section>
 
       {/* ===== CONTACT ===== */}
-      <section id="kontakt" className="py-24 md:py-32 bg-paper">
+      <section id="kontakt" className="py-24 md:py-32 bg-paper scroll-mt-16">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-normal mb-4">
