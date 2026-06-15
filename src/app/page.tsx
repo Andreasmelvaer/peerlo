@@ -598,6 +598,57 @@ export default function Home() {
       </section>
 
 
+      {/* ===== MEDIA ===== */}
+      <section id="media" className="py-24 md:py-32 bg-evening-forest scroll-mt-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-12">
+            <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">
+              Presse
+            </p>
+            <h2 className="text-4xl md:text-5xl font-normal text-white">
+              Omtaler i Media
+            </h2>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  source: "Næringsforeningen",
+                  title: "Medlem nummer 100 – 2026",
+                  url: "https://www.naeringsforeningen.no/nyheter/medlem-nummer-100-2026",
+                },
+                {
+                  source: "Lokalkapital Jæren",
+                  title: "Peerlo",
+                  url: "https://www.lokalkapitaljaeren.no/nyheter/peerlo",
+                },
+              ].map((article, i) => (
+                <motion.a
+                  key={i}
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/10 flex flex-col gap-4 group"
+                  whileHover={{ y: -4, backgroundColor: "rgba(255,255,255,0.18)" }}
+                  transition={{ duration: 0.35, ease: smoothEase }}
+                >
+                  <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
+                    {article.source}
+                  </p>
+                  <h3 className="text-xl font-medium text-white group-hover:text-bright-forest transition-colors duration-300">
+                    {article.title}
+                  </h3>
+                  <div className="flex items-center gap-2 text-bright-forest text-sm font-medium mt-auto">
+                    <span>Les artikkelen</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </motion.a>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ===== FAQ ===== */}
       <section className="py-24 md:py-32 bg-white">
         <script
