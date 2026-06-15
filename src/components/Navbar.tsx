@@ -9,10 +9,10 @@ import { motion, AnimatePresence } from "framer-motion";
 const links = [
   { href: "/#hvordan", label: "Hvordan det fungerer" },
   { href: "/#bedrifter", label: "For bedrifter" },
-  { href: "/#media", label: "I media" },
   { href: "/blog", label: "Blogg" },
   { href: "/bli-en-peer", label: "Bli en peer" },
   { href: "/#kontakt", label: "Kontakt" },
+  { href: "/#media", label: "I media" },
 ];
 
 export default function Navbar() {
