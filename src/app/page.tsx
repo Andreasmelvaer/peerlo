@@ -598,53 +598,43 @@ export default function Home() {
       </section>
 
 
-      {/* ===== MEDIA ===== */}
-      <section id="media" className="py-24 md:py-32 bg-evening-forest scroll-mt-16">
+      {/* ===== MEDIA MENTION ===== */}
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <AnimatedSection className="text-center mb-12">
-            <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">
-              Presse
-            </p>
-            <h2 className="text-4xl md:text-5xl font-normal text-white">
-              Omtaler i Media
-            </h2>
-          </AnimatedSection>
-          <AnimatedSection delay={0.1}>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[
-                {
-                  source: "Næringsforeningen",
-                  title: "Medlem nummer 100 – 2026",
-                  url: "https://www.naeringsforeningen.no/nyheter/medlem-nummer-100-2026",
-                },
-                {
-                  source: "Lokalkapital Jæren",
-                  title: "Peerlo",
-                  url: "https://www.lokalkapitaljaeren.no/nyheter/peerlo",
-                },
-              ].map((article, i) => (
-                <motion.a
-                  key={i}
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/10 flex flex-col gap-4 group"
-                  whileHover={{ y: -4, backgroundColor: "rgba(255,255,255,0.18)" }}
-                  transition={{ duration: 0.35, ease: smoothEase }}
-                >
-                  <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
-                    {article.source}
-                  </p>
-                  <h3 className="text-xl font-medium text-white group-hover:text-bright-forest transition-colors duration-300">
-                    {article.title}
-                  </h3>
-                  <div className="flex items-center gap-2 text-bright-forest text-sm font-medium mt-auto">
-                    <span>Les artikkelen</span>
-                    <ArrowRight size={14} />
-                  </div>
-                </motion.a>
-              ))}
-            </div>
+          <AnimatedSection>
+            <motion.a
+              href="https://www.naeringsforeningen.no/nyheter/medlem-nummer-100-2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col md:flex-row gap-8 items-center bg-paper rounded-3xl overflow-hidden border border-pastel-forest/20 hover:border-forest/30 transition-colors duration-300"
+              whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
+              transition={{ duration: 0.35, ease: smoothEase }}
+            >
+              <div className="md:w-72 shrink-0 overflow-hidden">
+                <motion.img
+                  src="/images/naeringsforeningen-article.png"
+                  alt="Peerlo omtalt i Næringsforeningen"
+                  className="w-full h-48 md:h-full object-cover object-top"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.5, ease: smoothEase }}
+                />
+              </div>
+              <div className="p-8 md:pl-2 flex flex-col gap-3">
+                <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
+                  Næringsforeningen · I media
+                </p>
+                <h3 className="text-2xl md:text-3xl font-normal text-charcoal group-hover:text-forest transition-colors duration-300 leading-snug">
+                  «Det er mange som sliter i stillhet rundt omkring på arbeidsplassene»
+                </h3>
+                <p className="text-charcoal/60 leading-relaxed">
+                  Peerlo ble valgt ut som medlem nummer 100 i Næringsforeningen i 2026.
+                </p>
+                <div className="flex items-center gap-2 text-forest text-sm font-medium mt-2">
+                  <span>Les artikkelen</span>
+                  <ArrowRight size={14} />
+                </div>
+              </div>
+            </motion.a>
           </AnimatedSection>
         </div>
       </section>

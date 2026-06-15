@@ -12,7 +12,6 @@ const links = [
   { href: "/blog", label: "Blogg" },
   { href: "/bli-en-peer", label: "Bli en peer" },
   { href: "/#kontakt", label: "Kontakt" },
-  { href: "/#media", label: "I media" },
 ];
 
 export default function Navbar() {
