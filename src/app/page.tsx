@@ -624,7 +624,7 @@ export default function Home() {
                   Næringsforeningen · I media
                 </p>
                 <h3 className="text-2xl md:text-3xl font-normal text-charcoal group-hover:text-forest transition-colors duration-300 leading-snug">
-                  «Det er mange som sliter i stillhet rundt omkring på arbeidsplassene»
+                  – Det er mange som sliter i stillhet rundt omkring på arbeidsplassene
                 </h3>
                 <p className="text-charcoal/60 leading-relaxed">
                   Peerlo ble valgt ut som medlem nummer 100 i Næringsforeningen i 2026.
