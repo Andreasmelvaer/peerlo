@@ -686,7 +686,7 @@ export default function Home() {
             <div>
               <FAQItem
                 q="Hva er peer support?"
-                a="Peer support er samtaler med noen som selv har opplevd lignende utfordringer. Ikke terapi, men menneskelig støtte fra noen som forstår hva du står i."
+                a="Peer support er samtaler med noen som selv har opplevd lignende utfordringer. Ikke terapi, men menneskelig støtte fra noen som forstår hva du står i. Les mer på peerlo.no/hva-er-peer-support."
               />
               <FAQItem
                 q="Er Peerlo terapi?"
