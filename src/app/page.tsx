@@ -241,10 +241,10 @@ export default function Home() {
             whileHover={{ scale: 1.03, rotate: 1 }}
             className="hidden md:flex justify-center"
           >
-            <div className="relative w-[260px]">
+            <div className="relative w-[280px]">
               <Image
-                src="/images/app-mood-slider.png"
-                alt="Peerlo app – anonym humørsjekk med slider"
+                src="/images/mobile-profile.png"
+                alt="Peerlo peer-profil"
                 width={393}
                 height={852}
                 className="rounded-[40px] shadow-2xl"
