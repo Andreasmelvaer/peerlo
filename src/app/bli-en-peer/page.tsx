@@ -163,16 +163,27 @@ export default function BliEnPeerPage() {
 
         {/* Hero */}
         <section className="bg-evening-forest pt-24 pb-20 md:pt-32 md:pb-28">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-5">
-              Bli en peer
-            </p>
-            <h1 className="text-4xl md:text-6xl font-normal text-white leading-tight mb-6">
-              Du trenger ikke en tittel for å gjøre en forskjell.
-            </h1>
-            <p className="text-xl text-white/65 max-w-2xl mx-auto leading-relaxed">
-              Hvis du har stått i noe vanskelig – og kommet deg gjennom det – har du noe ingen utdanning kan gi: egenerfaring. Og det er nettopp det som gjør peer support så kraftfullt.
-            </p>
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="text-center md:text-left">
+                <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-5">
+                  Bli en peer
+                </p>
+                <h1 className="text-4xl md:text-6xl font-normal text-white leading-tight mb-6">
+                  Du trenger ikke en tittel for å gjøre en forskjell.
+                </h1>
+                <p className="text-xl text-white/65 max-w-2xl leading-relaxed">
+                  Hvis du har stått i noe vanskelig – og kommet deg gjennom det – har du noe ingen utdanning kan gi: egenerfaring. Og det er nettopp det som gjør peer support så kraftfullt.
+                </p>
+              </div>
+              <div className="hidden md:flex justify-center">
+                <img
+                  src="/images/app-peer-registration.png"
+                  alt="Peerlo app – bli en peer og hjelp andre"
+                  className="w-[240px] rounded-[40px] shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
         </section>
 

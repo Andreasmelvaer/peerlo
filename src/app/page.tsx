@@ -241,10 +241,10 @@ export default function Home() {
             whileHover={{ scale: 1.03, rotate: 1 }}
             className="hidden md:flex justify-center"
           >
-            <div className="relative w-[280px]">
+            <div className="relative w-[260px]">
               <Image
-                src="/images/mobile-profile.png"
-                alt="Peerlo peer-profil"
+                src="/images/app-mood-slider.png"
+                alt="Peerlo app – anonym humørsjekk med slider"
                 width={393}
                 height={852}
                 className="rounded-[40px] shadow-2xl"
@@ -728,6 +728,23 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <AnimatedSection>
+            <motion.div
+              className="flex justify-center mb-10"
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: smoothEase }}
+              whileHover={{ scale: 1.04, rotate: 1 }}
+            >
+              <Image
+                src="/images/app-splash.png"
+                alt="Peerlo app – Your peer, right here"
+                width={393}
+                height={852}
+                className="w-[140px] rounded-[28px] shadow-2xl"
+                loading="lazy"
+              />
+            </motion.div>
             <h2 className="text-4xl md:text-6xl font-normal text-evening-forest mb-6">
               Alle trenger noen som forstår.
             </h2>
