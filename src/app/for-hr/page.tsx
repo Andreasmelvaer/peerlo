@@ -105,11 +105,10 @@ const problems = [
 ];
 
 const dashboardFeatures = [
-  "Anonymisert emnekart over hva ansatte sliter med",
-  "Trender i symptomtrykk over tid",
-  "Bruksstatistikk per avdeling, aldri per person",
-  "Varsler ved uvanlige mønstre",
-  "Eksportbare rapporter for ledermøter",
+  "Se hvordan det generelt står til på arbeidsplassen",
+  "Følg med på om ting utvikler seg over tid",
+  "Forstå hvilke temaer som går igjen blant ansatte",
+  "Bruk innsikten som grunnlag for bedre beslutninger",
 ];
 
 const steps = [
