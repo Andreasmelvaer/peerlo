@@ -125,11 +125,41 @@ function PeerForm() {
   );
 }
 
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://peerlo.no/bli-en-peer#webpage",
+  url: "https://peerlo.no/bli-en-peer",
+  name: "Bli en peer",
+  description:
+    "Har du statt i noe vanskelig og kommet deg gjennom det? Bli en sertifisert peer i Peerlo og hjelp andre i norsk arbeidsliv med din egenerfaring.",
+  inLanguage: "nb-NO",
+  isPartOf: { "@id": "https://peerlo.no/#website" },
+  about: { "@id": "https://peerlo.no/#peer-support-tjeneste" },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Hjem", item: "https://peerlo.no" },
+    { "@type": "ListItem", position: 2, name: "Bli en peer", item: "https://peerlo.no/bli-en-peer" },
+  ],
+};
+
 export default function BliEnPeerPage() {
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-paper">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
 
         {/* Hero */}
         <section className="bg-evening-forest pt-24 pb-20 md:pt-32 md:pb-28">
@@ -206,8 +236,9 @@ export default function BliEnPeerPage() {
               <div className="flex justify-center md:justify-end shrink-0">
                 <img
                   src="/images/peer-profil-utklipp.png"
-                  alt="Peer-profil i Peerlo-appen"
+                  alt="Peer-profil i Peerlo-appen – slik ser en peer-profil ut for brukere"
                   className="w-48 md:w-56 rounded-[2.5rem] shadow-2xl"
+                  loading="lazy"
                 />
               </div>
             </div>

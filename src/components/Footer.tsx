@@ -39,7 +39,10 @@ export default function Footer() {
               {[
                 { href: "/#hvordan", label: "Hvordan det fungerer" },
                 { href: "/#bedrifter", label: "For bedrifter" },
+                { href: "/bli-en-peer", label: "Bli en peer" },
                 { href: "/blog", label: "Blogg" },
+                { href: "/faq", label: "Ofte stilte sporsmal" },
+                { href: "/om-peerlo", label: "Om Peerlo" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -73,6 +76,14 @@ export default function Footer() {
                 >
                   +47 988 11 908
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/personvern"
+                  className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block"
+                >
+                  Personvern
+                </Link>
               </li>
               <li>
                 <Link

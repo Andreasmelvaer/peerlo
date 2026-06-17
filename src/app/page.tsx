@@ -444,8 +444,9 @@ export default function Home() {
             >
               <img
                 src="/images/dashboard-tablet.png"
-                alt="Peerlo HR Dashboard"
+                alt="Peerlo HR Dashboard – anonymisert innsikt i psykisk helse-tendenser for HR-avdelinger"
                 className="w-full max-w-4xl mx-auto"
+                loading="lazy"
               />
             </motion.div>
           </AnimatedSection>
@@ -613,8 +614,9 @@ export default function Home() {
               <div className="md:w-72 shrink-0 overflow-hidden">
                 <motion.img
                   src="/images/naeringsforeningen-article.png"
-                  alt="Peerlo omtalt i Næringsforeningen"
+                  alt="Peerlo omtalt i Naeringsforeningen i Stavanger som deres hundrede medlem"
                   className="w-full h-48 md:h-full object-cover object-top"
+                  loading="lazy"
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.5, ease: smoothEase }}
                 />
@@ -679,13 +681,16 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
+              "@id": "https://peerlo.no/#faqpage",
               mainEntity: [
-                { "@type": "Question", name: "Er Peerlo terapi?", acceptedAnswer: { "@type": "Answer", text: "Nei. Peerlo er ikke terapi eller behandling. Det er samtaler med mennesker som selv har opplevd lignende utfordringer." } },
-                { "@type": "Question", name: "Hvem er peers?", acceptedAnswer: { "@type": "Answer", text: "Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner – og som ønsker å støtte andre." } },
-                { "@type": "Question", name: "Er det anonymt?", acceptedAnswer: { "@type": "Answer", text: "Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver får kun aggregert innsikt – aldri informasjon om enkeltpersoner." } },
-                { "@type": "Question", name: "Når kan man bruke Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Når som helst. Når peers er tilgjengelige – også på kvelder, i helger og i ferier." } },
-                { "@type": "Question", name: "Hva om noen trenger profesjonell hjelp?", acceptedAnswer: { "@type": "Answer", text: "Peerlo er ikke en erstatning for profesjonell hjelp. Hvis noen trenger mer støtte, oppfordres de til å kontakte helsepersonell." } },
-                { "@type": "Question", name: "Hvorfor tilbyr arbeidsgivere Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Fordi tidlig støtte kan gjøre en stor forskjell – før utfordringer utvikler seg til sykefravær." } },
+                { "@type": "Question", name: "Er Peerlo terapi?", acceptedAnswer: { "@type": "Answer", text: "Nei. Peerlo er ikke terapi eller behandling. Det er samtaler med mennesker som selv har opplevd lignende utfordringer. Peerlo er et supplement til profesjonell hjelp, ikke en erstatning." } },
+                { "@type": "Question", name: "Hvem er peers?", acceptedAnswer: { "@type": "Answer", text: "Peers er mennesker med egenerfaring fra utfordringer som angst, samlivsbrudd, stress, sykdom eller andre livssituasjoner, og som onsker a stotte andre. De er sertifisert av Peerlo." } },
+                { "@type": "Question", name: "Er det anonymt?", acceptedAnswer: { "@type": "Answer", text: "Ja. Ansatte kan bruke Peerlo anonymt. Arbeidsgiver far kun aggregert innsikt, aldri informasjon om enkeltpersoner." } },
+                { "@type": "Question", name: "Nar kan man bruke Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Nar som helst. Nar peers er tilgjengelige, ogsa pa kvelder, i helger og i ferier." } },
+                { "@type": "Question", name: "Hva om noen trenger profesjonell hjelp?", acceptedAnswer: { "@type": "Answer", text: "Peerlo er ikke en erstatning for profesjonell hjelp. Hvis noen trenger mer stotte, oppfordres de til a kontakte fastlege, psykolog eller krisetelefonen." } },
+                { "@type": "Question", name: "Hvorfor tilbyr arbeidsgivere Peerlo?", acceptedAnswer: { "@type": "Answer", text: "Fordi tidlig stotte kan gjore en stor forskjell. Bedrifter bruker Peerlo for a forebygge sykefravær og styrke det psykososiale arbeidsmiljoet." } },
+                { "@type": "Question", name: "Hva er peer support?", acceptedAnswer: { "@type": "Answer", text: "Peer support er stotte fra et menneske som selv har hatt lignende erfaringer. Forskning viser at denne typen stotte er svart effektiv, saerlig som et tidlig tiltak for dem som ikke onsker eller er klare for profesjonell hjelp." } },
+                { "@type": "Question", name: "Hva koster Peerlo for bedrifter?", acceptedAnswer: { "@type": "Answer", text: "Peerlo er i pilotfase og prisen avtales direkte. Ta kontakt pa ole@peerlo.no for mer informasjon." } },
               ],
             }),
           }}

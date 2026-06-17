@@ -101,6 +101,12 @@ const siteSchemas = {
       areaServed: { "@type": "Country", name: "Norway" },
       disambiguatingDescription:
         "Peerlo er ikke terapi, men en digital plattform som kobler ansatte med sertifiserte peers med egenerfaring.",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Stavanger",
+        addressRegion: "Rogaland",
+        addressCountry: "NO",
+      },
       sameAs: ["https://www.linkedin.com/company/peerlo"],
     },
     {
@@ -112,6 +118,14 @@ const siteSchemas = {
         "Peer support-plattform for norsk arbeidsliv. Kobler ansatte med peers som har opplevd lignende utfordringer.",
       inLanguage: "nb-NO",
       publisher: { "@id": "https://peerlo.no/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: "https://peerlo.no/blog?q={search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
     },
     {
       "@type": "Service",
@@ -150,9 +164,15 @@ const siteSchemas = {
       name: "Ole Aarre",
       jobTitle: "Gründer",
       worksFor: { "@id": "https://peerlo.no/#organization" },
-      url: "https://peerlo.no",
+      url: "https://peerlo.no/om-peerlo",
       email: "ole@peerlo.no",
       telephone: "+4798811908",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Stavanger",
+        addressRegion: "Rogaland",
+        addressCountry: "NO",
+      },
       knowsAbout: [
         "Peer support",
         "Psykisk helse",
