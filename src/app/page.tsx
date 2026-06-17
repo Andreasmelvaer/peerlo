@@ -282,25 +282,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== DEFINITION ===== */}
-      <section className="py-16 md:py-20 bg-paper">
-        <div className="max-w-3xl mx-auto px-6">
-          <AnimatedSection>
-            <div className="bg-white rounded-3xl p-8 md:p-12 border border-pastel-forest/30">
-              <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest mb-4">
-                Hva er peer support?
-              </p>
-              <h2 className="text-2xl md:text-3xl font-normal mb-4 leading-snug">
-                Peer support er støtte fra noen som har opplevd det samme.
-              </h2>
-              <p className="text-charcoal/70 leading-relaxed">
-                En peer er ikke en terapeut. En peer er et menneske med egenerfaring – som har stått i noe av det samme som deg, og som ønsker å hjelpe. Forskning viser at denne typen støtte kan være svært effektiv, særlig som et tidlig tilbud før problemer eskalerer til sykefravær eller mer alvorlig psykisk uhelse.
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* ===== SOLUTION ===== */}
       <section className="py-24 md:py-32 bg-bright-forest/30">
         <div className="max-w-6xl mx-auto px-6">
@@ -703,6 +684,10 @@ export default function Home() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div>
+              <FAQItem
+                q="Hva er peer support?"
+                a="Peer support er samtaler med noen som selv har opplevd lignende utfordringer. Ikke terapi, men menneskelig støtte fra noen som forstår hva du står i."
+              />
               <FAQItem
                 q="Er Peerlo terapi?"
                 a="Nei. Peerlo er ikke terapi eller behandling. Det er samtaler med mennesker som selv har opplevd lignende utfordringer."
