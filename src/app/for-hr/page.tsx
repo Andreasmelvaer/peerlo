@@ -167,8 +167,9 @@ export default function ForHR() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: smoothEase }}
-          className="relative max-w-4xl mx-auto px-6 py-24 md:py-32 text-center"
+          className="relative max-w-6xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-2 gap-12 items-center w-full"
         >
+          <div>
           <motion.p
             className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-6"
             initial={{ opacity: 0 }}
@@ -188,7 +189,7 @@ export default function ForHR() {
             <span className="text-bright-forest">før de blir sykemeldinger</span>
           </motion.h1>
           <motion.p
-            className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-10"
+            className="text-xl text-white/70 leading-relaxed mb-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.9, ease: smoothEase }}
@@ -197,7 +198,7 @@ export default function ForHR() {
             gir deg innsikten du mangler, og ansatte støtten de trenger, før det er for sent.
           </motion.p>
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8, ease: smoothEase }}
@@ -219,6 +220,20 @@ export default function ForHR() {
                 Se dashbordet
               </Link>
             </motion.div>
+          </motion.div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85, rotate: -2 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ delay: 0.8, duration: 1, ease: smoothEase }}
+            whileHover={{ scale: 1.03, rotate: 1 }}
+            className="hidden md:flex justify-center"
+          >
+            <img
+              src="/images/app-mood-slider.png"
+              alt="Peerlo app – ansatt sjekker inn hvordan de har det, anonymt"
+              className="w-[260px] rounded-[40px] shadow-2xl"
+            />
           </motion.div>
         </motion.div>
       </section>
