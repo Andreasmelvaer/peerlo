@@ -353,6 +353,35 @@ export default function ForBedrifter() {
         </div>
       </section>
 
+      {/* ===== FOR HR LENKE ===== */}
+      <section className="py-12 bg-white border-t border-pastel-forest/20">
+        <div className="max-w-4xl mx-auto px-6">
+          <AnimatedSection>
+            <motion.div
+              className="flex flex-col md:flex-row items-center justify-between gap-6 bg-paper rounded-3xl px-8 py-6 border border-pastel-forest/20"
+              whileHover={{ boxShadow: "0 12px 30px -8px rgba(56,133,102,0.10)" }}
+              transition={{ duration: 0.3, ease: smoothEase }}
+            >
+              <div>
+                <p className="font-semibold text-charcoal mb-1">Er du HR-ansvarlig?</p>
+                <p className="text-charcoal/60 text-sm leading-relaxed">
+                  Vi har en egen side med informasjon om dashbordet, utrulling og spørsmål fra HR-avdelinger.
+                </p>
+              </div>
+              <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} transition={springTransition} className="shrink-0">
+                <Link
+                  href="/for-hr"
+                  className="inline-flex h-11 items-center justify-center px-6 rounded-full bg-forest text-white font-[family-name:var(--font-geist-sans)] font-medium text-sm hover:bg-evening-forest transition-colors duration-300 gap-2"
+                >
+                  Se siden for HR
+                  <ArrowRight size={15} />
+                </Link>
+              </motion.div>
+            </motion.div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ===== CTA ===== */}
       <section
         className="py-24 md:py-32 relative overflow-hidden"
