@@ -26,11 +26,11 @@ const sections = [
   },
   {
     heading: "2. Hvilke opplysninger vi samler inn",
-    body: "Nar du bruker Peerlo, kan vi behandle folgende typer opplysninger: e-postadresse og navn ved registrering, tekniske opplysninger som IP-adresse og enhetstype for drift av tjenesten, og anonymiserte bruksdata for statistikk. Peers som registrerer seg for a gi stotte, behandler ogsa informasjon om egenerfaring.",
+    body: "Når du bruker Peerlo, kan vi behandle følgende typer opplysninger: e-postadresse og navn ved registrering, tekniske opplysninger som IP-adresse og enhetstype for drift av tjenesten, og anonymiserte bruksdata for statistikk. Peers som registrerer seg for å gi støtte, behandler også informasjon om egenerfaring.",
   },
   {
-    heading: "3. Formal med behandlingen",
-    body: "Vi behandler personopplysninger for a levere og forbedre tjenesten, for a matche brukere med egnede peers, for fakturering og administrasjon av bedriftskunder, og for a overholde lovpakrevde forpliktelser.",
+    heading: "3. Formål med behandlingen",
+    body: "Vi behandler personopplysninger for å levere og forbedre tjenesten, for å matche brukere med egnede peers, for fakturering og administrasjon av bedriftskunder, og for å overholde lovpåkrevde forpliktelser.",
   },
   {
     heading: "4. Anonymitet for ansatte",
@@ -38,31 +38,31 @@ const sections = [
   },
   {
     heading: "5. Rettslig grunnlag",
-    body: "Behandlingen er basert pa samtykke fra den registrerte, avtalefullforelse (leveranse av tjenesten), berettiget interesse for drift og forbedring av plattformen, og lovpakrevde forpliktelser.",
+    body: "Behandlingen er basert på samtykke fra den registrerte, avtalefullførelse (leveranse av tjenesten), berettiget interesse for drift og forbedring av plattformen, og lovpåkrevde forpliktelser.",
   },
   {
     heading: "6. Lagring og sletting",
-    body: "Personopplysninger lagres sa lenge det er nodvendig for formalet, eller sa lenge loven krever det. Brukere kan be om sletting av sine opplysninger ved a kontakte oss pa ole@peerlo.no.",
+    body: "Personopplysninger lagres så lenge det er nødvendig for formålet, eller så lenge loven krever det. Brukere kan be om sletting av sine opplysninger ved å kontakte oss på ole@peerlo.no.",
   },
   {
     heading: "7. Deling med tredjeparter",
-    body: "Vi deler ikke personopplysninger med tredjepart uten samtykke, med unntak av underleverandorer som er nodvendige for drift av tjenesten (for eksempel sky-infrastruktur). Alle underleverandorer er bundet av databehandleravtaler i henhold til GDPR.",
+    body: "Vi deler ikke personopplysninger med tredjepart uten samtykke, med unntak av underleverandører som er nødvendige for drift av tjenesten (for eksempel sky-infrastruktur). Alle underleverandører er bundet av databehandleravtaler i henhold til GDPR.",
   },
   {
     heading: "8. Dine rettigheter",
-    body: "Du har rett til innsyn i dine personopplysninger, rett til retting av feilaktige opplysninger, rett til sletting (retten til a bli glemt), rett til a protestere mot behandlingen, og rett til dataportabilitet. For a bruke dine rettigheter, ta kontakt pa ole@peerlo.no.",
+    body: "Du har rett til innsyn i dine personopplysninger, rett til retting av feilaktige opplysninger, rett til sletting (retten til å bli glemt), rett til å protestere mot behandlingen, og rett til dataportabilitet. For å bruke dine rettigheter, ta kontakt på ole@peerlo.no.",
   },
   {
     heading: "9. Informasjonskapsler (cookies)",
-    body: "Peerlo bruker nodvendige informasjonskapsler for drift av tjenesten. Vi bruker ikke sporingsbaserte reklame-cookies. Du kan styre cookie-innstillinger i nettleseren din.",
+    body: "Peerlo bruker nødvendige informasjonskapsler for drift av tjenesten. Vi bruker ikke sporingsbaserte reklame-cookies. Du kan styre cookie-innstillinger i nettleseren din.",
   },
   {
     heading: "10. Endringer i personvernerklæringen",
-    body: "Vi kan oppdatere denne erklæringen. Vesentlige endringer varsles pa nettsiden. Siste oppdatering: juni 2025.",
+    body: "Vi kan oppdatere denne erklæringen. Vesentlige endringer varsles på nettsiden. Siste oppdatering: juni 2025.",
   },
   {
     heading: "11. Klage til Datatilsynet",
-    body: "Hvis du mener vi behandler dine personopplysninger i strid med GDPR, har du rett til a klage til Datatilsynet (datatilsynet.no).",
+    body: "Hvis du mener vi behandler dine personopplysninger i strid med GDPR, har du rett til å klage til Datatilsynet (datatilsynet.no).",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function PersonvernPage() {
               Personvernerklæring
             </h1>
             <p className="text-xl text-white/70 leading-relaxed">
-              Peerlo tar personvern pa alvor. Her finner du informasjon om hvilke personopplysninger vi behandler og hvordan vi beskytter dem.
+              Peerlo tar personvern på alvor. Her finner du informasjon om hvilke personopplysninger vi behandler og hvordan vi beskytter dem.
             </p>
           </div>
         </section>
@@ -106,7 +106,7 @@ export default function PersonvernPage() {
               Kontakt oss om personvern
             </h2>
             <p className="text-charcoal/70 leading-relaxed mb-4">
-              Har du sporsmal om hvordan vi behandler personopplysninger, ta kontakt:
+              Har du spørsmål om hvordan vi behandler personopplysninger, ta kontakt:
             </p>
             <ul className="space-y-2 text-charcoal/70">
               <li>

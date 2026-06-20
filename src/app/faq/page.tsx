@@ -4,22 +4,22 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ofte stilte sporsmal om Peerlo",
+  title: "Ofte stilte spørsmål om Peerlo",
   description:
-    "Svar pa de vanligste sporsmalene om Peerlo: hva er peer support, hvordan fungerer anonymitet, hva koster det for bedrifter, og hvem passer Peerlo for.",
+    "Svar på de vanligste spørsmålene om Peerlo: hva er peer support, hvordan fungerer anonymitet, hva koster det for bedrifter, og hvem passer Peerlo for.",
   alternates: { canonical: "https://peerlo.no/faq" },
   openGraph: {
-    title: "Ofte stilte sporsmal | Peerlo",
+    title: "Ofte stilte spørsmål | Peerlo",
     description:
-      "Svar pa de vanligste sporsmalene om Peerlo og peer support i norsk arbeidsliv.",
+      "Svar på de vanligste spørsmålene om Peerlo og peer support i norsk arbeidsliv.",
     url: "https://peerlo.no/faq",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ofte stilte sporsmal | Peerlo",
+    title: "Ofte stilte spørsmål | Peerlo",
     description:
-      "Svar pa de vanligste sporsmalene om Peerlo og peer support i norsk arbeidsliv.",
+      "Svar på de vanligste spørsmålene om Peerlo og peer support i norsk arbeidsliv.",
   },
 };
 
@@ -27,12 +27,12 @@ const faqs = [
   {
     question: "Hva er Peerlo?",
     answer:
-      "Peerlo er en norsk digital plattform for peer support i arbeidslivet. Gjennom Peerlo kan ansatte anonymt koble seg med sertifiserte peers som har egenerfaring fra lignende utfordringer. Peerlo er ikke terapi, men lavterskel menneskelig stotte tilgjengelig nar du trenger det. Peerlo tilbys av bedrifter som vil ta vare pa sine ansatte og forebygge sykefravær.",
+      "Peerlo er en norsk digital plattform for peer support i arbeidslivet. Gjennom Peerlo kan ansatte anonymt koble seg med sertifiserte peers som har egenerfaring fra lignende utfordringer. Peerlo er ikke terapi, men lavterskel menneskelig støtte tilgjengelig når du trenger det. Peerlo tilbys av bedrifter som vil ta vare på sine ansatte og forebygge sykefravær.",
   },
   {
     question: "Hvordan fungerer Peerlo?",
     answer:
-      "Prosessen er enkel: Du beskriver kort hva du trenger stotte med, anonymt. Peerlo matcher deg deretter med en sertifisert peer som har relevant egenerfaring. Deretter kan du starte en samtale direkte i appen. Du velger selv hva du vil snakke om og hvor mye du vil dele. Peers er tilgjengelige pa ulike tider, inkludert kvelder og helger.",
+      "Prosessen er enkel: Du beskriver kort hva du trenger støtte med, anonymt. Peerlo matcher deg deretter med en sertifisert peer som har relevant egenerfaring. Deretter kan du starte en samtale direkte i appen. Du velger selv hva du vil snakke om og hvor mye du vil dele. Peers er tilgjengelige på ulike tider, inkludert kvelder og helger.",
   },
   {
     question: "Er Peerlo terapi?",
@@ -42,37 +42,37 @@ const faqs = [
   {
     question: "Hvem passer Peerlo for?",
     answer:
-      "Peerlo passer for ansatte i norske bedrifter som star i noe vanskelig og onsker a snakke med noen som forstår uten at det foles som en stor terskel. Det kan vaere stress, arbeidspress, relasjonsproblemer, sorg, utbrenthet, angst eller andre livshendelser. Peerlo passer ogsa for bedrifter og HR-avdelinger som vil gi ansatte et lavterskel stotteverktoy.",
+      "Peerlo passer for ansatte i norske bedrifter som står i noe vanskelig og ønsker å snakke med noen som forstår, uten at det føles som en stor terskel. Det kan være stress, arbeidspress, relasjonsproblemer, sorg, utbrenthet, angst eller andre livshendelser. Peerlo passer også for bedrifter og HR-avdelinger som vil gi ansatte et lavterskel støtteverktøy.",
   },
   {
     question: "Hvordan fungerer anonymiteten?",
     answer:
-      "Ansatte kan bruke Peerlo uten at arbeidsgiver far vite hvem som har brukt tjenesten eller hva de har snakket om. Arbeidsgiver mottar kun anonymisert og aggregert innsikt, for eksempel hvilke temaer som er vanlige i organisasjonen, aldri informasjon om enkeltpersoner. Din samtale er mellom deg og peeren.",
+      "Ansatte kan bruke Peerlo uten at arbeidsgiver får vite hvem som har brukt tjenesten eller hva de har snakket om. Arbeidsgiver mottar kun anonymisert og aggregert innsikt, for eksempel hvilke temaer som er vanlige i organisasjonen, aldri informasjon om enkeltpersoner. Din samtale er mellom deg og peeren.",
   },
   {
     question: "Hva koster Peerlo for bedrifter?",
     answer:
-      "Peerlo er i pilotfase og prisen avtales direkte med bedriften. Ta kontakt med Ole Aarre pa ole@peerlo.no eller ring +47 988 11 908 for a diskutere en losning som passer for din virksomhet.",
+      "Peerlo er i pilotfase og prisen avtales direkte med bedriften. Ta kontakt med Ole Aarre på ole@peerlo.no eller ring +47 988 11 908 for å diskutere en løsning som passer for din virksomhet.",
   },
   {
     question: "Hva er peer support?",
     answer:
-      "Peer support er stotte fra et menneske som selv har hatt lignende erfaringer. Forskning viser at denne typen stotte kan vaere svart effektiv, saerlig som et tidlig tiltak for dem som ikke onsker eller er klare for profesjonell hjelp. En peer tilbyr ikke rad eller behandling, men lytter, deler og hjelper deg a finne veien videre.",
+      "Peer support er støtte fra et menneske som selv har hatt lignende erfaringer. Forskning viser at denne typen støtte kan være svært effektiv, særlig som et tidlig tiltak for dem som ikke ønsker eller er klare for profesjonell hjelp. En peer tilbyr ikke råd eller behandling, men lytter, deler og hjelper deg å finne veien videre.",
   },
   {
     question: "Hvordan blir man peer?",
     answer:
-      "For a bli peer i Peerlo ma du ha egenerfaring med utfordringer som andre kan dra nytte av, vaere personlig egnet til a lytte og stotte, og gjennom et kort intervju med oss. Etter godkjenning gjennomforer du et sertifiseringskurs. Du bestemmer selv nar du er tilgjengelig og hva du vil snakke om. Meld din interesse pa siden Bli en peer.",
+      "For å bli peer i Peerlo må du ha egenerfaring med utfordringer som andre kan dra nytte av, være personlig egnet til å lytte og støtte, og gjennom et kort intervju med oss. Etter godkjenning gjennomfører du et sertifiseringskurs. Du bestemmer selv når du er tilgjengelig og hva du vil snakke om. Meld din interesse på siden Bli en peer.",
   },
   {
     question: "Hvordan kan bedrifter bruke Peerlo?",
     answer:
-      "Bedrifter licensierer Peerlo som et personalgoede og forebyggende tiltak. Ansatte far tilgang gjennom appen og kan bruke den naar de onsker, anonymt. HR-avdelingen far en dashboard med anonymisert innsikt i organisasjonens psykiske helse-tendenser. Peerlo kan kombineres med eksisterende EAP-program, BHT og andre tilbud.",
+      "Bedrifter lisenser Peerlo som et personalgode og forebyggende tiltak. Ansatte får tilgang gjennom appen og kan bruke den når de ønsker, anonymt. HR-avdelingen får et dashbord med anonymisert innsikt i organisasjonens psykiske helse-tendenser. Peerlo kan kombineres med eksisterende EAP-program, BHT og andre tilbud.",
   },
   {
-    question: "Oppfyller Peerlo kravene i arbeidsmiljoloven?",
+    question: "Oppfyller Peerlo kravene i arbeidsmiljøloven?",
     answer:
-      "Arbeidsmiljolovens paragraf 4-3 stiller krav til det psykososiale arbeidsmiljoet. Peerlo er et tiltak som hjelper bedrifter med a oppfylle dette kravet ved a gi ansatte tilgang til lavterskel stotte. Peerlo erstatter ikke andre plikter etter loven, men er et godt supplement til et helhetlig arbeidsmiljoarbeid.",
+      "Arbeidsmiljølovens paragraf 4-3 stiller krav til det psykososiale arbeidsmiljøet. Peerlo er et tiltak som hjelper bedrifter med å oppfylle dette kravet ved å gi ansatte tilgang til lavterskel støtte. Peerlo erstatter ikke andre plikter etter loven, men er et godt supplement til et helhetlig arbeidsmiljøarbeid.",
   },
 ];
 
@@ -80,7 +80,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "https://peerlo.no/faq#faqpage",
-  name: "Ofte stilte sporsmal om Peerlo",
+  name: "Ofte stilte spørsmål om Peerlo",
   url: "https://peerlo.no/faq",
   inLanguage: "nb-NO",
   isPartOf: { "@id": "https://peerlo.no/#website" },
@@ -99,7 +99,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Hjem", item: "https://peerlo.no" },
-    { "@type": "ListItem", position: 2, name: "Ofte stilte sporsmal", item: "https://peerlo.no/faq" },
+    { "@type": "ListItem", position: 2, name: "Ofte stilte spørsmål", item: "https://peerlo.no/faq" },
   ],
 };
 
@@ -121,13 +121,13 @@ export default function FAQPage() {
         <section className="bg-evening-forest pt-20 pb-16 md:pt-28 md:pb-20">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <p className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">
-              Svar pa det du lurer pa
+              Svar på det du lurer på
             </p>
             <h1 className="text-4xl md:text-5xl font-normal text-white mb-6 leading-tight">
-              Ofte stilte sporsmal om Peerlo
+              Ofte stilte spørsmål om Peerlo
             </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-              Her finner du svar pa de vanligste sporsmalene om Peerlo, peer support og hvordan tjenesten fungerer for ansatte og bedrifter.
+              Her finner du svar på de vanligste spørsmålene om Peerlo, peer support og hvordan tjenesten fungerer for ansatte og bedrifter.
             </p>
           </div>
         </section>

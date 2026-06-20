@@ -7,12 +7,12 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Om Peerlo",
   description:
-    "Peerlo er en norsk peer support-plattform grunnlagt av Ole Aarre i Stavanger. Les om misjon, bakgrunn og hva vi tror pa.",
+    "Peerlo er en norsk peer support-plattform grunnlagt av Ole Aarre i Stavanger. Les om misjon, bakgrunn og hva vi tror på.",
   alternates: { canonical: "https://peerlo.no/om-peerlo" },
   openGraph: {
     title: "Om Peerlo",
     description:
-      "Peerlo er en norsk peer support-plattform grunnlagt av Ole Aarre i Stavanger. Les om misjon, bakgrunn og hva vi tror pa.",
+      "Peerlo er en norsk peer support-plattform grunnlagt av Ole Aarre i Stavanger. Les om misjon, bakgrunn og hva vi tror på.",
     url: "https://peerlo.no/om-peerlo",
     type: "website",
   },
@@ -61,7 +61,7 @@ const personSchema = {
   "@type": "Person",
   "@id": "https://peerlo.no/#ole-aarre",
   name: "Ole Aarre",
-  jobTitle: "Grunder og daglig leder",
+  jobTitle: "Gründer og daglig leder",
   worksFor: { "@id": "https://peerlo.no/#organization" },
   url: "https://peerlo.no/om-peerlo",
   email: "ole@peerlo.no",
@@ -118,7 +118,7 @@ export default function OmPeerloPage() {
               Om Peerlo
             </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-              Vi tror pa kraften i egenerfaring. At det a snakke med noen som virkelig har vaert der, kan utgjore en stor forskjell for den som star midt i det.
+              Vi tror på kraften i egenerfaring. At det å snakke med noen som virkelig har vært der, kan utgjøre en stor forskjell for den som står midt i det.
             </p>
           </div>
         </section>
@@ -128,46 +128,46 @@ export default function OmPeerloPage() {
           <div className="prose-custom space-y-8">
             <div>
               <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-3">
-                Var misjon
+                Vår misjon
               </p>
               <h2 className="text-3xl md:text-4xl font-normal text-charcoal mb-6 leading-snug">
-                Lavterskel stotte for alle som star i noe vanskelig
+                Lavterskel støtte for alle som står i noe vanskelig
               </h2>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                Hvert ar er over 70 000 nordmenn sykemeldt pa grunn av psykiske lidelser. Mange av disse hadde profittert pa a snakke med noen tidlig, men terskelen for a soke profesjonell hjelp er fortsatt hoy. Mange venter til problemene er store.
+                Hvert år er over 70 000 nordmenn sykemeldt på grunn av psykiske lidelser. Mange av disse hadde profittert på å snakke med noen tidlig, men terskelen for å søke profesjonell hjelp er fortsatt høy. Mange venter til problemene er store.
               </p>
               <p className="text-charcoal/70 text-lg leading-relaxed mb-4">
-                Peerlo ble grunnlagt for a fylle det gapet. Vi tror at det a snakke med et menneske som har vaert gjennom noe lignende, er en kraftfull form for stotte. Ikke terapi, men ekte menneskelig forstaelse.
+                Peerlo ble grunnlagt for å fylle det gapet. Vi tror at det å snakke med et menneske som har vært gjennom noe lignende, er en kraftfull form for støtte. Ikke terapi, men ekte menneskelig forståelse.
               </p>
               <p className="text-charcoal/70 text-lg leading-relaxed">
-                Vi kobler ansatte i norske bedrifter med sertifiserte peers som har egenerfaring fra utfordringer som stress, utbrenthet, angst, sorg og andre livshendelser. Alt er anonymt. Alt er tilgjengelig naar du trenger det.
+                Vi kobler ansatte i norske bedrifter med sertifiserte peers som har egenerfaring fra utfordringer som stress, utbrenthet, angst, sorg og andre livshendelser. Alt er anonymt. Alt er tilgjengelig når du trenger det.
               </p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 md:p-12 border border-pastel-forest/30">
               <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-3">
-                Hva vi tror pa
+                Hva vi tror på
               </p>
               <h2 className="text-2xl md:text-3xl font-normal text-charcoal mb-6 leading-snug">
-                Vara verdier
+                Våre verdier
               </h2>
               <ul className="space-y-5">
                 {[
                   {
                     title: "Egenerfaring har verdi",
-                    desc: "Det a ha vaert gjennom noe vanskelig gir en forstaelse som ingen utdanning kan erstatte.",
+                    desc: "Det å ha vært gjennom noe vanskelig gir en forståelse som ingen utdanning kan erstatte.",
                   },
                   {
                     title: "Lavterskel er kritisk",
-                    desc: "Stotte ma vaere tilgjengelig for at den skal bli brukt. Vi fjerner barrierer, ikke legger til dem.",
+                    desc: "Støtte må være tilgjengelig for at den skal bli brukt. Vi fjerner barrierer, ikke legger til dem.",
                   },
                   {
-                    title: "Anonymitet muliggjor apenhet",
-                    desc: "Folk snakker friere nar de vet at det ikke kan spores tilbake til dem.",
+                    title: "Anonymitet muliggjør åpenhet",
+                    desc: "Folk snakker friere når de vet at det ikke kan spores tilbake til dem.",
                   },
                   {
-                    title: "Tidlig stotte gir storst effekt",
-                    desc: "Jo tidligere man far hjelp, desto lettere er det a snu en negativ utvikling.",
+                    title: "Tidlig støtte gir størst effekt",
+                    desc: "Jo tidligere man får hjelp, desto lettere er det å snu en negativ utvikling.",
                   },
                 ].map((item) => (
                   <li key={item.title} className="flex items-start gap-4">
@@ -187,7 +187,7 @@ export default function OmPeerloPage() {
         <section className="bg-white border-t border-pastel-forest/20 py-16 md:py-20">
           <div className="max-w-3xl mx-auto px-6">
             <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-4">
-              Grunderen
+              Gründeren
             </p>
             <h2 className="text-3xl md:text-4xl font-normal text-charcoal mb-8 leading-snug">
               Ole Aarre
@@ -207,13 +207,13 @@ export default function OmPeerloPage() {
               </div>
               <div className="space-y-4 text-charcoal/70 text-lg leading-relaxed">
                 <p>
-                  Ole Aarre er grunder og daglig leder i Peerlo, og er basert i Stavanger. Han grunnla Peerlo etter a ha sett behovet for lavterskel stotte i arbeidslivet pa naert hold.
+                  Ole Aarre er gründer og daglig leder i Peerlo, og er basert i Stavanger. Han grunnla Peerlo etter å ha sett behovet for lavterskel støtte i arbeidslivet på nært hold.
                 </p>
                 <p>
-                  Ole er opptatt av at psykisk helse ikke bare er et helseproblem, men et arbeidsmiljoproblem. Han mener at bedrifter som investerer i tidlig stotte, ikke bare tar vare pa menneskene sine, men ogsa bygger mer robuste og produktive organisasjoner.
+                  Ole er opptatt av at psykisk helse ikke bare er et helseproblem, men et arbeidsmiljøproblem. Han mener at bedrifter som investerer i tidlig støtte, ikke bare tar vare på menneskene sine, men også bygger mer robuste og produktive organisasjoner.
                 </p>
                 <p>
-                  Peerlo ble tatt opp i Naeringsforeningen i Stavanger som deres hundrede medlem i 2026.
+                  Peerlo ble tatt opp i Næringsforeningen i Stavanger som deres hundrede medlem i 2026.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
                   <a
