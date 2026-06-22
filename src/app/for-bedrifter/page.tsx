@@ -134,64 +134,89 @@ export default function ForBedrifter() {
 
       {/* ===== HERO ===== */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden pt-16 bg-evening-forest">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: smoothEase }}
-          className="relative max-w-4xl mx-auto px-6 py-24 md:py-32 text-center"
-        >
-          <motion.p
-            className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            Peerlo for bedrifter
-          </motion.p>
-          <motion.h1
-            className="text-4xl md:text-6xl font-normal text-white mb-6 leading-tight"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.9, ease: smoothEase }}
-          >
-            Før det blir
-            <br />
-            <span className="text-bright-forest">en sykemelding</span>
-          </motion.h1>
-          <motion.p
-            className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45, duration: 0.9, ease: smoothEase }}
-          >
-            Peerlo gir ansatte et sted å gå, anonymt, tilgjengelig og uten venteliste.
-            En investering i menneskene som driver bedriften din.
-          </motion.p>
+        <div className="relative w-full max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-16">
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8, ease: smoothEase }}
+            transition={{ duration: 0.9, ease: smoothEase }}
+            className="flex-1 text-center md:text-left"
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} transition={springTransition}>
-              <Link
-                href="/#kontakt"
-                className="inline-flex h-14 items-center justify-center px-8 rounded-full bg-white text-evening-forest font-[family-name:var(--font-geist-sans)] font-semibold text-lg hover:bg-bright-forest transition-colors duration-300 gap-2"
-              >
-                Book en demo
-                <ArrowRight size={18} />
-              </Link>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} transition={springTransition}>
-              <Link
-                href="#hvordan"
-                className="inline-flex h-14 items-center justify-center px-8 rounded-full border-2 border-white/30 text-white font-[family-name:var(--font-geist-sans)] font-medium text-lg hover:bg-white/10 transition-colors duration-300"
-              >
-                Se hvordan det fungerer
-              </Link>
+            <motion.p
+              className="text-bright-forest font-[family-name:var(--font-geist-sans)] font-semibold text-sm uppercase tracking-widest mb-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+            >
+              Peerlo for bedrifter
+            </motion.p>
+            <motion.h1
+              className="text-4xl md:text-6xl font-normal text-white mb-6 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.9, ease: smoothEase }}
+            >
+              Før det blir
+              <br />
+              <span className="text-bright-forest">en sykemelding</span>
+            </motion.h1>
+            <motion.p
+              className="text-xl text-white/70 max-w-xl leading-relaxed mb-10"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.45, duration: 0.9, ease: smoothEase }}
+            >
+              Peerlo gir ansatte et sted å gå, anonymt, tilgjengelig og uten venteliste.
+              En investering i menneskene som driver bedriften din.
+            </motion.p>
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8, ease: smoothEase }}
+            >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} transition={springTransition}>
+                <Link
+                  href="/#kontakt"
+                  className="inline-flex h-14 items-center justify-center px-8 rounded-full bg-white text-evening-forest font-[family-name:var(--font-geist-sans)] font-semibold text-lg hover:bg-bright-forest transition-colors duration-300 gap-2"
+                >
+                  Book en demo
+                  <ArrowRight size={18} />
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} transition={springTransition}>
+                <Link
+                  href="#hvordan"
+                  className="inline-flex h-14 items-center justify-center px-8 rounded-full border-2 border-white/30 text-white font-[family-name:var(--font-geist-sans)] font-medium text-lg hover:bg-white/10 transition-colors duration-300"
+                >
+                  Se hvordan det fungerer
+                </Link>
+              </motion.div>
             </motion.div>
           </motion.div>
-        </motion.div>
+
+          <motion.div
+            className="hidden md:flex flex-col gap-3 flex-shrink-0 w-64"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 0.9, ease: smoothEase }}
+          >
+            <div className="self-start max-w-[85%] bg-white/10 text-white/75 rounded-2xl rounded-bl-sm px-4 py-3 text-base leading-relaxed">
+              Hei! Hva fikk deg til å logge inn i dag?
+            </div>
+            <div className="self-end max-w-[85%] bg-bright-forest/20 text-bright-forest/90 rounded-2xl rounded-br-sm px-4 py-3 text-base leading-relaxed">
+              Vet ikke helt om dette er noe for meg egentlig
+            </div>
+            <div className="self-start max-w-[85%] bg-white/10 text-white/75 rounded-2xl rounded-bl-sm px-4 py-3 text-base leading-relaxed">
+              Det er helt greit. Hva skjer hos deg for tida?
+            </div>
+            <div className="self-end max-w-[85%] bg-bright-forest/20 text-bright-forest/90 rounded-2xl rounded-br-sm px-4 py-3 text-base leading-relaxed">
+              Har bare ikke sovet ordentlig på lenge
+            </div>
+            <div className="self-start max-w-[85%] bg-white/10 text-white/75 rounded-2xl rounded-bl-sm px-4 py-3 text-base leading-relaxed">
+              Skjer det noe spesielt, eller bare generelt urolig?
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* ===== STATISTIKK ===== */}
