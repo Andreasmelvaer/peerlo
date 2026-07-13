@@ -90,8 +90,7 @@ function TypingHero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8, ease: smoothEase }}
         >
-          Hvordan har du det?<br />
-          <span className="text-white/60 text-[0.5em]">(egentlig)</span>
+          Hvordan har du det?
         </motion.p>
       </div>
     </motion.div>
