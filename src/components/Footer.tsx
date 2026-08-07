@@ -41,7 +41,7 @@ export default function Footer() {
                 { href: "/#bedrifter", label: "For bedrifter" },
                 { href: "/bli-en-peer", label: "Bli en peer" },
                 { href: "/blog", label: "Blogg" },
-                { href: "/faq", label: "Ofte stilte sporsmal" },
+                { href: "/faq", label: "Ofte stilte spørsmål" },
                 { href: "/om-peerlo", label: "Om Peerlo" },
               ].map((link) => (
                 <li key={link.href}>

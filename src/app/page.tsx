@@ -581,43 +581,82 @@ export default function Home() {
 
       {/* ===== MEDIA MENTION ===== */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <AnimatedSection>
-            <motion.a
-              href="https://www.naeringsforeningen.no/nyheter/medlem-nummer-100-2026"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col md:flex-row gap-8 items-center bg-paper rounded-3xl overflow-hidden border border-pastel-forest/20 hover:border-forest/30 transition-colors duration-300"
-              whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
-              transition={{ duration: 0.35, ease: smoothEase }}
-            >
-              <div className="md:w-72 shrink-0 overflow-hidden">
-                <motion.img
-                  src="/images/naeringsforeningen-article.png"
-                  alt="Peerlo omtalt i Naeringsforeningen i Stavanger som deres hundrede medlem"
-                  className="w-full h-48 md:h-full object-cover object-top"
-                  loading="lazy"
-                  whileHover={{ scale: 1.03 }}
-                  transition={{ duration: 0.5, ease: smoothEase }}
-                />
-              </div>
-              <div className="p-8 md:pl-2 flex flex-col gap-3">
-                <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
-                  Næringsforeningen · I media
-                </p>
-                <h3 className="text-2xl md:text-3xl font-normal text-charcoal group-hover:text-forest transition-colors duration-300 leading-snug">
-                  – Det er mange som sliter i stillhet rundt omkring på arbeidsplassene
-                </h3>
-                <p className="text-charcoal/60 leading-relaxed">
-                  Peerlo ble valgt ut som medlem nummer 100 i Næringsforeningen i 2026.
-                </p>
-                <div className="flex items-center gap-2 text-forest text-sm font-medium mt-2">
-                  <span>Les artikkelen</span>
-                  <ArrowRight size={14} />
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            <AnimatedSection>
+              <motion.a
+                href="https://www.naeringsforeningen.no/nyheter/medlem-nummer-100-2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col h-full bg-paper rounded-3xl overflow-hidden border border-pastel-forest/20 hover:border-forest/30 transition-colors duration-300"
+                whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
+                transition={{ duration: 0.35, ease: smoothEase }}
+              >
+                <div className="shrink-0 overflow-hidden">
+                  <motion.img
+                    src="/images/naeringsforeningen-article.png"
+                    alt="Peerlo omtalt i Naeringsforeningen i Stavanger som deres hundrede medlem"
+                    className="w-full h-48 object-cover object-top"
+                    loading="lazy"
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.5, ease: smoothEase }}
+                  />
                 </div>
-              </div>
-            </motion.a>
-          </AnimatedSection>
+                <div className="p-8 flex flex-col gap-3 flex-1">
+                  <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
+                    Næringsforeningen · I media
+                  </p>
+                  <h3 className="text-xl md:text-2xl font-normal text-charcoal group-hover:text-forest transition-colors duration-300 leading-snug">
+                    – Det er mange som sliter i stillhet rundt omkring på arbeidsplassene
+                  </h3>
+                  <p className="text-charcoal/60 leading-relaxed">
+                    Peerlo ble valgt ut som medlem nummer 100 i Næringsforeningen i 2026.
+                  </p>
+                  <div className="flex items-center gap-2 text-forest text-sm font-medium mt-2">
+                    <span>Les artikkelen</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </div>
+              </motion.a>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <motion.a
+                href="https://www.shifter.no/nyheter/gikk-gjennom-samlivsbrudd-og-fikk-angst-na-lager-ole-aarre-losningen-han-hadde-trengt-selv/471786"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col h-full bg-paper rounded-3xl overflow-hidden border border-pastel-forest/20 hover:border-forest/30 transition-colors duration-300"
+                whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
+                transition={{ duration: 0.35, ease: smoothEase }}
+              >
+                <div className="shrink-0 overflow-hidden">
+                  <motion.img
+                    src="/images/shifter-artikkel.png"
+                    alt="Peerlo-grunder Ole Aarre omtalt i Shifter"
+                    className="w-full h-48 object-cover object-top"
+                    loading="lazy"
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.5, ease: smoothEase }}
+                  />
+                </div>
+                <div className="p-8 flex flex-col gap-3 flex-1">
+                  <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
+                    Shifter · I media
+                  </p>
+                  <h3 className="text-xl md:text-2xl font-normal text-charcoal group-hover:text-forest transition-colors duration-300 leading-snug">
+                    Gikk gjennom samlivsbrudd og fikk angst: Nå lager Ole Aarre løsningen han hadde trengt selv
+                  </h3>
+                  <p className="text-charcoal/60 leading-relaxed">
+                    Den ferske gründeren ønsker å støtte mennesker gjennom kriser.
+                  </p>
+                  <div className="flex items-center gap-2 text-forest text-sm font-medium mt-2">
+                    <span>Les artikkelen</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </div>
+              </motion.a>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
