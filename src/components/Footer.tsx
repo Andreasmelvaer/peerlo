@@ -87,6 +87,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/slett-konto"
+                  className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block"
+                >
+                  Slett konto
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/brand"
                   className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block"
                 >
