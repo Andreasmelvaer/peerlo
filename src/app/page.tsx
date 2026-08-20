@@ -582,7 +582,7 @@ export default function Home() {
       {/* ===== MEDIA MENTION ===== */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <AnimatedSection>
               <motion.a
                 href="https://www.naeringsforeningen.no/nyheter/medlem-nummer-100-2026"
@@ -592,11 +592,11 @@ export default function Home() {
                 whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
                 transition={{ duration: 0.35, ease: smoothEase }}
               >
-                <div className="shrink-0 overflow-hidden">
+                <div className="shrink-0 overflow-hidden bg-charcoal/5 flex items-center justify-center">
                   <motion.img
                     src="/images/naeringsforeningen-article.png"
                     alt="Peerlo omtalt i Naeringsforeningen i Stavanger som deres hundrede medlem"
-                    className="w-full h-48 object-cover object-top"
+                    className="w-full h-36 object-contain"
                     loading="lazy"
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.5, ease: smoothEase }}
@@ -629,11 +629,11 @@ export default function Home() {
                 whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
                 transition={{ duration: 0.35, ease: smoothEase }}
               >
-                <div className="shrink-0 overflow-hidden">
+                <div className="shrink-0 overflow-hidden bg-charcoal/5 flex items-center justify-center">
                   <motion.img
                     src="/images/shifter-artikkel.png"
                     alt="Peerlo-grunder Ole Aarre omtalt i Shifter"
-                    className="w-full h-48 object-cover object-top"
+                    className="w-full h-36 object-contain"
                     loading="lazy"
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.5, ease: smoothEase }}
@@ -648,6 +648,43 @@ export default function Home() {
                   </h3>
                   <p className="text-charcoal/60 leading-relaxed">
                     Den ferske gründeren ønsker å støtte mennesker gjennom kriser.
+                  </p>
+                  <div className="flex items-center gap-2 text-forest text-sm font-medium mt-2">
+                    <span>Les artikkelen</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </div>
+              </motion.a>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <motion.a
+                href="https://www.aftenbladet.no/okonomi/i/rrVd4A/ole-aarre-startet-peerlo-etter-depresjon-satser-paa-psykisk-helse-i-arbeidslivet"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col h-full bg-paper rounded-3xl overflow-hidden border border-pastel-forest/20 hover:border-forest/30 transition-colors duration-300"
+                whileHover={{ y: -4, boxShadow: "0 20px 40px -12px rgba(56,133,102,0.12)" }}
+                transition={{ duration: 0.35, ease: smoothEase }}
+              >
+                <div className="shrink-0 overflow-hidden bg-charcoal/5 flex items-center justify-center">
+                  <motion.img
+                    src="/images/aftenbladet-artikkel.jpg"
+                    alt="Peerlo-grunder Ole Aarre omtalt i Stavanger Aftenblad"
+                    className="w-full h-36 object-contain"
+                    loading="lazy"
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.5, ease: smoothEase }}
+                  />
+                </div>
+                <div className="p-8 flex flex-col gap-3 flex-1">
+                  <p className="text-forest font-[family-name:var(--font-geist-sans)] font-semibold text-xs uppercase tracking-widest">
+                    Stavanger Aftenblad · I media
+                  </p>
+                  <h3 className="text-xl md:text-2xl font-normal text-charcoal group-hover:text-forest transition-colors duration-300 leading-snug">
+                    Ole Aarre startet Peerlo etter depresjon – satser på psykisk helse i arbeidslivet
+                  </h3>
+                  <p className="text-charcoal/60 leading-relaxed">
+                    Da gründer Ole Aarre ble deprimert, skjulte han det for sine nærmeste. Nå bygger han tilbudet han selv savnet.
                   </p>
                   <div className="flex items-center gap-2 text-forest text-sm font-medium mt-2">
                     <span>Les artikkelen</span>
