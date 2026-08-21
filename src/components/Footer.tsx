@@ -130,7 +130,7 @@ export default function Footer() {
         >
           <p>
             &copy; {new Date().getFullYear()} Peerlo. Alle rettigheter
-            reservert.
+            reservert. Org.nr. 935 861 047.
           </p>
           <p>Your peer, right here.</p>
         </motion.div>
